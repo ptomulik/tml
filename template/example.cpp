@@ -6,14 +6,19 @@
 
 /** // doc: unit.cpp {{{
  * \file unit.cpp
- * \todo Write documentation
+ * \example unit.cpp
+ * \brief Usage example for class
  */ // }}}
 
+// TODO: substitute: s/\<unit\>/tml\/theunit/g
+// TODO: substitute: s/\<class\>/tml::theclass/g
+// [Code]
 #include <unit.hpp>
 
-// TODO:
-// 1. Replace unit.cpp with your unit name
-// 2. Place your code here
+// TODO: Write your code here
+// [Code]
+
+int main() { return 0; }
 
 // vim: set expandtab tabstop=2 shiftwidth=2:
 // vim: set foldmethod=marker foldcolumn=4:

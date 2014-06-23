@@ -4,16 +4,11 @@
 // (See accompanying file LICENSE_1_0.txt or copy at
 //  http://www.boost.org/LICENSE_1_0.txt)
 
-/** // doc: unit.cpp {{{
- * \file unit.cpp
- * \todo Write documentation
- */ // }}}
-
-#include <unit.hpp>
-
-// TODO:
-// 1. Replace unit.cpp with your unit name
-// 2. Place your code here
+// Define classes which have only forward declarations in code. This way we
+// force doxygen to generate documentation for these classes.
+namespace tml {
+struct type_sequence_tag {};
+} // end namespace tml
 
 // vim: set expandtab tabstop=2 shiftwidth=2:
 // vim: set foldmethod=marker foldcolumn=4:

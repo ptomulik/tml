@@ -4,35 +4,32 @@
 // (See accompanying file LICENSE_1_0.txt or copy at
 //  http://www.boost.org/LICENSE_1_0.txt)
 
-// tml/sequence.hpp
+// unit.hpp
 
-/** // doc: tml/sequence.hpp {{{
- * \file tml/sequence.hpp
+/** // doc: unit.hpp {{{
+ * \file unit.hpp
  * \todo Write documentation
  */ // }}}
-#ifndef TML_SEQUENCE_HPP
-#define TML_SEQUENCE_HPP
+#ifndef TML_FWD_SEQUENCE_HPP
+#define TML_FWD_SEQUENCE_HPP
 
-#include <tml/fwd/sequence.hpp>
-namespace tml {
-/** // doc: sequence {{{
- * \struct sequence
- * \brief Native representation of any sequence supported by tml
+namespace tml { namespace detail {
+/** // doc: sequence_impl {{{
+ * \struct sequence_impl
+ * \brief implementation details for \ref sequence
  *
  * \tparam Tag sequence tag,
  * \tparam Types types used to represent elements of the sequence.
- *
- * \sa detail::sequence_impl
  */ // }}}
+template<class Tag, class... Types>
+  struct sequence_impl;
+} } // end namespace tml::detail
+
+namespace tml {
 template <class Tag, class... Types>
-  struct sequence
-    : detail::sequence_impl<Tag, Types...>
-  {
-    /// Sequence type, same as sequence<Tag,Types...>
-    typedef sequence sequence_type;
-  };
+  struct sequence;
 } // end namespace tml
 
-#endif /* TML_SEQUENCE_HPP */
+#endif /* TML_FWD_SEQUENCE_HPP */
 // vim: set expandtab tabstop=2 shiftwidth=2:
 // vim: set foldmethod=marker foldcolumn=4:

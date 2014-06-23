@@ -4,16 +4,25 @@
 // (See accompanying file LICENSE_1_0.txt or copy at
 //  http://www.boost.org/LICENSE_1_0.txt)
 
-/** // doc: unit.cpp {{{
- * \file unit.cpp
+// unit.hpp
+
+/** // doc: unit.hpp {{{
+ * \file unit.hpp
  * \todo Write documentation
  */ // }}}
+#ifndef TML_FWD_AS_SEQUENCE_HPP
+#define TML_FWD_AS_SEQUENCE_HPP
 
-#include <unit.hpp>
+namespace tml { namespace detail {
+template <class Seq>
+  struct as_sequence_impl;
+} } // end namespace tml::detail
 
-// TODO:
-// 1. Replace unit.cpp with your unit name
-// 2. Place your code here
+namespace tml {
+template <class Seq>
+  struct as_sequence ;
+} // end namespace tml
 
+#endif /* TML_FWD_AS_SEQUENCE_HPP */
 // vim: set expandtab tabstop=2 shiftwidth=2:
 // vim: set foldmethod=marker foldcolumn=4:

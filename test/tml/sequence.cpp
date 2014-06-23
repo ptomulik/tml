@@ -7,63 +7,35 @@
 #include <boost/test/unit_test.hpp>
 
 #include <tml/sequence.hpp>
-
 #include <type_traits>
-#include <boost/mpl/list.hpp>
 
-struct X {};
-struct Y; // incomplete type
+using namespace tml;
 
-// test for these types
-typedef boost::mpl::list<
-  bool
-, char
-, int
-, double
-, X
-> test_types;
+struct seq_tag;
+template <class... Ts>
+  struct seq
+  {
+  };
+namespace tml { namespace detail {
+template <class... Ts>
+  struct sequence_impl<seq_tag,Ts...>
+  {
+    typedef seq<Ts...> type;
+  };
+} } // end namesapce tml::detail
 
-// Empty sequence
-BOOST_AUTO_TEST_CASE(is_class0)
+// Heterogenous sequences
+BOOST_AUTO_TEST_CASE(type1)
 {
-  BOOST_CHECK((std::is_class<tml::sequence<> >::value));
-}
-
-// Homogenous sequences for complete types
-BOOST_AUTO_TEST_CASE_TEMPLATE(is_class1, T, test_types)
-{
-  BOOST_CHECK((std::is_class<tml::sequence<T> >::value));
-  BOOST_CHECK((std::is_class<tml::sequence<T,T> >::value));
-  BOOST_CHECK((std::is_class<tml::sequence<T,T,T> >::value));
-  BOOST_CHECK((std::is_class<tml::sequence<T,T,T,T> >::value));
-  BOOST_CHECK((std::is_class<tml::sequence<T,T,T,T,T> >::value));
-  BOOST_CHECK((std::is_class<tml::sequence<T,T,T,T,T,T> >::value));
-  BOOST_CHECK((std::is_class<tml::sequence<T,T,T,T,T,T,T> >::value));
-  BOOST_CHECK((std::is_class<tml::sequence<T,T,T,T,T,T,T,T> >::value));
-  BOOST_CHECK((std::is_class<tml::sequence<T,T,T,T,T,T,T,T,T> >::value));
-  BOOST_CHECK((std::is_class<tml::sequence<T,T,T,T,T,T,T,T,T,T> >::value));
-}
-
-// Homogenous sequence for an incomplete type
-BOOST_AUTO_TEST_CASE(is_class2)
-{
-  BOOST_CHECK((std::is_class<tml::sequence<Y> >::value));
-  BOOST_CHECK((std::is_class<tml::sequence<Y,Y> >::value));
-  BOOST_CHECK((std::is_class<tml::sequence<Y,Y,Y> >::value));
-  BOOST_CHECK((std::is_class<tml::sequence<Y,Y,Y,Y> >::value));
-  BOOST_CHECK((std::is_class<tml::sequence<Y,Y,Y,Y,Y> >::value));
-  BOOST_CHECK((std::is_class<tml::sequence<Y,Y,Y,Y,Y,Y> >::value));
-  BOOST_CHECK((std::is_class<tml::sequence<Y,Y,Y,Y,Y,Y,Y> >::value));
-  BOOST_CHECK((std::is_class<tml::sequence<Y,Y,Y,Y,Y,Y,Y,Y> >::value));
-  BOOST_CHECK((std::is_class<tml::sequence<Y,Y,Y,Y,Y,Y,Y,Y,Y> >::value));
-  BOOST_CHECK((std::is_class<tml::sequence<Y,Y,Y,Y,Y,Y,Y,Y,Y,Y> >::value));
+  BOOST_CHECK((std::is_same<sequence<seq_tag>::type, seq<> >::value));
+  BOOST_CHECK((std::is_same<sequence<seq_tag,int>::type, seq<int> >::value));
+  BOOST_CHECK((std::is_same<sequence<seq_tag,void,char>::type, seq<void,char> >::value));
 }
 
 // Heterogenous sequences
-BOOST_AUTO_TEST_CASE(is_class4)
+BOOST_AUTO_TEST_CASE(sequence_type1)
 {
-  BOOST_CHECK((std::is_class<tml::sequence<int,Y> >::value));
-  BOOST_CHECK((std::is_class<tml::sequence<int,X,Y> >::value));
-  BOOST_CHECK((std::is_class<tml::sequence<int,char,X,Y> >::value));
-  BOOST_CHECK((std::is_class<tml::sequence<int,char,double,X,Y> >::value));
+  BOOST_CHECK((std::is_same<sequence<seq_tag>::sequence_type, sequence<seq_tag> >::value));
+  BOOST_CHECK((std::is_same<sequence<seq_tag,int>::sequence_type, sequence<seq_tag,int> >::value));
+  BOOST_CHECK((std::is_same<sequence<seq_tag,void,char>::sequence_type, sequence<seq_tag,void,char> >::value));
 }

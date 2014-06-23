@@ -29,7 +29,7 @@ before_script:
   - $CXX -dumpversion;
 
 script:
-  - bjam toolset=$CC -d+2 test
+  - bjam toolset=$CC -d+2 -a test example
     
 # Uncomment the following block to enable code coverage support.
 #after_success:

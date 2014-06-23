@@ -13,17 +13,14 @@ project
     <toolset>gcc:<cxxflags>-std=c++11
     <toolset>gcc:<cxxflags>-Wextra
     <toolset>gcc:<cxxflags>-pedantic
-    <toolset>gcc:<linkflags>-lboost_unit_test_framework
     <toolset>clang:<cxxflags>-std=c++11
     <toolset>clang:<cxxflags>-Wextra
     <toolset>clang:<cxxflags>-pedantic
-    <toolset>clang:<linkflags>-lboost_unit_test_framework
-    <define>BOOST_TEST_DYN_LINK=1
   : build-dir bin.v2
   ;
 
-unit-test tml/as_sequence : tml/as_sequence.cpp ;
-unit-test tml/sequence : tml/sequence.cpp ;
-unit-test tml/sequence_tag : tml/sequence_tag.cpp ;
-unit-test tml/type_sequence : tml/type_sequence.cpp ;
-unit-test tml/value_sequence : tml/value_sequence.cpp ;
+compile tml/as_sequence.cpp ;
+compile tml/sequence_tag.cpp ;
+compile tml/type_sequence.cpp ;
+compile tml/value.cpp ;
+compile tml/value_sequence.cpp ;
