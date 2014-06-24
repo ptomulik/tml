@@ -13,25 +13,85 @@
 #ifndef TML_SEQUENCE_HPP
 #define TML_SEQUENCE_HPP
 
-#include <tml/fwd/sequence.hpp>
+#include <tml/sequence_fwd.hpp>
+#include <tml/template_sequence/aux_/tag.hpp>
+
 namespace tml {
 /** // doc: sequence {{{
+ * \ingroup SeqClassGroup
  * \struct sequence
- * \brief Native representation of any sequence supported by tml
+ * \brief A \ref VariadicTemplateSeqConcept.
  *
- * \tparam Tag sequence tag,
- * \tparam Types types used to represent elements of the sequence.
+ * \todo Write documentation for tml::sequence.
  *
- * \sa detail::sequence_impl
+ * \tparam Args Elements of the sequence.
+ *
+ * \par Synopsis
+ *
+ * TODO
+ *
+ * \par Description
+ *
+ * TODO
+ *
+ * \par Model of
+ *
+ * TODO
+ *
+ * \par Expression semantics
+ *
+ * TODO
+ *
+ * - **Return type**: TODO
+ * - **Semantics**: TODO
+ *
+ * \par Example
+ * \snippet tml/sequence.cpp Code
+ *
  */ // }}}
-template <class Tag, class... Types>
+template <class... Args>
   struct sequence
-    : detail::sequence_impl<Tag, Types...>
   {
-    /// Sequence type, same as sequence<Tag,Types...>
-    typedef sequence sequence_type;
+    typedef sequence type;
+    typedef aux::template_sequence_tag sequence_tag;
+  };
+/** // doc: sequence_c {{{
+ * \ingroup SeqClassGroup
+ * \struct sequence_c
+ * \brief TODO: brief description
+ *
+ * \tparam T TODO parameter description
+ *
+ * \par Synopsis
+ *
+ * TODO
+ *
+ * \par Description
+ *
+ * TODO
+ *
+ * \par Expression semantics
+ *
+ * TODO
+ *
+ * - **Return type**: TODO
+ * - **Semantics**: TODO
+ *
+ * \par Example
+ * \snippet tml/sequence.cpp Code
+ *
+ */ // }}}
+template <class T, T... Args>
+  struct sequence_c
+  {
+    typedef sequence_c type;
+    typedef T value_type;
+    typedef aux::template_sequence_tag sequence_tag;
   };
 } // end namespace tml
+
+#include <tml/template_sequence/metafunctions.hpp>
+#include <tml/template_sequence/aux_/iterator.hpp>
 
 #endif /* TML_SEQUENCE_HPP */
 // vim: set expandtab tabstop=2 shiftwidth=2:

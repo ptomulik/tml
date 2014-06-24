@@ -6,9 +6,10 @@
 
 // Define classes which have only forward declarations in code. This way we
 // force doxygen to generate documentation for these classes.
-namespace tml {
-struct type_sequence_tag {};
-} // end namespace tml
+
+namespace tml { namespace aux {
+struct variadic_template_tag {};
+} } // end namespace tml::aux
 
 // vim: set expandtab tabstop=2 shiftwidth=2:
 // vim: set foldmethod=marker foldcolumn=4:

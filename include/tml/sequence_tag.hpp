@@ -8,49 +8,66 @@
 
 /** // doc: tml/sequence_tag.hpp {{{
  * \file tml/sequence_tag.hpp
- * \brief Defines the tml::sequence_tag metafunction.
+ * \todo Write documentation
  */ // }}}
 #ifndef TML_SEQUENCE_TAG_HPP
 #define TML_SEQUENCE_TAG_HPP
 
-#include <tml/fwd/sequence_tag.hpp>
-
-namespace tml { namespace detail {
-/** // doc: sequence_tag_impl {{{
- * \brief Implementation of the \ref sequence_tag metafunction
- *
- * \tparam Seq a sequence
- *
- * This template shall be used for specialization instead of specializing the
- * \ref sequence_tag directly.
- *
- * **Defaults to**: ``Seq::sequence_tag``
- */ // }}}
-template <class Seq>
-  struct sequence_tag_impl
-  {
-    typedef typename Seq::sequence_tag type;
-  };
-} } // end namesapce tml::detail
+#include <tml/sequence_tag_fwd.hpp>
 
 namespace tml {
 /** // doc: sequence_tag {{{
- * \brief Return sequence tag for a given type 
+ * \ingroup SeqIntrGroup
+ * \struct sequence_tag
+ * \brief Return sequence tag
  *
- * \tparam Seq a sequence
+ * \tparam Sequence A sequence, for which the tag will be returned.
  *
- * Sequence tags are used to dispatch generation of custom sequences.
+ * \par Synopsis
+ *
+ * \code
+ *  template< class Sequence >
+ *  struct sequence_tag
+ *  {
+ *    typedef unspecified type;
+ *  };
+ * \endcode
+ *
+ * \par Description
+ *
+ * Returns a tag identifying given sequence. The returned tag is used by
+ * \ref TagDispatchedMetafunConcept "Tag Dispatched Metafunctions" operating on
+ * sequences to dispatch operation to an appropriate implementation.
+ *
+ * \par Model of
+ *
+ * \ref MetafunConcept
+ *
+ * \par Expression semantics
+ *
+ * For any type `s`
+ * \code
+ *  typedef sequence_tag<s>::type t;
+ * \endcode
+ *
+ * - **Return type**: Unspecified
+ * - **Semantics**: By default equivalent to
+ *   \code
+ *    typedef s::sequence_tag t;
+ *   \endcode
+ *   `t` is a type used to dispatch execution of \ref TagDispatchedMetafunConcept
+ *   "Tag Dispatched Metafunctions" operating on sequences to appropriate
+ *   implementations.
  *
  * \par Example
  * \snippet tml/sequence_tag.cpp Code
  *
- * \sa detail::sequence_tag_impl
- * \sa generate
  */ // }}}
-template <class Seq>
+template <class Sequence>
   struct sequence_tag
-    : detail::sequence_tag_impl<Seq>
-  { };
+  { 
+    typedef typename Sequence::sequence_tag type;
+  };
 } // end namespace tml
 
 #endif /* TML_SEQUENCE_TAG_HPP */

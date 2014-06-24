@@ -4,16 +4,14 @@
 // (See accompanying file LICENSE_1_0.txt or copy at
 //  http://www.boost.org/LICENSE_1_0.txt)
 
-/** // doc: unit.cpp {{{
- * \file unit.cpp
- * \example unit.cpp
- * \brief Usage example for class
+/** // doc: tml/unit.cpp {{{
+ * \file tml/unit.cpp
+ * \example tml/unit.cpp
+ * \brief Usage example for tml::class
  */ // }}}
 
-// TODO: substitute: s/\<unit\>/tml\/theunit/g
-// TODO: substitute: s/\<class\>/tml::theclass/g
 // [Code]
-#include <unit.hpp>
+#include <tml/unit.hpp>
 
 // TODO: Write your code here
 // [Code]
