@@ -189,7 +189,23 @@ namespace tml {
  */
 
 /**
+ * \defgroup MetafunArithmeticOpsGroup Arithmetic Operations
+ */
+
+/**
+ * \defgroup MetafunComparisonsGroup Comparisons
+ */
+
+/**
  * \defgroup MetafunLogicOpsGroup Logical Operations
+ */
+
+/**
+ * \defgroup MetafunBitOpsGroup Bitwise Operations
+ */
+
+/**
+ * \defgroup MetafunTrivialGroup Trivial Metafunctions
  */
 
 /**
