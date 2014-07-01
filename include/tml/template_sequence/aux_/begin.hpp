@@ -27,7 +27,7 @@ template <>
         typedef ts_iter<Sequence,0l> type;
       };
   };
-} // begin namespace tml::aux
+} // begin namespace tml
 
 #endif /* TML_TEMPLATE_SEQUENCE_AUX_BEGIN_HPP */
 // vim: set expandtab tabstop=2 shiftwidth=2:

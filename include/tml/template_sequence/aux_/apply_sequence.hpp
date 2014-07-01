@@ -63,7 +63,7 @@ template <>
         : tml::apply<F, integral_c<T,Args>...>
       { };
   };
-} // end namespace tml::aux
+} // end namespace tml
 
 #endif /* TML_TEMPLATE_SEQUENCE_AUX_APPLY_SEQUENCE_HPP */
 // vim: set expandtab tabstop=2 shiftwidth=2:

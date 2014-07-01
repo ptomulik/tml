@@ -37,7 +37,7 @@ template <class Sequence, long N>
         typedef ts_iter<Sequence, N + I> type;
       };
   };
-} // end namespace tml::aux
+} // end namespace tml
 
 #include <tml/template_sequence/aux_/distance.hpp>
 #include <tml/template_sequence/aux_/advance.hpp>

@@ -26,7 +26,7 @@ template <>
         // TODO
       };
   };
-} // end namespace tml::aux
+} // end namespace tml
 
 #endif /* TML_TEMPLATE_SEQUENCE_AUX_XXX_HPP */
 // vim: set expandtab tabstop=2 shiftwidth=2:
