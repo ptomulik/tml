@@ -52,6 +52,7 @@ compile tml/join.cpp                                      : : tml/join ;
 compile tml/lambda.cpp                                    : : tml/lambda ;
 compile tml/long.cpp                                      : : tml/long ;
 compile tml/next.cpp                                      : : tml/next ;
+compile tml/numeric_tag.cpp                               : : tml/numeric_tag ;
 compile tml/or.cpp                                        : : tml/or ;
 compile tml/pop_back.cpp                                  : : tml/pop_back ;
 compile tml/pop_front.cpp                                 : : tml/pop_front ;
