@@ -23,7 +23,6 @@ It's just the beginning. Many things are missing or incomplete.
 Features
 --------
 
-
 Sequences
 ^^^^^^^^^
 
@@ -337,6 +336,10 @@ Currently supported compilers:
 
 I haven't tested with other compilers. Feedback is welcome.
 
+Documentation
+-------------
+
+- `reference manual`_
 
 Generating reference manual
 ---------------------------
@@ -371,3 +374,4 @@ Distributed under the Boost Software License, Version 1.0.
 
 .. _Boost.MPL: http://www.boost.org/libs/mpl/doc/
 .. _tinympl: https://github.com/sbabbi/tinympl
+.. _reference manual: http://ptomulik.github.io/tml/refman/html/
