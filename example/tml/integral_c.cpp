@@ -12,6 +12,7 @@
 
 // [Code]
 #include <tml/integral_c.hpp>
+#include <tml/integral_c_tag.hpp>
 
 using namespace tml;
 
@@ -21,6 +22,7 @@ typedef integral_c<short,8> eight;
 static_assert( is_same<eight::value_type, short>::value, "");
 static_assert( is_same<eight::type, eight>::value, "");
 static_assert( eight::value == 8, "");
+static_assert( is_same<eight::numeric_tag, integral_c_tag>::value, "");
 // [Code]
 
 int main() { return 0; }

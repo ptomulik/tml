@@ -14,6 +14,7 @@
 #define TML_INTEGRAL_C_HPP
 
 #include <tml/integral_c_fwd.hpp>
+#include <tml/integral_c_tag.hpp>
 
 namespace tml {
 /** // doc: integral_c {{{
@@ -70,6 +71,7 @@ template <class T, T N>
     static constexpr value_type value = N;
     typedef integral_c type;
     constexpr value_type operator()() const noexcept { return value; }
+    typedef integral_c_tag numeric_tag;
   };
 } // end namespace tml
 
