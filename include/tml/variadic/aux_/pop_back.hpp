@@ -5,8 +5,9 @@
 
 #   include <tml/limits/variadic.hpp>
 #   include <tml/apply.hpp>
-#   include <tml/aux_/preprocessor/arguments.hpp>
 #   include <boost/preprocessor/iteration/iterate.hpp>
+#   include <boost/preprocessor/repetition/enum_params.hpp>
+#   include <boost/preprocessor/repetition/enum_trailing_params.hpp>
 #   include <boost/preprocessor/arithmetic/dec.hpp>
 
 #   define BOOST_PP_ITERATION_LIMITS (1,TML_LIMIT_VARIADIC_SIZE)
@@ -19,9 +20,9 @@
 
 namespace tml { namespace variadic {
 template <class F>
-  template<TML_PP_ARG_ENUM(BOOST_PP_ITERATION(), class A)>
-    struct pop_back<F>::apply<TML_PP_ARG_ENUM(BOOST_PP_ITERATION(), A)>
-      : tml::apply<TML_PP_ARG_PREPEND_ENUM(F, BOOST_PP_DEC(BOOST_PP_ITERATION()), A)>
+  template<BOOST_PP_ENUM_PARAMS(BOOST_PP_ITERATION(), class A)>
+    struct pop_back<F>::apply<BOOST_PP_ENUM_PARAMS(BOOST_PP_ITERATION(), A)>
+      : tml::apply<F BOOST_PP_ENUM_TRAILING_PARAMS(BOOST_PP_DEC(BOOST_PP_ITERATION()), A)>
     { };
 } } // end namespace tml::variadic
 

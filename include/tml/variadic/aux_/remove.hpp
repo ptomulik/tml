@@ -5,8 +5,9 @@
 
 #   include <tml/limits/variadic.hpp>
 #   include <tml/apply.hpp>
-#   include <tml/aux_/preprocessor/arguments.hpp>
 #   include <boost/preprocessor/iteration/iterate.hpp>
+#   include <boost/preprocessor/repetition/enum_params.hpp>
+#   include <boost/preprocessor/repetition/enum_trailing_params.hpp>
 #   include <boost/preprocessor/arithmetic/inc.hpp>
 #   include <boost/preprocessor/cat.hpp>
 
@@ -22,9 +23,9 @@ namespace tml { namespace variadic { namespace detail {
 template<class F>
   struct remove_impl<F , BOOST_PP_ITERATION()>
   {
-    template <TML_PP_ARG_ENUM_APPEND(BOOST_PP_INC(BOOST_PP_ITERATION()), class A , class... Args)>
+    template <BOOST_PP_ENUM_PARAMS(BOOST_PP_INC(BOOST_PP_ITERATION()), class A), class... Args>
       struct apply
-        : tml::apply<F, TML_PP_ARG_ENUM_APPEND(BOOST_PP_ITERATION(), A, Args...)>
+        : tml::apply<F BOOST_PP_ENUM_TRAILING_PARAMS(BOOST_PP_ITERATION(), A), Args...>
       { };
   };
 } } } // end namespace tml::variadic
