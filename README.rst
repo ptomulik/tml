@@ -26,17 +26,18 @@ Features
 Sequences
 ^^^^^^^^^
 
-The TML introduces new sequence classes called ``sequence`` and
-``sequence_c``. The ``sequence`` class models what I call "Variadic Template 
-Sequence". The concept of "Template Sequence" makes an explicit assumption,
-that the sequence has form of instantiation ``X<a0,...a{n-1}>`` of some
-template ``X`` and ``a0,...,a{n-1}`` are then the elements of the sequence.
-A "Variadic Template Sequence" is a Template Sequence with ``X`` being a
-variadic template.
+The TML introduces new sequence class called ``sequence``. It models what I
+call a *Variadic Template Sequence*. The concept of *Template Sequence* makes
+an explicit assumption, that sequence is an instantiation ``X<a0,...a{n-1}>``
+of some template class ``X`` with type parameters, and ``a0,...,a{n-1}`` are
+then the elements of the sequence. A *Variadic Template Sequence* is a
+refinement of *Template Sequence* with ``X`` being a variadic template.
 
-At the moment I'm focussed on these "Variadic Template Sequences", so there
-is no default implementation of the Intrinsic Methods, and no support for
-well-known MPL sequences such as ``vector`` or ``list``.
+At the moment I'm focussed on these *Template Sequences*, so sequence
+metafunctions are implemented only for *Template Sequences*. There is no
+support for MPL sequences such as ``vector`` or ``list`` and probably will
+never be (it's not decided yet, but it seems to be no point to reimplement
+already existing features).
 
 
 Classes
@@ -68,6 +69,13 @@ Views
 Intrinsic Metafunctions
 ```````````````````````
 
+There are two new intrinsic metafunctions: ``apply_sequence`` and
+``sequence_generator``. The ``apply_sequence`` is used to pass elements of
+a sequence as arguments to a *Lambda Expression*. The ``sequence_generator``
+metafunction is used to obtain a *Sequence Generator* ``G`` for a particular
+sequence, such that one can generate concept-identical sequences by just
+applying new elements to ``G``.
+
 +--------------------+--------+------+-------+-----+-----+--------+----------+
 |                    | vector | list | deque | set | map | string | sequence |
 +====================+========+======+=======+=====+=====+========+==========+
@@ -89,21 +97,21 @@ Intrinsic Metafunctions
 +--------------------+--------+------+-------+-----+-----+--------+----------+
 | erase              |        |      |       |     |     |        |     Y    |
 +--------------------+--------+------+-------+-----+-----+--------+----------+
-| erase_key          |        |      |       |     |     |        |          |
+| erase_key          |        |      |       |     |     |        |    N/A   |
 +--------------------+--------+------+-------+-----+-----+--------+----------+
 | front              |        |      |       |     |     |        |     Y    |
 +--------------------+--------+------+-------+-----+-----+--------+----------+
-| has_key            |        |      |       |     |     |        |          |
+| has_key            |        |      |       |     |     |        |    N/A   |
 +--------------------+--------+------+-------+-----+-----+--------+----------+
 | insert             |        |      |       |     |     |        |     Y    |
 +--------------------+--------+------+-------+-----+-----+--------+----------+
 | insert_range       |        |      |       |     |     |        |          |
 +--------------------+--------+------+-------+-----+-----+--------+----------+
-| is_sequence        |        |      |       |     |     |        |          |
+| is_sequence        |        |      |       |     |     |        |    N/A   |
 +--------------------+--------+------+-------+-----+-----+--------+----------+
-| key_type           |        |      |       |     |     |        |          |
+| key_type           |        |      |       |     |     |        |    N/A   |
 +--------------------+--------+------+-------+-----+-----+--------+----------+
-| order              |        |      |       |     |     |        |          |
+| order              |        |      |       |     |     |        |    N/A   |
 +--------------------+--------+------+-------+-----+-----+--------+----------+
 | pop_back           |        |      |       |     |     |        |     Y    |
 +--------------------+--------+------+-------+-----+-----+--------+----------+
@@ -119,7 +127,7 @@ Intrinsic Metafunctions
 +--------------------+--------+------+-------+-----+-----+--------+----------+
 | size               |        |      |       |     |     |        |     Y    |
 +--------------------+--------+------+-------+-----+-----+--------+----------+
-| value_type         |        |      |       |     |     |        |          |
+| value_type         |        |      |       |     |     |        |    N/A   |
 +--------------------+--------+------+-------+-----+-----+--------+----------+
 
 
