@@ -134,12 +134,12 @@ applying new elements to ``G``.
 Iterators
 ^^^^^^^^^
 
-"Template Sequences" are accompanied with "Template Sequence Iterators". All
+*Template Sequences* are accompanied with *Template Sequence Iterators*. All
 the iterator metafunctions are implemented for these iterators, that is:
 
 - [x] advance,
 - [x] distance,
-- [x] next.
+- [x] next,
 - [x] prior,
 - [x] deref,
 - [x] iterator_category.
