@@ -45,6 +45,10 @@ namespace tml {
  * Returns the result of short-circuit logical and (&&) operation on its
  * arguments.
  *
+ * \par Model of
+ *
+ * \ref NumericMetafunConcept
+ *
  * \par Expression semantics
  *
  * For arbitrary nullary \ref MetafunConcept f1, f2,... fn:

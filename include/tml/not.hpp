@@ -44,6 +44,10 @@ namespace tml {
  *
  * Returns the result of logical not (!) operation on its argument.
  *
+ * \par Model of
+ *
+ * \ref NumericMetafunConcept
+ *
  * \par Expression semantics
  *
  * For arbitrary nullary \ref MetafunConcept `f`:
