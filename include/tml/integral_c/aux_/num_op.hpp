@@ -30,57 +30,60 @@
 
 # include AUX862492_OP_FWD_HEADER
 
+# ifndef AUX862492_OP
+#   error "definition of AUX862492_OP is missing"
+# endif
+# ifndef AUX862492_OP_NAME
+#   error "definition of AUX862492_OP_NAME is missing"
+# endif
+# ifndef AUX862492_OP_IMPL_NAME
+#   define AUX862492_OP_IMPL_NAME BOOST_PP_CAT(AUX862492_OP_NAME,_impl)
+# endif
 # ifndef AUX862492_OP_ARITY_MIN
 #   define AUX862492_OP_ARITY_MIN 2
 # endif
 # ifndef AUX862492_OP_ARITY_MAX
 #   define AUX862492_OP_ARITY_MAX (TML_LIMIT_VARIADIC_SIZE-1)
 # endif
-# ifndef AUX862492_OP_IMPL_NAME
-#   define AUX862492_OP_IMPL_NAME BOOST_PP_CAT(AUX862492_OP_NAME,_impl)
+# ifndef AUX862492_OP_ARG_VALUE
+#   define AUX862492_OP_ARG_VALUE(arg) arg::value
+# endif
+# ifndef AUX862492_OP_APPLY
+#   define AUX862492_OP_APPLY(z, n, data) BOOST_PP_IF(BOOST_PP_GREATER(n,0),AUX862492_OP,) AUX862492_OP_ARG_VALUE(BOOST_PP_CAT(data,n))
 # endif
 
-# define TML_PP_SAME(z, n, data) data
-# define AUX862492_OP_DO(z, n, data) BOOST_PP_IF(BOOST_PP_GREATER(n,0),AUX862492_OP,) data##n::value
+# define AUX862492_SAME(z, n, data) data
+
+# ifndef AUX862492_OP_VALUE_TYPE
+#   define AUX862492_OP_VALUE_TYPE  decltype(BOOST_PP_REPEAT(BOOST_PP_ITERATION(),AUX862492_OP_APPLY,T)) 
+# endif
 
 # define BOOST_PP_ITERATION_LIMITS (AUX862492_OP_ARITY_MIN,AUX862492_OP_ARITY_MAX)
 # define BOOST_PP_FILENAME_1 <tml/integral_c/aux_/num_op.hpp>
 # include BOOST_PP_ITERATE()
 
-# undef TML_PP_SAME
-# undef AUX862492_OP_DO
-# undef TML_PP
+# undef AUX862492_SAME
+# undef AUX862492_OP_APPLY
 
-# ifdef AUX862492_OP_FWD_HEADER
-#   undef AUX862492_OP_FWD_HEADER
-# endif
-# ifdef AUX862492_OP
-#   undef AUX862492_OP
-# endif
-# ifdef AUX862492_OP_ARITY_MIN
-#   undef AUX862492_OP_ARITY_MIN
-# endif
-# ifdef AUX862492_OP_ARITY_MAX
-#   undef AUX862492_OP_ARITY_MAX
-# endif
-# ifdef AUX862492_OP_NAME
-#   undef AUX862492_OP_NAME
-# endif
-# ifdef AUX862492_OP_IMPL_NAME
-#   undef AUX862492_OP_IMPL_NAME
-# endif
+# undef AUX862492_OP_FWD_HEADER
+# undef AUX862492_OP
+# undef AUX862492_OP_NAME
+# undef AUX862492_OP_IMPL_NAME
+# undef AUX862492_OP_ARITY_MIN
+# undef AUX862492_OP_ARITY_MAX
+# undef AUX862492_OP_VALUE_TYPE
 
 #else /* BOOST_PP_IS_ITERATING */
 
 namespace tml {
 template <>
-  struct AUX862492_OP_IMPL_NAME<BOOST_PP_ENUM(BOOST_PP_ITERATION(),TML_PP_SAME,integral_c_tag)>
+  struct AUX862492_OP_IMPL_NAME<BOOST_PP_ENUM(BOOST_PP_ITERATION(),AUX862492_SAME,integral_c_tag)>
   {
     template<BOOST_PP_ENUM_PARAMS(BOOST_PP_ITERATION(),class T)>
       struct apply
         : integral_c<
-            decltype(BOOST_PP_REPEAT(BOOST_PP_ITERATION(),AUX862492_OP_DO,T))
-          , (BOOST_PP_REPEAT(BOOST_PP_ITERATION(),AUX862492_OP_DO,T))
+            AUX862492_OP_VALUE_TYPE
+          , (BOOST_PP_REPEAT(BOOST_PP_ITERATION(),AUX862492_OP_APPLY,T))
           >
       { };
   };
