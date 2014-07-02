@@ -248,12 +248,12 @@ Composing and Argument Binding
 Arithmetic Operations
 `````````````````````
 
-- [ ] plus,
-- [ ] minus,
-- [ ] times,
-- [ ] divides,
-- [ ] modulus,
-- [ ] negate.
+- [x] plus,
+- [x] minus,
+- [x] times,
+- [x] divides,
+- [x] modulus,
+- [x] negate.
 
 Comparisons
 ```````````
