@@ -258,12 +258,12 @@ Arithmetic Operations
 Comparisons
 ```````````
 
-- [ ] less,
-- [ ] less_equal,
-- [ ] greater,
-- [ ] greater_equal,
-- [ ] equal_to,
-- [ ] not_equal_to.
+- [x] less,
+- [x] less_equal,
+- [x] greater,
+- [x] greater_equal,
+- [x] equal_to,
+- [x] not_equal_to.
 
 Logical Operations
 ``````````````````
