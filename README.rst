@@ -268,9 +268,9 @@ Comparisons
 Logical Operations
 ``````````````````
 
-- [ ] and\_,
+- [x] and\_,
 - [x] or\_,
-- [ ] not\_.
+- [x] not\_.
 
 Bitwise Operations
 ``````````````````

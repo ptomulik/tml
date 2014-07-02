@@ -20,6 +20,7 @@ project
   ;
 
 compile tml/advance.cpp                                   : : tml/advance ;
+compile tml/and.cpp                                       : : tml/and ;
 compile tml/apply.cpp                                     : : tml/apply ;
 compile tml/apply_sequence.cpp                            : : tml/apply_sequence ;
 compile tml/apply_wrap.cpp                                : : tml/apply_wrap ;
@@ -56,6 +57,7 @@ compile tml/minus.cpp                                     : : tml/minus ;
 compile tml/modulus.cpp                                   : : tml/modulus ;
 compile tml/negate.cpp                                    : : tml/negate ;
 compile tml/next.cpp                                      : : tml/next ;
+compile tml/not.cpp                                       : : tml/not ;
 compile tml/numeric_tag.cpp                               : : tml/numeric_tag ;
 compile tml/or.cpp                                        : : tml/or ;
 compile tml/plus.cpp                                      : : tml/plus ;

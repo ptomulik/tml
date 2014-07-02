@@ -6,21 +6,21 @@
 
 // tml/or.hpp
 
-/** // doc: tml/or.hpp {{{
- * \file tml/or.hpp
+/** // doc: tml/not.hpp {{{
+ * \file tml/not.hpp
  * \todo Write documentation
  */ // }}}
-#ifndef TML_OR_HPP
-#define TML_OR_HPP
+#ifndef TML_NOT_HPP
+#define TML_NOT_HPP
 
-#include <tml/or_fwd.hpp>
+#include <tml/not_fwd.hpp>
 #include <tml/numeric_tag.hpp>
 
 namespace tml {
-/** // doc: or_ {{{
+/** // doc: not_ {{{
  * \ingroup MetafunLogicOpsGroup
- * \struct or_
- * \brief Logical or
+ * \struct not_
+ * \brief Logical not
  *
  * \tparam F1 First argument. Nullary \ref MetafunConcept.
  * \tparam F2 Second argument. Nullary \ref MetafunConcept.
@@ -34,7 +34,7 @@ namespace tml {
  *      , class F2
  *      , class... Fs
  *      >
- *  struct or_
+ *  struct not_
  *  {
  *    typedef unspecified type;
  *  };
@@ -42,49 +42,43 @@ namespace tml {
  *
  * \par Description
  *
- * Returns the result of short-circuit logical or (||) operation on its
- * arguments.
+ * Returns the result of logical not (!) operation on its argument.
  *
  * \par Expression semantics
  *
- * For arbitrary nullary \ref MetafunConcept f1, f2,... fn:
+ * For arbitrary nullary \ref MetafunConcept `f`:
  * \code
- *  typedef or_<f1,f2,...,fn>::type r;
+ *  typedef not_<f>::type r;
  * \endcode
  *
  * - **Return type**: \ref IntConstConcept
- * - **Semantics**: `r` is `true_` if either of
+ * - **Semantics**: Equivalent to
  *   \code
- *    f1::type::value, f2::type::value, ...fn::type::value
+ *    typedef bool_<!f::type::value) > r;
  *   \endcode
- *   expressions evaluated to `true`, and `false_` otherwise;
  *
  * \code
- *  typedef or_<f1,f2,...fn> r;
+ *  typedef not_<f> r;
  * \endcode
  * - **Return type**: \ref IntConstConcept
  * - **Semantics**: Equivalent to
  *   \code
- *    struct r : or_<f1,f2,...,fn>::type {};
+ *    struct r : not_<f>::type {};
  *   \endcode
  *
  * \par Example
- * \snippet tml/or.cpp Code
+ * \snippet tml/not.cpp Code
  *
  */ // }}}
-template <class F1, class F2, class... Fs>
-  struct or_
-    : or_impl<
-        typename numeric_tag<F1>::type
-      , typename numeric_tag<F2>::type
-      , typename numeric_tag<Fs>::type...
-      >::template apply<F1,F2,Fs...>
+template <class F>
+  struct not_
+    : not_impl<typename numeric_tag<F>::type>::template apply<F>
   {
   };
 } // end namespace tml
 
-#include <tml/integral_c/aux_/or.hpp>
+#include <tml/integral_c/aux_/not.hpp>
 
-#endif /* TML_OR_HPP */
+#endif /* TML_NOT_HPP */
 // vim: set expandtab tabstop=2 shiftwidth=2:
 // vim: set foldmethod=marker foldcolumn=4:

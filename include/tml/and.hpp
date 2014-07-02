@@ -4,23 +4,23 @@
 // (See accompanying file LICENSE_1_0.txt or copy at
 //  http://www.boost.org/LICENSE_1_0.txt)
 
-// tml/or.hpp
+// tml/and.hpp
 
-/** // doc: tml/or.hpp {{{
- * \file tml/or.hpp
+/** // doc: tml/and.hpp {{{
+ * \file tml/and.hpp
  * \todo Write documentation
  */ // }}}
-#ifndef TML_OR_HPP
-#define TML_OR_HPP
+#ifndef TML_AND_HPP
+#define TML_AND_HPP
 
-#include <tml/or_fwd.hpp>
+#include <tml/and_fwd.hpp>
 #include <tml/numeric_tag.hpp>
 
 namespace tml {
-/** // doc: or_ {{{
+/** // doc: and_ {{{
  * \ingroup MetafunLogicOpsGroup
- * \struct or_
- * \brief Logical or
+ * \struct and_
+ * \brief Logical and
  *
  * \tparam F1 First argument. Nullary \ref MetafunConcept.
  * \tparam F2 Second argument. Nullary \ref MetafunConcept.
@@ -34,7 +34,7 @@ namespace tml {
  *      , class F2
  *      , class... Fs
  *      >
- *  struct or_
+ *  struct and_
  *  {
  *    typedef unspecified type;
  *  };
@@ -42,7 +42,7 @@ namespace tml {
  *
  * \par Description
  *
- * Returns the result of short-circuit logical or (||) operation on its
+ * Returns the result of short-circuit logical and (&&) operation on its
  * arguments.
  *
  * \par Expression semantics
@@ -53,11 +53,11 @@ namespace tml {
  * \endcode
  *
  * - **Return type**: \ref IntConstConcept
- * - **Semantics**: `r` is `true_` if either of
+ * - **Semantics**: `r` is `false_` if either of
  *   \code
  *    f1::type::value, f2::type::value, ...fn::type::value
  *   \endcode
- *   expressions evaluated to `true`, and `false_` otherwise;
+ *   expressions evaluated to `false`, and `true_` otherwise;
  *
  * \code
  *  typedef or_<f1,f2,...fn> r;
@@ -69,12 +69,12 @@ namespace tml {
  *   \endcode
  *
  * \par Example
- * \snippet tml/or.cpp Code
+ * \snippet tml/and.cpp Code
  *
  */ // }}}
 template <class F1, class F2, class... Fs>
-  struct or_
-    : or_impl<
+  struct and_
+    : and_impl<
         typename numeric_tag<F1>::type
       , typename numeric_tag<F2>::type
       , typename numeric_tag<Fs>::type...
@@ -83,8 +83,8 @@ template <class F1, class F2, class... Fs>
   };
 } // end namespace tml
 
-#include <tml/integral_c/aux_/or.hpp>
+#include <tml/integral_c/aux_/and.hpp>
 
-#endif /* TML_OR_HPP */
+#endif /* TML_AND_HPP */
 // vim: set expandtab tabstop=2 shiftwidth=2:
 // vim: set foldmethod=marker foldcolumn=4:
