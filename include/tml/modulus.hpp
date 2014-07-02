@@ -50,7 +50,7 @@ namespace tml {
  *
  * For any \ref IntConstConcept "Integral Constants" `c1,c2`
  * \code
- *  typedef modulus<c1,c2,...cn>::type r;
+ *  typedef modulus<c1,c2>::type r;
  * \endcode
  * - **Return type**: \ref IntConstConcept.
  * - **Precondition**:
