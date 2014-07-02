@@ -275,11 +275,11 @@ Logical Operations
 Bitwise Operations
 ``````````````````
 
-- [ ] bitand\_,
-- [ ] bitor\_,
-- [ ] bitxor\_,
-- [ ] shift_left,
-- [ ] shift_right.
+- [x] bitand\_,
+- [x] bitor\_,
+- [x] bitxor\_,
+- [x] shift_left,
+- [x] shift_right.
 
 Trivial
 ```````
