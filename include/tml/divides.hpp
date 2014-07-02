@@ -94,7 +94,7 @@ template <class T1, class T2, class... Ts>
   { };
 } // end namespace tml
 
-#include <tml/integral_c/aux_/divides.hpp>
+#include <tml/aux_/divides.hpp>
 
 #endif /* TML_DIVIDES_HPP */
 // vim: set expandtab tabstop=2 shiftwidth=2:

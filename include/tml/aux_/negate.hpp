@@ -4,21 +4,17 @@
 // (See accompanying file LICENSE_1_0.txt or copy at
 //  http://www.boost.org/LICENSE_1_0.txt)
 
-// tml/integral_c/aux_/divides.hpp
+// tml/integral_c/aux_/negate.hpp
 
-/** // doc: tml/integral_c/aux_/divides.hpp {{{
- * \file tml/integral_c/aux_/divides.hpp
+/** // doc: tml/integral_c/aux_/negate.hpp {{{
+ * \file tml/integral_c/aux_/negate.hpp
  * \todo Write documentation
  */ // }}}
-# ifndef TML_INTEGRAL_C_AUX_DIVIDES_HPP
-# define TML_INTEGRAL_C_AUX_DIVIDES_HPP
+#ifndef TML_AUX_NEGATE_HPP
+#define TML_AUX_NEGATE_HPP
 
-#define AUX862492_OP /
-#define AUX862492_OP_NAME divides
+#include <tml/integral_c/aux_/negate.hpp>
 
-#include <tml/integral_c/aux_/num_op.hpp>
-
-#endif /* TML_INTEGRAL_C_AUX_DIVIDES_HPP */
-
+#endif /* TML_AUX_NEGATE_HPP */
 // vim: set expandtab tabstop=2 shiftwidth=2:
 // vim: set foldmethod=marker foldcolumn=4:

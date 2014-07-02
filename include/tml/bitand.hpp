@@ -88,7 +88,7 @@ template <class T1, class T2, class... Fs>
   };
 } // end namespace tml
 
-#include <tml/integral_c/aux_/bitand.hpp>
+#include <tml/aux_/bitand.hpp>
 
 #endif /* TML_BITAND_HPP */
 // vim: set expandtab tabstop=2 shiftwidth=2:

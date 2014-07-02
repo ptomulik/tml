@@ -306,13 +306,13 @@ Miscellaneous
 `````````````
 
 - [x] identity,
-- [ ] always,
+- [x] always,
 - [ ] inherit,
 - [ ] inherit_linearly,
-- [ ] numeric_cast,
-- [ ] min,
-- [ ] max,
-- [ ] sizeof\_.
+- [x] numeric_cast,
+- [x] min,
+- [x] max,
+- [x] sizeof\_.
 
 Data Types
 ^^^^^^^^^^

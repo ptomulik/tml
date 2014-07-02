@@ -86,7 +86,7 @@ template <class T, class Shift>
   };
 } // end namespace tml
 
-#include <tml/integral_c/aux_/shift_left.hpp>
+#include <tml/aux_/shift_left.hpp>
 
 #endif /* TML_SHIFT_LEFT_HPP */
 // vim: set expandtab tabstop=2 shiftwidth=2:

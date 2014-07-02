@@ -86,7 +86,7 @@ template <class T1, class T2, class... Ts>
   { };
 } // end namespace tml
 
-#include <tml/integral_c/aux_/times.hpp>
+#include <tml/aux_/times.hpp>
 
 #endif /* TML_TIMES_HPP */
 // vim: set expandtab tabstop=2 shiftwidth=2:

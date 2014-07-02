@@ -82,7 +82,7 @@ template <class T1, class T2>
   { };
 } // end namespace tml
 
-#include <tml/integral_c/aux_/less_equal.hpp>
+#include <tml/aux_/less_equal.hpp>
 
 #endif /* TML_LESS_EQUAL_HPP */
 // vim: set expandtab tabstop=2 shiftwidth=2:

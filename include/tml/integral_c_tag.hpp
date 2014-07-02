@@ -18,7 +18,10 @@ namespace tml {
  * \struct integral_c_tag
  * \brief A tag for integral numbers.
  */ // }}}
-struct integral_c_tag;
+struct integral_c_tag
+{
+  static constexpr int value = 0;
+};
 } // end namespace tml
 
 #endif /* TML_INTEGRAL_C_TAG_HPP */

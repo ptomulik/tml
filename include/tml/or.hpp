@@ -87,7 +87,7 @@ template <class F1, class F2, class... Fs>
   };
 } // end namespace tml
 
-#include <tml/integral_c/aux_/or.hpp>
+#include <tml/aux_/or.hpp>
 
 #endif /* TML_OR_HPP */
 // vim: set expandtab tabstop=2 shiftwidth=2:

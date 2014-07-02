@@ -12,9 +12,6 @@
  */ // }}}
 #if !BOOST_PP_IS_ITERATING
 
-# include <tml/integral_c_tag.hpp>
-# include <tml/integral_c.hpp>
-
 # include <tml/limits/variadic.hpp>
 # include <boost/preprocessor/iteration/iterate.hpp>
 # include <boost/preprocessor/repetition/enum.hpp>
@@ -61,17 +58,6 @@
 # define BOOST_PP_ITERATION_LIMITS (AUX862492_OP_ARITY_MIN,AUX862492_OP_ARITY_MAX)
 # define BOOST_PP_FILENAME_1 <tml/integral_c/aux_/num_op.hpp>
 # include BOOST_PP_ITERATE()
-
-# undef AUX862492_SAME
-# undef AUX862492_OP_APPLY
-
-# undef AUX862492_OP_FWD_HEADER
-# undef AUX862492_OP
-# undef AUX862492_OP_NAME
-# undef AUX862492_OP_IMPL_NAME
-# undef AUX862492_OP_ARITY_MIN
-# undef AUX862492_OP_ARITY_MAX
-# undef AUX862492_OP_VALUE_TYPE
 
 #else /* BOOST_PP_IS_ITERATING */
 

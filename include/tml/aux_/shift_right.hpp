@@ -4,23 +4,31 @@
 // (See accompanying file LICENSE_1_0.txt or copy at
 //  http://www.boost.org/LICENSE_1_0.txt)
 
-// tml/integral_c/aux_/shift_right.hpp
+// tml/aux_/shift_right.hpp
 
-/** // doc: tml/integral_c/aux_/shift_right.hpp {{{
- * \file tml/integral_c/aux_/shift_right.hpp
+/** // doc: tml/aux_/shift_right.hpp {{{
+ * \file tml/aux_/shift_right.hpp
  * \todo Write documentation
  */ // }}}
-# ifndef TML_INTEGRAL_C_AUX_SHIFT_RIGHT_HPP
-# define TML_INTEGRAL_C_AUX_SHIFT_RIGHT_HPP
+# ifndef TML_AUX_SHIFT_RIGHT_HPP
+# define TML_AUX_SHIFT_RIGHT_HPP
+
+#include <tml/aux_/num_op_includes.hpp>
+#include <tml/integral_c/aux_/num_op_includes.hpp>
 
 #define AUX862492_OP >>
 #define AUX862492_OP_NAME shift_right
 #define AUX862492_OP_ARITY_MIN 2
 #define AUX862492_OP_ARITY_MAX 2
+#define AUX862492_OP_NOT_VARIADIC 1
 
+#include <tml/aux_/num_op.hpp>
 #include <tml/integral_c/aux_/num_op.hpp>
 
-#endif /* TML_INTEGRAL_C_AUX_SHIFT_RIGHT_HPP */
+#include <tml/aux_/num_op_cleanup.hpp>
+#include <tml/integral_c/aux_/num_op_cleanup.hpp>
+
+#endif /* TML_AUX_SHIFT_RIGHT_HPP */
 
 // vim: set expandtab tabstop=2 shiftwidth=2:
 // vim: set foldmethod=marker foldcolumn=4:
