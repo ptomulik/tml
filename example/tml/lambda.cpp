@@ -14,7 +14,6 @@
 #include <tml/int.hpp>
 #include <tml/placeholders.hpp>
 #include <tml/lambda.hpp>
-#include <tml/apply.hpp>
 
 using namespace tml;
 
@@ -23,10 +22,15 @@ template< class N1, class N2 >
     : int_<( N1::value + N2::value )>
   { };
 
+template <class F>
+  struct wrap
+    : F
+  { };
 typedef lambda< int_plus<_1, int_<42> > >::type f1;
+typedef lambda< wrap< int_plus< _1, int_<42> > > >::type f2;
 
 static_assert(f1::apply<int_<42> >::type::value == 84, "");
-static_assert(apply<f1,int_<42> >::type::value == 84, "");
+static_assert(f2::apply<int_<42> >::type::value == 84, "");
 // [Code]
 
 int main() { return 0; }
