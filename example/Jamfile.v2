@@ -41,6 +41,7 @@ compile tml/distance.cpp                                  : : tml/distance ;
 compile tml/divides.cpp                                   : : tml/divides ;
 compile tml/empty.cpp                                     : : tml/empty ;
 compile tml/enable_if.cpp                                 : : tml/enable_if ;
+compile tml/enable_if_template.cpp                        : : tml/enable_if_template ;
 compile tml/enable_if_type.cpp                            : : tml/enable_if_type ;
 compile tml/end.cpp                                       : : tml/end ;
 compile tml/equal_to.cpp                                  : : tml/equal_to ;
