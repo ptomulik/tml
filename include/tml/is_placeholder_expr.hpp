@@ -65,7 +65,7 @@ template <class E>
   };
 template <template <class...> class X, class... Args>
   struct is_placeholder_expr<X<Args...> >
-    : variadic::any<quote<is_placeholder_expr> >::template apply<Args...>
+    : variadic::any<quote<is_placeholder> >::template apply<Args...>
   {
   };
 } // end namespace tml
