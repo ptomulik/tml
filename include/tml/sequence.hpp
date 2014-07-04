@@ -15,6 +15,7 @@
 
 #include <tml/sequence_fwd.hpp>
 #include <tml/template_sequence/aux_/tag.hpp>
+#include <tml/sequence_tag_fwd.hpp>
 
 namespace tml {
 /** // doc: sequence {{{
@@ -53,7 +54,6 @@ template <class... Args>
   struct sequence
   {
     typedef sequence type;
-    typedef aux::template_sequence_tag sequence_tag;
   };
 /** // doc: sequence_c {{{
  * \ingroup SeqClassGroup
@@ -86,7 +86,25 @@ template <class T, T... Args>
   {
     typedef sequence_c type;
     typedef T value_type;
-    typedef aux::template_sequence_tag sequence_tag;
+  };
+// We can't just embed the sequence_tag inside of sequence, because the
+// property of being "template_sequence" is not inheritable. IOW, this:
+//
+//  template <class...>
+//    struct sequence { typedef aux::template_sequence sequence_tag; }
+//  struct f : sequence<int,char> { };
+//
+//  would be an error, because `f` is not a template (so sequence_tag is
+//  wrong).
+template<class... Args>
+  struct sequence_tag<sequence<Args...> >
+  {
+    typedef aux::template_sequence_tag type;
+  };
+template<class T, T... Args>
+  struct sequence_tag<sequence_c<T,Args...> >
+  {
+    typedef aux::template_sequence_tag type;
   };
 } // end namespace tml
 
