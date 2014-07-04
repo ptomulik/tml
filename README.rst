@@ -233,12 +233,12 @@ Invocation
 - [x] apply,
 - [x] apply_sequence (new),
 - [x] apply_wrap,
-- [ ] unpack_args.
+- [x] unpack_args.
 
 Composing and Argument Binding
 ``````````````````````````````
 
-- [x] Placeholders,
+- [x] Placeholders (except the unnamed placeholder),
 - [x] lambda,
 - [x] bind,
 - [x] quote,
