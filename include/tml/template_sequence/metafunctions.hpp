@@ -30,6 +30,7 @@
 #include <tml/template_sequence/aux_/push_front.hpp>
 #include <tml/template_sequence/aux_/sequence_generator.hpp>
 #include <tml/template_sequence/aux_/size.hpp>
+#include <tml/template_sequence/aux_/c_str.hpp>
 
 #endif /* TML_TEMPLATE_SEQUENCE_METAFUNCTIONS_HPP */
 // vim: set expandtab tabstop=2 shiftwidth=2:

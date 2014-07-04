@@ -220,6 +220,21 @@ namespace tml {
  */
 
 /**
+ * \defgroup MetafunStringGroup String Operations
+ *
+ * There is no special type to represent a string. Any \ref TemplateSeqConcept
+ * of \ref IntConstConcept "Integral Constants", whose elements are characters,
+ * may be used with string metafunctions. One crucial string metafunction is
+ * the `c_str`, which returns null-terminated array of characters, that is the
+ * string (in the sense of C language) usable at runtime.
+ * @{
+ */
+/**
+ * \defgroup MetafunStringVariadicGroup Variadic Metafunction Classes
+ */
+/** @} */
+
+/**
  * \defgroup MetafunMiscGroup Miscellaneous
  */
 

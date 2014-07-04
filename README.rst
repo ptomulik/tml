@@ -291,7 +291,8 @@ Trivial
 String Operations
 `````````````````
 
-- [ ] c_str.
+- [x] c_str,
+- [x] num_to_string (new, also variants {short,int,long,size_t)_to_string).
 
 SFINAE support
 ``````````````
