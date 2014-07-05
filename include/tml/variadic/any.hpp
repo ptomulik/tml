@@ -14,9 +14,23 @@
 #define TML_VARIADIC_ANY_HPP
 
 #include <tml/variadic/any_fwd.hpp>
-#include <tml/if.hpp>
 #include <tml/bool.hpp>
 #include <tml/apply.hpp>
+
+namespace tml { namespace variadic { namespace detail {
+template <bool... Args>
+  struct any_impl
+    : true_
+  { };
+template <>
+  struct any_impl<>
+    : false_
+  { };
+template <bool... Tail>
+  struct any_impl<false,Tail...>
+    : any_impl<Tail...>
+  { };
+} } } // end namespace tml::variadic::detail
 
 namespace tml { namespace variadic {
 /** // doc: any {{{
@@ -81,18 +95,11 @@ template <class F>
 template <class F>
   template <class... Args>
     struct any<F>::apply
-      : false_
-    { };
-template <class F>
-  template <class Head, class... Tail>
-    struct any<F>::apply<Head,Tail...>
-      : if_<
-          typename tml::apply<F,Head>::type
-        , true_
-        , typename any<F>::template apply<Tail...>
-        >::type
+      : detail::any_impl<tml::apply<F,Args>::type::value...>
     { };
 } } // end namespace tml::variadic
+
+#include <tml/variadic/aux_/any.hpp>
 
 #endif /* TML_VARIADIC_ANY_HPP */
 // vim: set expandtab tabstop=2 shiftwidth=2:
