@@ -4,25 +4,25 @@
 // (See accompanying file LICENSE_1_0.txt or copy at
 //  http://www.boost.org/LICENSE_1_0.txt)
 
-// tml/variadic/any.hpp
+// tml/variadic/all.hpp
 
-/** // doc: tml/variadic/any.hpp {{{
- * \file tml/variadic/any.hpp
+/** // doc: tml/variadic/all.hpp {{{
+ * \file tml/variadic/all.hpp
  * \todo Write documentation
  */ // }}}
-#ifndef TML_VARIADIC_ANY_HPP
-#define TML_VARIADIC_ANY_HPP
+#ifndef TML_VARIADIC_ALL_HPP
+#define TML_VARIADIC_ALL_HPP
 
-#include <tml/variadic/any_fwd.hpp>
+#include <tml/variadic/all_fwd.hpp>
 #include <tml/if.hpp>
 #include <tml/bool.hpp>
 #include <tml/apply.hpp>
 
 namespace tml { namespace variadic {
-/** // doc: any {{{
+/** // doc: all {{{
  * \ingroup AlgoQueryGroup
- * \struct any
- * \brief Tests whether a predicate `F` holds for any argument from `Args`
+ * \struct all
+ * \brief Tests whether a predicate `F` holds for all the arguments from `Args`
  *
  * \tparam F Predicate. Unary \ref LambdaExprConcept.
  * \tparam Args Arguments to check. Any types.
@@ -32,7 +32,7 @@ namespace tml { namespace variadic {
  * \code
  *  namespace variadic {
  *    template<class F>
- *    struct any
+ *    struct all
  *    {
  *      template<class... Args>
  *        struct apply
@@ -46,8 +46,8 @@ namespace tml { namespace variadic {
  *
  * \par Description
  *
- * If the predicate `F` holds for any of the arguments from `Args...`, then
- * `variadic::any<F>::apply<Args...>::type` is `true_`. Otherwise it's
+ * If the predicate `F` holds for all of the arguments from `Args...`, then
+ * `variadic::all<F>::apply<Args...>::type` is `true_`. Otherwise it's
  * `false_`.
  *
  * \par Model of
@@ -56,44 +56,44 @@ namespace tml { namespace variadic {
  *
  * \par Expression semantics
  *
- * For an unary \ref LambdaExprConcept `f` and any types `args...`
+ * For an unary \ref LambdaExprConcept `f` and all types `args...`
  * \code
- *  typedef variadic::any<f>::apply<args...>::type r;
+ *  typedef variadic::all<f>::apply<args...>::type r;
  * \endcode
  *
  * - **Return type**: Boolean \ref IntConstConcept
  * - **Semantics**: `r` is a boolean \ref IntConstConcept with
- *   `r::value == true` if and only if for any type `ai` from `args...`
+ *   `r::value == true` if and only if for each type `ai` from `args...`
  *   `apply<f,ai>::type::value == true` holds.
  *   
  * \code
- *  typedef variadic::any<f>::apply<> t;
+ *  typedef variadic::all<f>::apply<> t;
  * \endcode
  *
  * - **Return type**: \ref IntConstConcept
- * - **Semantics**: `t` is a boolean \ref IntConstConcept with `r::value == false`
+ * - **Semantics**: `t` is a boolean \ref IntConstConcept with `r::value == true`
  *
  * \par Example
- * \snippet tml/variadic/any.cpp Code
+ * \snippet tml/variadic/all.cpp Code
  */ // }}}
 template <class F>
-  struct any;
+  struct all;
 template <class F>
   template <class... Args>
-    struct any<F>::apply
-      : false_
+    struct all<F>::apply
+      : true_
     { };
 template <class F>
   template <class Head, class... Tail>
-    struct any<F>::apply<Head,Tail...>
+    struct all<F>::apply<Head,Tail...>
       : if_<
           typename tml::apply<F,Head>::type
-        , true_
-        , typename any<F>::template apply<Tail...>
+        , typename all<F>::template apply<Tail...>
+        , false_
         >::type
     { };
 } } // end namespace tml::variadic
 
-#endif /* TML_VARIADIC_ANY_HPP */
+#endif /* TML_VARIADIC_ALL_HPP */
 // vim: set expandtab tabstop=2 shiftwidth=2:
 // vim: set foldmethod=marker foldcolumn=4:

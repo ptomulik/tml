@@ -110,6 +110,7 @@ compile tml/template_sequence/aux_/sequence_generator.cpp : : tml/template_seque
 compile tml/template_sequence/aux_/size.cpp               : : tml/template_sequence/aux_/size ;
 compile tml/times.cpp                                     : : tml/times ;
 compile tml/unpack_args.cpp                               : : tml/unpack_args ;
+compile tml/variadic/all.cpp                              : : tml/variadic/all ;
 compile tml/variadic/any.cpp                              : : tml/variadic/any ;
 compile tml/variadic/at.cpp                               : : tml/variadic/at ;
 compile tml/variadic/back.cpp                             : : tml/variadic/back ;

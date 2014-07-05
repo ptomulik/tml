@@ -28,6 +28,7 @@ struct negative
 static_assert(!variadic::any<negative>::apply<>::value, "");
 static_assert(!variadic::any<negative>::apply<int_<1> >::value, "");
 static_assert(!variadic::any<negative>::apply<int_<1>, int_<2> >::value, "");
+
 static_assert( variadic::any<negative>::apply<int_<1>, int_<-1>, int_<2> >::value, "");
 // [Code]
 
