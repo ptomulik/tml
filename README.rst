@@ -180,7 +180,7 @@ Querying Algorithms
 - [ ] upper_bound,
 - [ ] min_element,
 - [ ] max_element,
-- [ ] equal.
+- [x] equal.
 
 Transformation Algorithms
 `````````````````````````

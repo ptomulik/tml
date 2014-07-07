@@ -133,7 +133,14 @@ namespace tml {
 
 /**
  * \defgroup AlgoQueryGroup Querying Algorithms
+ * @{
  */
+
+/**
+ * \defgroup AlgoQueryVariadicGroup Variadic Metafunction Classes
+ */
+
+/** @} */
 
 /**
  * \defgroup AlgoTransfGroup Transformation Algorithms

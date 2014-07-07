@@ -34,7 +34,7 @@ template <bool... Tail>
 
 namespace tml { namespace variadic {
 /** // doc: any {{{
- * \ingroup AlgoQueryGroup
+ * \ingroup AlgoQueryVariadicGroup
  * \struct any
  * \brief Tests whether a predicate `F` holds for any argument from `Args`
  *
