@@ -7,7 +7,7 @@
 /** // doc: tml/variadic/insert.cpp {{{
  * \file tml/variadic/insert.cpp
  * \example tml/variadic/insert.cpp
- * \brief Usage example for tml::variadic::insert
+ * \brief Usage example for \ref tml::variadic::insert
  */ // }}}
 
 // [Code]

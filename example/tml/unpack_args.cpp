@@ -7,7 +7,7 @@
 /** // doc: tml/unpack_args.cpp {{{
  * \file tml/unpack_args.cpp
  * \example tml/unpack_args.cpp
- * \brief Usage example for tml::unpack_args
+ * \brief Usage example for \ref tml::unpack_args
  */ // }}}
 
 // [Code]

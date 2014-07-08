@@ -7,7 +7,7 @@
 /** // doc: tml/push_back.cpp {{{
  * \file tml/push_back.cpp
  * \example tml/push_back.cpp
- * \brief Usage example for tml::push_back
+ * \brief Usage example for \ref tml::push_back
  */ // }}}
 
 // [Code]

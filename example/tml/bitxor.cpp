@@ -7,7 +7,7 @@
 /** // doc: tml/bitxor.cpp {{{
  * \file tml/bitxor.cpp
  * \example tml/bitxor.cpp
- * \brief Usage example for tml::bitxor_
+ * \brief Usage example for \ref tml::bitxor_
  */ // }}}
 
 // [Code]

@@ -7,7 +7,7 @@
 /** // doc: tml/and.cpp {{{
  * \file tml/and.cpp
  * \example tml/and.cpp
- * \brief Usage example for tml::and_
+ * \brief Usage example for \ref tml::and_
  */ // }}}
 
 // [Code]

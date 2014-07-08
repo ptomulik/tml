@@ -7,7 +7,7 @@
 /** // doc: tml/variadic/pop_front.cpp {{{
  * \file tml/variadic/pop_front.cpp
  * \example tml/variadic/pop_front.cpp
- * \brief Usage example for tml::variadic::pop_front
+ * \brief Usage example for \ref tml::variadic::pop_front
  */ // }}}
 
 // [Code]

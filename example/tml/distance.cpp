@@ -7,7 +7,7 @@
 /** // doc: tml/distance.cpp {{{
  * \file tml/distance.cpp
  * \example tml/distance.cpp
- * \brief Usage example for tml::class
+ * \brief Usage example for \ref tml::class
  */ // }}}
 
 // [Code]

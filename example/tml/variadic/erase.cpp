@@ -7,7 +7,7 @@
 /** // doc: tml/variadic/erase.cpp {{{
  * \file tml/variadic/erase.cpp
  * \example tml/variadic/erase.cpp
- * \brief Usage example for tml::variadic::erase
+ * \brief Usage example for \ref tml::variadic::erase
  */ // }}}
 
 // [Code]

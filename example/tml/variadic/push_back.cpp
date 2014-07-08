@@ -7,7 +7,7 @@
 /** // doc: tml/variadic/push_back.cpp {{{
  * \file tml/variadic/push_back.cpp
  * \example tml/variadic/push_back.cpp
- * \brief Usage example for tml::tml::variadic::push_back
+ * \brief Usage example for \ref tml::tml::variadic::push_back
  */ // }}}
 
 // [Code]

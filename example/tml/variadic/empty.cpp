@@ -7,7 +7,7 @@
 /** // doc: tml/variadic/empty.cpp {{{
  * \file tml/variadic/empty.cpp
  * \example tml/variadic/empty.cpp
- * \brief Usage example for tml::class
+ * \brief Usage example for \ref tml::class
  */ // }}}
 
 // [Code]

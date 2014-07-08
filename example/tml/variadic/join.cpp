@@ -7,7 +7,7 @@
 /** // doc: tml/variadic/join.cpp {{{
  * \file tml/variadic/join.cpp
  * \example tml/variadic/join.cpp
- * \brief Usage example for tml::variadic::join
+ * \brief Usage example for \ref tml::variadic::join
  */ // }}}
 
 // [Code]

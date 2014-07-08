@@ -7,7 +7,7 @@
 /** // doc: tml/is_placeholder.cpp {{{
  * \file tml/is_placeholder.cpp
  * \example tml/is_placeholder.cpp
- * \brief Usage example for tml::is_placeholder
+ * \brief Usage example for \ref tml::is_placeholder
  */ // }}}
 
 // [Code]

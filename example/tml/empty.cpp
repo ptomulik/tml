@@ -7,7 +7,7 @@
 /** // doc: tml/empty.cpp {{{
  * \file tml/empty.cpp
  * \example tml/empty.cpp
- * \brief Usage example for tml::empty
+ * \brief Usage example for \ref tml::empty
  */ // }}}
 
 // [Code]

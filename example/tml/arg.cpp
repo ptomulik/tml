@@ -7,7 +7,7 @@
 /** // doc: tml/arg.cpp {{{
  * \file tml/arg.cpp
  * \example tml/arg.cpp
- * \brief Usage example for tml::arg
+ * \brief Usage example for \ref tml::arg
  */ // }}}
 
 // [Code]

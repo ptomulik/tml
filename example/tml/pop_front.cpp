@@ -7,7 +7,7 @@
 /** // doc: tml/pop_front.cpp {{{
  * \file tml/pop_front.cpp
  * \example tml/pop_front.cpp
- * \brief Usage example for tml::pop_front
+ * \brief Usage example for \ref tml::pop_front
  */ // }}}
 
 // [Code]

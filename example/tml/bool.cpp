@@ -7,7 +7,7 @@
 /** // doc: tml/bool.cpp {{{
  * \file tml/bool.cpp
  * \example tml/bool.cpp
- * \brief Usage example for tml::bool_
+ * \brief Usage example for \ref tml::bool_
  */ // }}}
 
 // [Code]

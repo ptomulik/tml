@@ -7,7 +7,7 @@
 /** // doc: tml/deref.cpp {{{
  * \file tml/deref.cpp
  * \example tml/deref.cpp
- * \brief Usage example for tml::deref
+ * \brief Usage example for \ref tml::deref
  */ // }}}
 
 // [Code]

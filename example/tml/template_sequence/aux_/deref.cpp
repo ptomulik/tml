@@ -7,7 +7,7 @@
 /** // doc: tml/template_sequence/aux_/deref.cpp {{{
  * \file tml/template_sequence/aux_/deref.cpp
  * \example tml/template_sequence/aux_/deref.cpp
- * \brief Usage example for tml::deref_impl<aux::ts_iter_tag>
+ * \brief Usage example for \ref tml::deref_impl<aux::ts_iter_tag>
  */ // }}}
 
 // [Code]

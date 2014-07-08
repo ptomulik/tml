@@ -7,7 +7,7 @@
 /** // doc: tml/not.cpp {{{
  * \file tml/not.cpp
  * \example tml/not.cpp
- * \brief Usage example for tml::not_
+ * \brief Usage example for \ref tml::not_
  */ // }}}
 
 // [Code]

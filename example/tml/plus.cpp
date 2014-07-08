@@ -7,7 +7,7 @@
 /** // doc: tml/plus.cpp {{{
  * \file tml/plus.cpp
  * \example tml/plus.cpp
- * \brief Usage example for tml::plus
+ * \brief Usage example for \ref tml::plus
  */ // }}}
 
 // [Code]

@@ -7,7 +7,7 @@
 /** // doc: tml/always.cpp {{{
  * \file tml/always.cpp
  * \example tml/always.cpp
- * \brief Usage example for tml::always
+ * \brief Usage example for \ref tml::always
  */ // }}}
 
 // [Code]

@@ -7,7 +7,7 @@
 /** // doc: tml/times.cpp {{{
  * \file tml/times.cpp
  * \example tml/times.cpp
- * \brief Usage example for tml::times
+ * \brief Usage example for \ref tml::times
  */ // }}}
 
 // [Code]

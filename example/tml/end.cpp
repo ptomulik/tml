@@ -7,7 +7,7 @@
 /** // doc: tml/end.cpp {{{
  * \file tml/end.cpp
  * \example tml/end.cpp
- * \brief Usage example for tml::end
+ * \brief Usage example for \ref tml::end
  */ // }}}
 
 // [Code]

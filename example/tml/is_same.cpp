@@ -7,7 +7,7 @@
 /** // doc: tml/is_same.cpp {{{
  * \file tml/is_same.cpp
  * \example tml/is_same.cpp
- * \brief Usage example for tml::class
+ * \brief Usage example for \ref tml::class
  */ // }}}
 
 // [Code]

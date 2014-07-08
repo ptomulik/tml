@@ -7,7 +7,7 @@
 /** // doc: tml/minus.cpp {{{
  * \file tml/minus.cpp
  * \example tml/minus.cpp
- * \brief Usage example for tml::minus
+ * \brief Usage example for \ref tml::minus
  */ // }}}
 
 // [Code]

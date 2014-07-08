@@ -8,7 +8,7 @@
 
 /** // doc: tml/variadic_template/aux_/xxx_fwd.hpp {{{
  * \file tml/variadic_template/aux_/xxx_fwd.hpp
- * \brief Forward declarations for tml/variadic_template/aux_/xxx.hpp
+ * \brief Forward declarations for \ref tml/variadic_template/aux_/xxx.hpp
  */ // }}}
 #ifndef TML_TEMPLATE_SEQUENCE_AUX_XXX_FWD_HPP
 #define TML_TEMPLATE_SEQUENCE_AUX_XXX_FWD_HPP

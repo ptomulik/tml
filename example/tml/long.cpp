@@ -7,7 +7,7 @@
 /** // doc: tml/long.cpp {{{
  * \file tml/long.cpp
  * \example tml/long.cpp
- * \brief Usage example for tml::long_
+ * \brief Usage example for \ref tml::long_
  */ // }}}
 
 // [Code]

@@ -7,7 +7,7 @@
 /** // doc: tml/numeric_cast.cpp {{{
  * \file tml/numeric_cast.cpp
  * \example tml/numeric_cast.cpp
- * \brief Usage example for tml::numeric_cast
+ * \brief Usage example for \ref tml::numeric_cast
  */ // }}}
 
 // [Code]

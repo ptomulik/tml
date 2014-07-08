@@ -7,7 +7,7 @@
 /** // doc: tml/is_bind_expr.cpp {{{
  * \file tml/is_bind_expr.cpp
  * \example tml/is_bind_expr.cpp
- * \brief Usage example for tml::is_bind_expr
+ * \brief Usage example for \ref tml::is_bind_expr
  */ // }}}
 
 // [Code]

@@ -7,7 +7,7 @@
 /** // doc: tml/erase.cpp {{{
  * \file tml/erase.cpp
  * \example tml/erase.cpp
- * \brief Usage example for tml::erase
+ * \brief Usage example for \ref tml::erase
  */ // }}}
 
 // [Code]

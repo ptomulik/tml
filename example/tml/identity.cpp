@@ -7,7 +7,7 @@
 /** // doc: tml/identity.cpp {{{
  * \file tml/identity.cpp
  * \example tml/identity.cpp
- * \brief Usage example for tml::identity
+ * \brief Usage example for \ref tml::identity
  */ // }}}
 
 // [Code]

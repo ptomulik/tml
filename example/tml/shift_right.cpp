@@ -7,7 +7,7 @@
 /** // doc: tml/shift_right.cpp {{{
  * \file tml/shift_right.cpp
  * \example tml/shift_right.cpp
- * \brief Usage example for tml::shift_right
+ * \brief Usage example for \ref tml::shift_right
  */ // }}}
 
 // [Code]

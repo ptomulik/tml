@@ -7,7 +7,7 @@
 /** // doc: tml/numeric_tag.cpp {{{
  * \file tml/numeric_tag.cpp
  * \example tml/numeric_tag.cpp
- * \brief Usage example for tml::numeric_tag
+ * \brief Usage example for \ref tml::numeric_tag
  */ // }}}
 
 // [Code]

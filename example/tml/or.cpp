@@ -7,7 +7,7 @@
 /** // doc: tml/or.cpp {{{
  * \file tml/or.cpp
  * \example tml/or.cpp
- * \brief Usage example for tml::or_
+ * \brief Usage example for \ref tml::or_
  */ // }}}
 
 // [Code]

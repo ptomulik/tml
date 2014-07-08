@@ -7,7 +7,7 @@
 /** // doc: tml/void.cpp {{{
  * \file tml/void.cpp
  * \example tml/void.cpp
- * \brief Usage example for tml::void
+ * \brief Usage example for \ref tml::void
  */ // }}}
 
 // [Code]

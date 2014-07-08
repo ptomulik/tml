@@ -7,7 +7,7 @@
 /** // doc: tml/max.cpp {{{
  * \file tml/max.cpp
  * \example tml/max.cpp
- * \brief Usage example for tml::max
+ * \brief Usage example for \ref tml::max
  */ // }}}
 
 // [Code]

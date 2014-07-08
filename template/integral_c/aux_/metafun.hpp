@@ -8,7 +8,7 @@
 
 /** // doc: tml/integral_c/aux_/xxx.hpp {{{
  * \file tml/integral_c/aux_/xxx.hpp
- * \todo Write documentation
+ * \brief Implements \ref tml::xxx for \ref IntConstConcept
  */ // }}}
 #ifndef TML_INTEGRAL_C_AUX_XXX_HPP
 #define TML_INTEGRAL_C_AUX_XXX_HPP

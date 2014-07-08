@@ -7,7 +7,7 @@
 /** // doc: tml/not_equal_to.cpp {{{
  * \file tml/not_equal_to.cpp
  * \example tml/not_equal_to.cpp
- * \brief Usage example for tml::not_equal_to
+ * \brief Usage example for \ref tml::not_equal_to
  */ // }}}
 
 // [Code]

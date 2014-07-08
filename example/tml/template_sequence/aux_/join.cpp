@@ -7,7 +7,7 @@
 /** // doc: tml/template_sequence/aux_/join.cpp {{{
  * \file tml/template_sequence/aux_/join.cpp
  * \example tml/template_sequence/aux_/join.cpp
- * \brief Usage example for tml::join_impl<aux::template_sequence_tag>
+ * \brief Usage example for \ref tml::join_impl<aux::template_sequence_tag>
  */ // }}}
 
 // [Code]

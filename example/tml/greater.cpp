@@ -7,7 +7,7 @@
 /** // doc: tml/greater.cpp {{{
  * \file tml/greater.cpp
  * \example tml/greater.cpp
- * \brief Usage example for tml::greater
+ * \brief Usage example for \ref tml::greater
  */ // }}}
 
 // [Code]

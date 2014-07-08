@@ -7,7 +7,7 @@
 /** // doc: tml/clear.cpp {{{
  * \file tml/clear.cpp
  * \example tml/clear.cpp
- * \brief Usage example for tml::clear
+ * \brief Usage example for \ref tml::clear
  */ // }}}
 
 // [Code]

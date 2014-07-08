@@ -7,7 +7,7 @@
 /** // doc: tml/divides.cpp {{{
  * \file tml/divides.cpp
  * \example tml/divides.cpp
- * \brief Usage example for tml::divides
+ * \brief Usage example for \ref tml::divides
  */ // }}}
 
 // [Code]

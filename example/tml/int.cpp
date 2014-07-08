@@ -7,7 +7,7 @@
 /** // doc: tml/int.cpp {{{
  * \file tml/int.cpp
  * \example tml/int.cpp
- * \brief Usage example for tml::int_
+ * \brief Usage example for \ref tml::int_
  */ // }}}
 
 // [Code]

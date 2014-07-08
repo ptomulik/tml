@@ -7,7 +7,7 @@
 /** // doc: tml/back.cpp {{{
  * \file tml/back.cpp
  * \example tml/back.cpp
- * \brief Usage example for tml::back
+ * \brief Usage example for \ref tml::back
  */ // }}}
 
 // [Code]

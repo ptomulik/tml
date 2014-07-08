@@ -7,7 +7,7 @@
 /** // doc: tml/less.cpp {{{
  * \file tml/less.cpp
  * \example tml/less.cpp
- * \brief Usage example for tml::less
+ * \brief Usage example for \ref tml::less
  */ // }}}
 
 // [Code]

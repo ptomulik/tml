@@ -7,7 +7,7 @@
 /** // doc: tml/template_sequence/aux_/distance.cpp {{{
  * \file tml/template_sequence/aux_/distance.cpp
  * \example tml/template_sequence/aux_/distance.cpp
- * \brief Usage example for tml::distance_impl<aux::template_sequence_tag>
+ * \brief Usage example for \ref tml::distance_impl<aux::template_sequence_tag>
  */ // }}}
 
 // [Code]

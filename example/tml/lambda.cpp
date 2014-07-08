@@ -7,7 +7,7 @@
 /** // doc: tml/lambda.cpp {{{
  * \file tml/lambda.cpp
  * \example tml/lambda.cpp
- * \brief Usage example for tml::lambda
+ * \brief Usage example for \ref tml::lambda
  */ // }}}
 
 // [Code]

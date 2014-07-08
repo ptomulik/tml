@@ -7,7 +7,7 @@
 /** // doc: tml/integral_c.cpp {{{
  * \file tml/integral_c.cpp
  * \example tml/integral_c.cpp
- * \brief Usage example for tml::integral_c
+ * \brief Usage example for \ref tml::integral_c
  */ // }}}
 
 // [Code]

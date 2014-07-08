@@ -7,7 +7,7 @@
 /** // doc: tml/quote.cpp {{{
  * \file tml/quote.cpp
  * \example tml/quote.cpp
- * \brief Usage example for tml::quote
+ * \brief Usage example for \ref tml::quote
  */ // }}}
 
 // [Code]

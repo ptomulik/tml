@@ -7,7 +7,7 @@
 /** // doc: tml/variadic/equal.cpp {{{
  * \file tml/variadic/equal.cpp
  * \example tml/variadic/equal.cpp
- * \brief Usage example for tml::variadic::equal
+ * \brief Usage example for \ref tml::variadic::equal
  */ // }}}
 
 // [Code]

@@ -7,7 +7,7 @@
 /** // doc: tml/push_front.cpp {{{
  * \file tml/push_front.cpp
  * \example tml/push_front.cpp
- * \brief Usage example for tml::push_front
+ * \brief Usage example for \ref tml::push_front
  */ // }}}
 
 // [Code]

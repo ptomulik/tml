@@ -7,7 +7,7 @@
 /** // doc: tml/equal_to.cpp {{{
  * \file tml/equal_to.cpp
  * \example tml/equal_to.cpp
- * \brief Usage example for tml::equal_to
+ * \brief Usage example for \ref tml::equal_to
  */ // }}}
 
 // [Code]

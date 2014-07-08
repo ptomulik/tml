@@ -7,7 +7,7 @@
 /** // doc: tml/template_sequence/aux_/clear.cpp {{{
  * \file tml/template_sequence/aux_/clear.cpp
  * \example tml/template_sequence/aux_/clear.cpp
- * \brief Usage example for tml::clear_impl<aux::template_sequence_tag>
+ * \brief Usage example for \ref tml::clear_impl<aux::template_sequence_tag>
  */ // }}}
 
 // [Code]

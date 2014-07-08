@@ -7,7 +7,7 @@
 /** // doc: tml/negate.cpp {{{
  * \file tml/negate.cpp
  * \example tml/negate.cpp
- * \brief Usage example for tml::negate
+ * \brief Usage example for \ref tml::negate
  */ // }}}
 
 // [Code]

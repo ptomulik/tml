@@ -7,7 +7,7 @@
 /** // doc: tml/size_t.cpp {{{
  * \file tml/size_t.cpp
  * \example tml/size_t.cpp
- * \brief Usage example for tml::size_t
+ * \brief Usage example for \ref tml::size_t
  */ // }}}
 
 // [Code]

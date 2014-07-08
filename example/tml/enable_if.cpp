@@ -7,7 +7,7 @@
 /** // doc: tml/enable_if.cpp {{{
  * \file tml/enable_if.cpp
  * \example tml/enable_if.cpp
- * \brief Usage example for tml::enable_if
+ * \brief Usage example for \ref tml::enable_if
  */ // }}}
 
 // [Code]

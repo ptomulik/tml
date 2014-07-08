@@ -7,7 +7,7 @@
 /** // doc: tml/variadic/clear.cpp {{{
  * \file tml/variadic/clear.cpp
  * \example tml/variadic/clear.cpp
- * \brief Usage example for tml::variadic::clear
+ * \brief Usage example for \ref tml::variadic::clear
  */ // }}}
 
 // [Code]

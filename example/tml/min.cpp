@@ -7,7 +7,7 @@
 /** // doc: tml/min.cpp {{{
  * \file tml/min.cpp
  * \example tml/min.cpp
- * \brief Usage example for tml::min
+ * \brief Usage example for \ref tml::min
  */ // }}}
 
 // [Code]

@@ -7,7 +7,7 @@
 /** // doc: tml/bitor.cpp {{{
  * \file tml/bitor.cpp
  * \example tml/bitor.cpp
- * \brief Usage example for tml::bitor_
+ * \brief Usage example for \ref tml::bitor_
  */ // }}}
 
 // [Code]

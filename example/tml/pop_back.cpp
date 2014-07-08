@@ -7,7 +7,7 @@
 /** // doc: tml/pop_back.cpp {{{
  * \file tml/pop_back.cpp
  * \example tml/pop_back.cpp
- * \brief Usage example for tml::pop_back
+ * \brief Usage example for \ref tml::pop_back
  */ // }}}
 
 // [Code]

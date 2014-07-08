@@ -7,7 +7,7 @@
 /** // doc: tml/bind.cpp {{{
  * \file tml/bind.cpp
  * \example tml/bind.cpp
- * \brief Usage example for tml::bind
+ * \brief Usage example for \ref tml::bind
  */ // }}}
 
 // [Code]

@@ -7,7 +7,7 @@
 /** // doc: tml/variadic/c_str.cpp {{{
  * \file tml/variadic/c_str.cpp
  * \example tml/variadic/c_str.cpp
- * \brief Usage example for tml::variadic::c_str
+ * \brief Usage example for \ref tml::variadic::c_str
  */ // }}}
 
 // [Code]

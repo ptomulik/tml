@@ -7,7 +7,7 @@
 /** // doc: tml/if.cpp {{{
  * \file tml/if.cpp
  * \example tml/if.cpp
- * \brief Usage example for tml::if_
+ * \brief Usage example for \ref tml::if_
  */ // }}}
 
 // [Code]

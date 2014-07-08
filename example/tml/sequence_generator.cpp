@@ -7,7 +7,7 @@
 /** // doc: tml/sequence_generator.cpp {{{
  * \file tml/sequence_generator.cpp
  * \example tml/sequence_generator.cpp
- * \brief Usage example for tml::sequence_generator
+ * \brief Usage example for \ref tml::sequence_generator
  */ // }}}
 
 // [Code]

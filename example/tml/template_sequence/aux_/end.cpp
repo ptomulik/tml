@@ -7,7 +7,7 @@
 /** // doc: tml/template_sequence/aux_/end.cpp {{{
  * \file tml/template_sequence/aux_/end.cpp
  * \example tml/template_sequence/aux_/end.cpp
- * \brief Usage example for tml::end_impl<aux::template_sequence_tag>
+ * \brief Usage example for \ref tml::end_impl<aux::template_sequence_tag>
  */ // }}}
 
 // [Code]

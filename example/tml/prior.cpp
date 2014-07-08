@@ -7,7 +7,7 @@
 /** // doc: tml/prior.cpp {{{
  * \file tml/prior.cpp
  * \example tml/prior.cpp
- * \brief Usage example for tml::prior
+ * \brief Usage example for \ref tml::prior
  */ // }}}
 
 // [Code]

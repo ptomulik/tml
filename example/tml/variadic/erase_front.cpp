@@ -7,7 +7,7 @@
 /** // doc: tml/variadic/erase_front.cpp {{{
  * \file tml/variadic/erase_front.cpp
  * \example tml/variadic/erase_front.cpp
- * \brief Usage example for tml::variadic::erase_front
+ * \brief Usage example for \ref tml::variadic::erase_front
  */ // }}}
 
 // [Code]

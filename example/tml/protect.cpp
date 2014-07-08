@@ -7,7 +7,7 @@
 /** // doc: tml/protect.cpp {{{
  * \file tml/protect.cpp
  * \example tml/protect.cpp
- * \brief Usage example for tml::protect
+ * \brief Usage example for \ref tml::protect
  */ // }}}
 
 // [Code]

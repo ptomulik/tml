@@ -7,7 +7,7 @@
 /** // doc: tml/is_placeholder_expr.cpp {{{
  * \file tml/is_placeholder_expr.cpp
  * \example tml/is_placeholder_expr.cpp
- * \brief Usage example for tml::is_placeholder_expr
+ * \brief Usage example for \ref tml::is_placeholder_expr
  */ // }}}
 
 // [Code]

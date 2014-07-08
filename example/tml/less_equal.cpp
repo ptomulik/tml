@@ -7,7 +7,7 @@
 /** // doc: tml/less_equal.cpp {{{
  * \file tml/less_equal.cpp
  * \example tml/less_equal.cpp
- * \brief Usage example for tml::less_equal
+ * \brief Usage example for \ref tml::less_equal
  */ // }}}
 
 // [Code]

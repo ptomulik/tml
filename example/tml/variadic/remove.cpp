@@ -7,7 +7,7 @@
 /** // doc: tml/variadic/remove.cpp {{{
  * \file tml/variadic/remove.cpp
  * \example tml/variadic/remove.cpp
- * \brief Usage example for tml::variadic::remove
+ * \brief Usage example for \ref tml::variadic::remove
  */ // }}}
 
 // [Code]

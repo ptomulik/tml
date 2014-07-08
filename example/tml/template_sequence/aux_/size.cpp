@@ -7,7 +7,7 @@
 /** // doc: tml/template_sequence/aux_/size.cpp {{{
  * \file tml/template_sequence/aux_/size.cpp
  * \example tml/template_sequence/aux_/size.cpp
- * \brief Usage example for tml::size_impl<aux::template_sequence_tag>
+ * \brief Usage example for \ref tml::size_impl<aux::template_sequence_tag>
  */ // }}}
 
 // [Code]

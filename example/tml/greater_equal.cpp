@@ -7,7 +7,7 @@
 /** // doc: tml/greater_equal.cpp {{{
  * \file tml/greater_equal.cpp
  * \example tml/greater_equal.cpp
- * \brief Usage example for tml::greater_equal
+ * \brief Usage example for \ref tml::greater_equal
  */ // }}}
 
 // [Code]

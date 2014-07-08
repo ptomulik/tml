@@ -7,7 +7,7 @@
 /** // doc: tml/front.cpp {{{
  * \file tml/front.cpp
  * \example tml/front.cpp
- * \brief Usage example for tml::front
+ * \brief Usage example for \ref tml::front
  */ // }}}
 
 // [Code]

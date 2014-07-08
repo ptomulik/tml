@@ -7,7 +7,7 @@
 /** // doc: tml/bitand.cpp {{{
  * \file tml/bitand.cpp
  * \example tml/bitand.cpp
- * \brief Usage example for tml::bitand_
+ * \brief Usage example for \ref tml::bitand_
  */ // }}}
 
 // [Code]

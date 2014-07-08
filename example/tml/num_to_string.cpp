@@ -7,7 +7,7 @@
 /** // doc: tml/num_to_string.cpp {{{
  * \file tml/num_to_string.cpp
  * \example tml/num_to_string.cpp
- * \brief Usage example for tml::num_to_string
+ * \brief Usage example for \ref tml::num_to_string
  */ // }}}
 
 // [Code]

@@ -7,7 +7,7 @@
 /** // doc: tml/next.cpp {{{
  * \file tml/next.cpp
  * \example tml/next.cpp
- * \brief Usage example for tml::next
+ * \brief Usage example for \ref tml::next
  */ // }}}
 
 // [Code]

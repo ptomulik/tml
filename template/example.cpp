@@ -7,7 +7,7 @@
 /** // doc: tml/unit.cpp {{{
  * \file tml/unit.cpp
  * \example tml/unit.cpp
- * \brief Usage example for tml::class
+ * \brief Usage example for \ref tml::class
  */ // }}}
 
 // [Code]

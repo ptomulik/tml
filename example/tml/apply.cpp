@@ -7,7 +7,7 @@
 /** // doc: tml/apply.cpp {{{
  * \file tml/apply.cpp
  * \example tml/apply.cpp
- * \brief Usage example for tml::apply
+ * \brief Usage example for \ref tml::apply
  */ // }}}
 
 // [Code]

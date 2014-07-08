@@ -7,7 +7,7 @@
 /** // doc: tml/apply_wrap.cpp {{{
  * \file tml/apply_wrap.cpp
  * \example tml/apply_wrap.cpp
- * \brief Usage example for tml::apply_wrap
+ * \brief Usage example for \ref tml::apply_wrap
  */ // }}}
 
 // [Code]

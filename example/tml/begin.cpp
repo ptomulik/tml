@@ -7,7 +7,7 @@
 /** // doc: tml/begin.cpp {{{
  * \file tml/begin.cpp
  * \example tml/begin.cpp
- * \brief Usage example for tml::begin
+ * \brief Usage example for \ref tml::begin
  */ // }}}
 
 // [Code]

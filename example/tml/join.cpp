@@ -7,7 +7,7 @@
 /** // doc: tml/join.cpp {{{
  * \file tml/join.cpp
  * \example tml/join.cpp
- * \brief Usage example for tml::join
+ * \brief Usage example for \ref tml::join
  */ // }}}
 
 // [Code]

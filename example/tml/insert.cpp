@@ -7,7 +7,7 @@
 /** // doc: tml/insert.cpp {{{
  * \file tml/insert.cpp
  * \example tml/insert.cpp
- * \brief Usage example for tml::insert
+ * \brief Usage example for \ref tml::insert
  */ // }}}
 
 // [Code]

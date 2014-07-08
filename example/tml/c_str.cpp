@@ -7,7 +7,7 @@
 /** // doc: tml/c_str.cpp {{{
  * \file tml/c_str.cpp
  * \example tml/c_str.cpp
- * \brief Usage example for tml::c_str
+ * \brief Usage example for \ref tml::c_str
  */ // }}}
 
 // [Code]

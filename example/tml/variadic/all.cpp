@@ -7,7 +7,7 @@
 /** // doc: tml/variadic/all.cpp {{{
  * \file tml/variadic/all.cpp
  * \example tml/variadic/all.cpp
- * \brief Usage example for tml::variadic::all
+ * \brief Usage example for \ref tml::variadic::all
  */ // }}}
 
 // [Code]

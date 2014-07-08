@@ -7,7 +7,7 @@
 /** // doc: tml/char.cpp {{{
  * \file tml/char.cpp
  * \example tml/char.cpp
- * \brief Usage example for tml::char_
+ * \brief Usage example for \ref tml::char_
  */ // }}}
 
 // [Code]
