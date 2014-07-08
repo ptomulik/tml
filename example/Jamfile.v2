@@ -91,6 +91,7 @@ compile tml/shift_right.cpp                               : : tml/shift_right ;
 compile tml/size.cpp                                      : : tml/size ;
 compile tml/size_t.cpp                                    : : tml/size_t ;
 compile tml/sizeof.cpp                                    : : tml/sizeof ;
+compile tml/string.cpp                                    : : tml/string ;
 compile tml/template_sequence/aux_/advance.cpp            : : tml/template_sequence/aux_/advance ;
 compile tml/template_sequence/aux_/apply_sequence.cpp     : : tml/template_sequence/aux_/apply_sequence ;
 compile tml/template_sequence/aux_/at.cpp                 : : tml/template_sequence/aux_/at ;
