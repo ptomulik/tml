@@ -49,7 +49,7 @@ namespace tml {
  * \par Expression semantics
  *
  * For an arbitrary \ref LambdaExprConcept `f`, and arbitrary types `a1,...an`,
- * and template `x` such that `x<a1,...an>` is a \ref TemplateSeqConcept:
+ * and template `x` such that `x<a1,...an>` is a \ref TemplateSeqConcept
  * \code
  *  typedef unpack_args<f> g;
  * \endcode
