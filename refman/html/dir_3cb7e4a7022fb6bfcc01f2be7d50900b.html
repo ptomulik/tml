@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -65,6 +72,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       </li>
     </ul>
   </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('dir_3cb7e4a7022fb6bfcc01f2be7d50900b.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -79,11 +101,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_705f6b619ad903a3abb125f10ebcf64e.html">tml</a></li><li class="navelem"><a class="el" href="dir_e4ee4d7a0bbf8b57e4006b7a83cd438f.html">template_sequence</a></li><li class="navelem"><a class="el" href="dir_3cb7e4a7022fb6bfcc01f2be7d50900b.html">aux_</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">aux_ Directory Reference</div>  </div>
@@ -93,57 +110,86 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="files"></a>
 Files</h2></td></tr>
 <tr class="memitem:template__sequence_2aux___2advance_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="template__sequence_2aux___2advance_8hpp.html">advance.hpp</a> <a href="template__sequence_2aux___2advance_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:template__sequence_2aux___2advance_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements <a class="el" href="structtml_1_1advance.html">tml::advance</a> for <a class="el" href="TemplateSeqConcept.html">Template Sequence</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:template__sequence_2aux___2apply__sequence_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="template__sequence_2aux___2apply__sequence_8hpp.html">apply_sequence.hpp</a> <a href="template__sequence_2aux___2apply__sequence_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:template__sequence_2aux___2apply__sequence_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements <a class="el" href="structtml_1_1apply__sequence.html">tml::apply_sequence</a> for <a class="el" href="TemplateSeqConcept.html">Template Sequence</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:template__sequence_2aux___2at_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="template__sequence_2aux___2at_8hpp.html">at.hpp</a> <a href="template__sequence_2aux___2at_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:template__sequence_2aux___2at_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements <a class="el" href="structtml_1_1at.html">tml::at</a> for <a class="el" href="TemplateSeqConcept.html">Template Sequence</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:template__sequence_2aux___2back_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="template__sequence_2aux___2back_8hpp.html">back.hpp</a> <a href="template__sequence_2aux___2back_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:template__sequence_2aux___2back_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements <a class="el" href="structtml_1_1back.html">tml::back</a> for <a class="el" href="TemplateSeqConcept.html">Template Sequence</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:template__sequence_2aux___2begin_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="template__sequence_2aux___2begin_8hpp.html">begin.hpp</a> <a href="template__sequence_2aux___2begin_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:template__sequence_2aux___2begin_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements <a class="el" href="structtml_1_1begin.html">tml::begin</a> for <a class="el" href="TemplateSeqConcept.html">Template Sequence</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:template__sequence_2aux___2c__str_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="template__sequence_2aux___2c__str_8hpp.html">c_str.hpp</a> <a href="template__sequence_2aux___2c__str_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:template__sequence_2aux___2c__str_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements <a class="el" href="structtml_1_1c__str.html">tml::c_str</a> for <a class="el" href="TemplateSeqConcept.html">Template Sequence</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:template__sequence_2aux___2clear_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="template__sequence_2aux___2clear_8hpp.html">clear.hpp</a> <a href="template__sequence_2aux___2clear_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:template__sequence_2aux___2clear_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements <a class="el" href="structtml_1_1clear.html">tml::clear</a> for <a class="el" href="TemplateSeqConcept.html">Template Sequence</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:template__sequence_2aux___2deref_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="template__sequence_2aux___2deref_8hpp.html">deref.hpp</a> <a href="template__sequence_2aux___2deref_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:template__sequence_2aux___2deref_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements <a class="el" href="structtml_1_1deref.html">tml::deref</a> for <a class="el" href="TemplateSeqConcept.html">Template Sequence</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:template__sequence_2aux___2distance_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="template__sequence_2aux___2distance_8hpp.html">distance.hpp</a> <a href="template__sequence_2aux___2distance_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:template__sequence_2aux___2distance_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements <a class="el" href="structtml_1_1distance.html">tml::distance</a> for <a class="el" href="TemplateSeqConcept.html">Template Sequence</a> iterator. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:template__sequence_2aux___2empty_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="template__sequence_2aux___2empty_8hpp.html">empty.hpp</a> <a href="template__sequence_2aux___2empty_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:template__sequence_2aux___2empty_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements <a class="el" href="structtml_1_1empty.html">tml::empty</a> for <a class="el" href="TemplateSeqConcept.html">Template Sequence</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:template__sequence_2aux___2end_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="template__sequence_2aux___2end_8hpp.html">end.hpp</a> <a href="template__sequence_2aux___2end_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:template__sequence_2aux___2end_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements <a class="el" href="structtml_1_1end.html">tml::end</a> for <a class="el" href="TemplateSeqConcept.html">Template Sequence</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:template__sequence_2aux___2erase_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="template__sequence_2aux___2erase_8hpp.html">erase.hpp</a> <a href="template__sequence_2aux___2erase_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:template__sequence_2aux___2erase_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements <a class="el" href="structtml_1_1erase.html">tml::erase</a> for <a class="el" href="TemplateSeqConcept.html">Template Sequence</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:template__sequence_2aux___2front_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="template__sequence_2aux___2front_8hpp.html">front.hpp</a> <a href="template__sequence_2aux___2front_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:template__sequence_2aux___2front_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements <a class="el" href="structtml_1_1front.html">tml::front</a> for <a class="el" href="TemplateSeqConcept.html">Template Sequence</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:template__sequence_2aux___2insert_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="template__sequence_2aux___2insert_8hpp.html">insert.hpp</a> <a href="template__sequence_2aux___2insert_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:template__sequence_2aux___2insert_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements <a class="el" href="structtml_1_1insert.html">tml::insert</a> for <a class="el" href="TemplateSeqConcept.html">Template Sequence</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:iterator_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="iterator_8hpp.html">iterator.hpp</a> <a href="iterator_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:iterator_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines <a class="el" href="TemplateSeqConcept.html">Template Sequence</a> iterator. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:template__sequence_2aux___2join_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="template__sequence_2aux___2join_8hpp.html">join.hpp</a> <a href="template__sequence_2aux___2join_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:template__sequence_2aux___2join_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements <a class="el" href="structtml_1_1join.html">tml::join</a> for <a class="el" href="TemplateSeqConcept.html">Template Sequence</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:template__sequence_2aux___2pop__back_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="template__sequence_2aux___2pop__back_8hpp.html">pop_back.hpp</a> <a href="template__sequence_2aux___2pop__back_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:template__sequence_2aux___2pop__back_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements <a class="el" href="structtml_1_1pop__back.html">tml::pop_back</a> for <a class="el" href="TemplateSeqConcept.html">Template Sequence</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:template__sequence_2aux___2pop__front_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="template__sequence_2aux___2pop__front_8hpp.html">pop_front.hpp</a> <a href="template__sequence_2aux___2pop__front_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:template__sequence_2aux___2pop__front_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements <a class="el" href="structtml_1_1pop__front.html">tml::pop_front</a> for <a class="el" href="TemplateSeqConcept.html">Template Sequence</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:template__sequence_2aux___2push__back_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="template__sequence_2aux___2push__back_8hpp.html">push_back.hpp</a> <a href="template__sequence_2aux___2push__back_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:template__sequence_2aux___2push__back_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements <a class="el" href="structtml_1_1push__back.html">tml::push_back</a> for <a class="el" href="TemplateSeqConcept.html">Template Sequence</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:template__sequence_2aux___2push__front_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="template__sequence_2aux___2push__front_8hpp.html">push_front.hpp</a> <a href="template__sequence_2aux___2push__front_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:template__sequence_2aux___2push__front_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements <a class="el" href="structtml_1_1push__front.html">tml::push_front</a> for <a class="el" href="TemplateSeqConcept.html">Template Sequence</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:template__sequence_2aux___2sequence__generator_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="template__sequence_2aux___2sequence__generator_8hpp.html">sequence_generator.hpp</a> <a href="template__sequence_2aux___2sequence__generator_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:template__sequence_2aux___2sequence__generator_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements <a class="el" href="structtml_1_1sequence__generator.html">tml::sequence_generator</a> for <a class="el" href="TemplateSeqConcept.html">Template Sequence</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:template__sequence_2aux___2size_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="template__sequence_2aux___2size_8hpp.html">size.hpp</a> <a href="template__sequence_2aux___2size_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:template__sequence_2aux___2size_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements <a class="el" href="structtml_1_1size.html">tml::size</a> for <a class="el" href="TemplateSeqConcept.html">Template Sequence</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:tag_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tag_8hpp.html">tag.hpp</a> <a href="tag_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:tag_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1aux_1_1template__sequence__tag.html">tml::aux::template_sequence_tag</a> class. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.7-->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 2 2014 14:08:29 for TML by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.7
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_705f6b619ad903a3abb125f10ebcf64e.html">tml</a></li><li class="navelem"><a class="el" href="dir_e4ee4d7a0bbf8b57e4006b7a83cd438f.html">template_sequence</a></li><li class="navelem"><a class="el" href="dir_3cb7e4a7022fb6bfcc01f2be7d50900b.html">aux_</a></li>
+    <li class="footer">Generated on Tue Jul 8 2014 21:50:34 for TML by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
 </body>
 </html>

@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -71,6 +78,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('tag_8hpp_source.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,11 +107,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_705f6b619ad903a3abb125f10ebcf64e.html">tml</a></li><li class="navelem"><a class="el" href="dir_e4ee4d7a0bbf8b57e4006b7a83cd438f.html">template_sequence</a></li><li class="navelem"><a class="el" href="dir_3cb7e4a7022fb6bfcc01f2be7d50900b.html">aux_</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">tag.hpp</div>  </div>
@@ -107,7 +124,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#define TML_TEMPLATE_SEQUENCE_AUX_TAG_HPP</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span>tml { <span class="keyword">namespace </span>aux {</div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="structts__iter__tag.html">   26</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structtemplate__sequence__tag.html">template_sequence_tag</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="structts__iter__tag.html">   26</a></span>&#160;<span class="keyword">struct </span>template_sequence_tag;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">struct </span><a class="code" href="structts__iter__tag.html">ts_iter_tag</a>;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;} } <span class="comment">// end namespace tml::aux</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
@@ -115,14 +132,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">// vim: set expandtab tabstop=2 shiftwidth=2:</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">// vim: set foldmethod=marker foldcolumn=4:</span></div>
 <div class="ttc" id="structts__iter__tag_html"><div class="ttname"><a href="structts__iter__tag.html">ts_iter_tag</a></div><div class="ttdoc">Identifies iterators for Template Sequences. </div><div class="ttdef"><b>Definition:</b> tag.hpp:26</div></div>
-<div class="ttc" id="structtemplate__sequence__tag_html"><div class="ttname"><a href="structtemplate__sequence__tag.html">template_sequence_tag</a></div><div class="ttdoc">Identifies Template Sequences. </div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.7-->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 2 2014 14:08:26 for TML by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.7
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_705f6b619ad903a3abb125f10ebcf64e.html">tml</a></li><li class="navelem"><a class="el" href="dir_e4ee4d7a0bbf8b57e4006b7a83cd438f.html">template_sequence</a></li><li class="navelem"><a class="el" href="dir_3cb7e4a7022fb6bfcc01f2be7d50900b.html">aux_</a></li><li class="navelem"><a class="el" href="tag_8hpp.html">tag.hpp</a></li>
+    <li class="footer">Generated on Tue Jul 8 2014 21:50:29 for TML by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
 </body>
 </html>

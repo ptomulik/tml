@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -71,6 +78,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('any_8hpp_source.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,11 +107,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_705f6b619ad903a3abb125f10ebcf64e.html">tml</a></li><li class="navelem"><a class="el" href="dir_b05dc52c9e1170a8c9d49bc9a33381df.html">variadic</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">any.hpp</div>  </div>
@@ -107,47 +124,54 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#define TML_VARIADIC_ANY_HPP</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="any__fwd_8hpp.html">tml/variadic/any_fwd.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="if_8hpp.html">tml/if.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="bool_8hpp.html">tml/bool.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="apply_8hpp.html">tml/apply.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">namespace </span>tml { <span class="keyword">namespace </span>variadic {</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> F&gt;</div>
-<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="structtml_1_1variadic_1_1any.html">   79</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="structtml_1_1variadic_1_1any.html">any</a>;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> F&gt;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span>... Args&gt;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">struct </span><a class="code" href="structtml_1_1variadic_1_1any.html">any</a>&lt;F&gt;::apply</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      : <a class="code" href="structtml_1_1integral__c.html">false_</a></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    { };</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> F&gt;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class </span>Head, <span class="keyword">class</span>... Tail&gt;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keyword">struct </span><a class="code" href="structtml_1_1variadic_1_1any.html">any</a>&lt;F&gt;::<a class="code" href="structtml_1_1apply.html">apply</a>&lt;Head,Tail...&gt;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      : <a class="code" href="structtml_1_1if__.html">if_</a>&lt;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;          typename tml::apply&lt;F,Head&gt;::type</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        , true_</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        , typename any&lt;F&gt;::template apply&lt;Tail...&gt;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        &gt;::type</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    { };</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;} } <span class="comment">// end namespace tml::variadic</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* TML_VARIADIC_ANY_HPP */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment">// vim: set expandtab tabstop=2 shiftwidth=2:</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment">// vim: set foldmethod=marker foldcolumn=4:</span></div>
-<div class="ttc" id="structtml_1_1variadic_1_1any_html"><div class="ttname"><a href="structtml_1_1variadic_1_1any.html">tml::variadic::any</a></div><div class="ttdoc">Tests whether a predicate F holds for any argument from Args </div><div class="ttdef"><b>Definition:</b> any.hpp:79</div></div>
-<div class="ttc" id="structtml_1_1if___html"><div class="ttname"><a href="structtml_1_1if__.html">tml::if_</a></div><div class="ttdoc">Returns one of its two arguments depending on a condition. </div><div class="ttdef"><b>Definition:</b> if.hpp:61</div></div>
-<div class="ttc" id="if_8hpp_html"><div class="ttname"><a href="if_8hpp.html">if.hpp</a></div></div>
-<div class="ttc" id="structtml_1_1integral__c_html"><div class="ttname"><a href="structtml_1_1integral__c.html">tml::integral_c</a></div><div class="ttdoc">A general Integral Constant wrapper. </div><div class="ttdef"><b>Definition:</b> integral_c.hpp:68</div></div>
-<div class="ttc" id="any__fwd_8hpp_html"><div class="ttname"><a href="any__fwd_8hpp.html">any_fwd.hpp</a></div><div class="ttdoc">Forward declarations for tml/any.hpp. </div></div>
-<div class="ttc" id="apply_8hpp_html"><div class="ttname"><a href="apply_8hpp.html">apply.hpp</a></div></div>
-<div class="ttc" id="bool_8hpp_html"><div class="ttname"><a href="bool_8hpp.html">bool.hpp</a></div></div>
-<div class="ttc" id="structtml_1_1apply_html"><div class="ttname"><a href="structtml_1_1apply.html">tml::apply</a></div><div class="ttdoc">Invokes a Metafunction Class or a Lambda Expression. </div><div class="ttdef"><b>Definition:</b> apply.hpp:60</div></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="bool_8hpp.html">tml/bool.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="apply_8hpp.html">tml/apply.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace </span>tml { <span class="keyword">namespace </span>variadic { <span class="keyword">namespace </span>detail {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">bool</span>... Args&gt;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keyword">struct </span>any_impl</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    : true_</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  { };</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keyword">struct </span>any_impl&lt;&gt;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    : false_</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  { };</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">bool</span>... Tail&gt;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keyword">struct </span>any_impl&lt;false,Tail...&gt;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    : any_impl&lt;Tail...&gt;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  { };</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;} } } <span class="comment">// end namespace tml::variadic::detail</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">namespace </span>tml { <span class="keyword">namespace </span>variadic {</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> F&gt;</div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="structtml_1_1variadic_1_1any.html">   94</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="structtml_1_1variadic_1_1any.html">any</a>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> F&gt;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span>... Args&gt;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keyword">struct </span><a class="code" href="structtml_1_1variadic_1_1any.html">any</a>&lt;F&gt;::apply</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      : detail::any_impl&lt;tml::apply&lt;F,Args&gt;::type::value...&gt;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    { };</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;} } <span class="comment">// end namespace tml::variadic</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">#include &lt;tml/variadic/aux_/any.hpp&gt;</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* TML_VARIADIC_ANY_HPP */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="comment">// vim: set expandtab tabstop=2 shiftwidth=2:</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="comment">// vim: set foldmethod=marker foldcolumn=4:</span></div>
+<div class="ttc" id="structtml_1_1variadic_1_1any_html"><div class="ttname"><a href="structtml_1_1variadic_1_1any.html">tml::variadic::any</a></div><div class="ttdoc">Tests whether a predicate F holds for any argument from Args </div><div class="ttdef"><b>Definition:</b> any.hpp:94</div></div>
+<div class="ttc" id="any__fwd_8hpp_html"><div class="ttname"><a href="any__fwd_8hpp.html">any_fwd.hpp</a></div><div class="ttdoc">Forward declarations for tml/variadic/any.hpp. </div></div>
+<div class="ttc" id="apply_8hpp_html"><div class="ttname"><a href="apply_8hpp.html">apply.hpp</a></div><div class="ttdoc">Provides tml::apply. </div></div>
+<div class="ttc" id="bool_8hpp_html"><div class="ttname"><a href="bool_8hpp.html">bool.hpp</a></div><div class="ttdoc">Provides tml::bool_. </div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.7-->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 2 2014 14:08:26 for TML by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.7
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_705f6b619ad903a3abb125f10ebcf64e.html">tml</a></li><li class="navelem"><a class="el" href="dir_b05dc52c9e1170a8c9d49bc9a33381df.html">variadic</a></li><li class="navelem"><a class="el" href="any_8hpp.html">any.hpp</a></li>
+    <li class="footer">Generated on Tue Jul 8 2014 21:50:29 for TML by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
 </body>
 </html>

@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -65,6 +72,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       </li>
     </ul>
   </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('dir_705f6b619ad903a3abb125f10ebcf64e.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -79,11 +101,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_705f6b619ad903a3abb125f10ebcf64e.html">tml</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">tml Directory Reference</div>  </div>
@@ -106,338 +123,497 @@ Directories</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="files"></a>
 Files</h2></td></tr>
 <tr class="memitem:advance_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="advance_8hpp.html">advance.hpp</a> <a href="advance_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:advance_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1advance.html">tml::advance</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:advance__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="advance__fwd_8hpp.html">advance_fwd.hpp</a> <a href="advance__fwd_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:advance__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for tml/advance.hpp. <br /></td></tr>
+<tr class="memdesc:advance__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="advance_8hpp.html">tml/advance.hpp</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:always_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="always_8hpp.html">always.hpp</a> <a href="always_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:always_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1always.html">tml::always</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:always__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="always__fwd_8hpp.html">always_fwd.hpp</a> <a href="always__fwd_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:always__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="always_8hpp.html">tml/always.hpp</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:and_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="and_8hpp.html">and.hpp</a> <a href="and_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:and_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1and__.html">tml::and_</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:and__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="and__fwd_8hpp.html">and_fwd.hpp</a> <a href="and__fwd_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:and__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for tml/and.hpp. <br /></td></tr>
+<tr class="memdesc:and__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="and_8hpp.html">tml/and.hpp</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:apply_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apply_8hpp.html">apply.hpp</a> <a href="apply_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:apply_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1apply.html">tml::apply</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:apply__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apply__fwd_8hpp.html">apply_fwd.hpp</a> <a href="apply__fwd_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:apply__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for tml/apply.hpp. <br /></td></tr>
+<tr class="memdesc:apply__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="apply_8hpp.html">tml/apply.hpp</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:apply__sequence_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apply__sequence_8hpp.html">apply_sequence.hpp</a> <a href="apply__sequence_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:apply__sequence_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1apply__sequence.html">tml::apply_sequence</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:apply__sequence__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apply__sequence__fwd_8hpp.html">apply_sequence_fwd.hpp</a> <a href="apply__sequence__fwd_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:apply__sequence__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for tml/apply_sequence.hpp. <br /></td></tr>
+<tr class="memdesc:apply__sequence__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="apply__sequence_8hpp.html">tml/apply_sequence.hpp</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:apply__wrap_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apply__wrap_8hpp.html">apply_wrap.hpp</a> <a href="apply__wrap_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:apply__wrap_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1apply__wrap.html">tml::apply_wrap</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:apply__wrap__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apply__wrap__fwd_8hpp.html">apply_wrap_fwd.hpp</a> <a href="apply__wrap__fwd_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:apply__wrap__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for tml/apply_wrap.hpp. <br /></td></tr>
+<tr class="memdesc:apply__wrap__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="apply__wrap_8hpp.html">tml/apply_wrap.hpp</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:arg_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arg_8hpp.html">arg.hpp</a> <a href="arg_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:arg_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1arg.html">tml::arg</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:arg__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arg__fwd_8hpp.html">arg_fwd.hpp</a> <a href="arg__fwd_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:arg__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for tml/arg.hpp. <br /></td></tr>
+<tr class="memdesc:arg__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="arg_8hpp.html">tml/arg.hpp</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:at_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="at_8hpp.html">at.hpp</a> <a href="at_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:at_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1at.html">tml::at</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:at__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="at__fwd_8hpp.html">at_fwd.hpp</a> <a href="at__fwd_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:at__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for tml/at.hpp. <br /></td></tr>
+<tr class="memdesc:at__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="at_8hpp.html">tml/at.hpp</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:back_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="back_8hpp.html">back.hpp</a> <a href="back_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:back_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1back.html">tml::back</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:back__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="back__fwd_8hpp.html">back_fwd.hpp</a> <a href="back__fwd_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:back__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for tml/back.hpp. <br /></td></tr>
+<tr class="memdesc:back__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="back_8hpp.html">tml/back.hpp</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:begin_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="begin_8hpp.html">begin.hpp</a> <a href="begin_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:begin_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1begin.html">tml::begin</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:begin__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="begin__fwd_8hpp.html">begin_fwd.hpp</a> <a href="begin__fwd_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:begin__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for tml/begin.hpp. <br /></td></tr>
+<tr class="memdesc:begin__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="begin_8hpp.html">tml/begin.hpp</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:bind_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bind_8hpp.html">bind.hpp</a> <a href="bind_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:bind_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1bind.html">tml::bind</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:bind__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bind__fwd_8hpp.html">bind_fwd.hpp</a> <a href="bind__fwd_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:bind__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for tml/bind.hpp. <br /></td></tr>
+<tr class="memdesc:bind__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="bind_8hpp.html">tml/bind.hpp</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:bitand_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bitand_8hpp.html">bitand.hpp</a> <a href="bitand_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:bitand_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1bitand__.html">tml::bitand_</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:bitand__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bitand__fwd_8hpp.html">bitand_fwd.hpp</a> <a href="bitand__fwd_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:bitand__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="bitand_8hpp.html">tml/bitand.hpp</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:bitor_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bitor_8hpp.html">bitor.hpp</a> <a href="bitor_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:bitor_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1bitor__.html">tml::bitor_</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:bitor__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bitor__fwd_8hpp.html">bitor_fwd.hpp</a> <a href="bitor__fwd_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:bitor__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="bitor_8hpp.html">tml/bitor.hpp</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:bitxor_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bitxor_8hpp.html">bitxor.hpp</a> <a href="bitxor_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:bitxor_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1bitxor__.html">tml::bitxor_</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:bitxor__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bitxor__fwd_8hpp.html">bitxor_fwd.hpp</a> <a href="bitxor__fwd_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:bitxor__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="bitxor_8hpp.html">tml/bitxor.hpp</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:bool_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bool_8hpp.html">bool.hpp</a> <a href="bool_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:bool_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="group__TypesNumericGroup.html#ga337de3e11815353e8ecd1e341c4db098">tml::bool_</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:bool__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bool__fwd_8hpp.html">bool_fwd.hpp</a> <a href="bool__fwd_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:bool__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for tml/bool.hpp. <br /></td></tr>
+<tr class="memdesc:bool__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="bool_8hpp.html">tml/bool.hpp</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:c__str_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c__str_8hpp.html">c_str.hpp</a> <a href="c__str_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:c__str_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1c__str.html">tml::c_str</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:c__str__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c__str__fwd_8hpp.html">c_str_fwd.hpp</a> <a href="c__str__fwd_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:c__str__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="c__str_8hpp.html">tml/c_str.hpp</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:c__str__term_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c__str__term_8hpp.html">c_str_term.hpp</a> <a href="c__str__term_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:c__str__term_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1c__str__term.html">tml::c_str_term</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:char_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="char_8hpp.html">char.hpp</a> <a href="char_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:char_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="group__TypesNumericGroup.html#ga5bdca608606911b38c7033657f92b777">tml::char_</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:char__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="char__fwd_8hpp.html">char_fwd.hpp</a> <a href="char__fwd_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:char__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for tml/char.hpp. <br /></td></tr>
+<tr class="memdesc:char__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="char_8hpp.html">tml/char.hpp</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:clear_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clear_8hpp.html">clear.hpp</a> <a href="clear_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:clear_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1clear.html">tml::clear</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:clear__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clear__fwd_8hpp.html">clear_fwd.hpp</a> <a href="clear__fwd_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:clear__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for tml/clear.hpp. <br /></td></tr>
+<tr class="memdesc:clear__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="clear_8hpp.html">tml/clear.hpp</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:deref_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="deref_8hpp.html">deref.hpp</a> <a href="deref_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:deref_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1deref.html">tml::deref</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:deref__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="deref__fwd_8hpp.html">deref_fwd.hpp</a> <a href="deref__fwd_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:deref__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for tml/deref.hpp. <br /></td></tr>
+<tr class="memdesc:deref__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="deref_8hpp.html">tml/deref.hpp</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:distance_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="distance_8hpp.html">distance.hpp</a> <a href="distance_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:distance_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1distance.html">tml::distance</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:distance__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="distance__fwd_8hpp.html">distance_fwd.hpp</a> <a href="distance__fwd_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:distance__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for tml/distance.hpp. <br /></td></tr>
+<tr class="memdesc:distance__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="distance_8hpp.html">tml/distance.hpp</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:divides_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="divides_8hpp.html">divides.hpp</a> <a href="divides_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:divides_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1divides.html">tml::divides</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:divides__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="divides__fwd_8hpp.html">divides_fwd.hpp</a> <a href="divides__fwd_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:divides__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for tml/divides.hpp. <br /></td></tr>
+<tr class="memdesc:divides__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="divides_8hpp.html">tml/divides.hpp</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:empty_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="empty_8hpp.html">empty.hpp</a> <a href="empty_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:empty_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1empty.html">tml::empty</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:empty__base_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="empty__base_8hpp.html">empty_base.hpp</a> <a href="empty__base_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:empty__base_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1empty__base.html">tml::empty_base</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:empty__base__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><b>empty_base_fwd.hpp</b> <a href="empty__base__fwd_8hpp_source.html">[code]</a></td></tr>
+<tr class="memitem:empty__base__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="empty__base__fwd_8hpp.html">empty_base_fwd.hpp</a> <a href="empty__base__fwd_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:empty__base__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="empty__base_8hpp.html">tml/empty_base.hpp</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:empty__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="empty__fwd_8hpp.html">empty_fwd.hpp</a> <a href="empty__fwd_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:empty__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for tml/empty.hpp. <br /></td></tr>
+<tr class="memdesc:empty__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="empty_8hpp.html">tml/empty.hpp</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:enable__if_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enable__if_8hpp.html">enable_if.hpp</a> <a href="enable__if_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:enable__if_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1enable__if.html">tml::enable_if</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:enable__if__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enable__if__fwd_8hpp.html">enable_if_fwd.hpp</a> <a href="enable__if__fwd_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:enable__if__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for tml/enable_if.hpp. <br /></td></tr>
+<tr class="memdesc:enable__if__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="enable__if_8hpp.html">tml/enable_if.hpp</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:enable__if__type_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enable__if__type_8hpp.html">enable_if_type.hpp</a> <a href="enable__if__type_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:enable__if__type_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1enable__if__type.html">tml::enable_if_type</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:end_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="end_8hpp.html">end.hpp</a> <a href="end_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:end_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1end.html">tml::end</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:end__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="end__fwd_8hpp.html">end_fwd.hpp</a> <a href="end__fwd_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:end__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for tml/end.hpp. <br /></td></tr>
+<tr class="memdesc:end__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="end_8hpp.html">tml/end.hpp</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:equal_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="equal_8hpp.html">equal.hpp</a> <a href="equal_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:equal_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1equal.html">tml::equal</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:equal__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="equal__fwd_8hpp.html">equal_fwd.hpp</a> <a href="equal__fwd_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:equal__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="equal_8hpp.html">tml/equal.hpp</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:equal__to_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="equal__to_8hpp.html">equal_to.hpp</a> <a href="equal__to_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:equal__to_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1equal__to.html">tml::equal_to</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:equal__to__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="equal__to__fwd_8hpp.html">equal_to_fwd.hpp</a> <a href="equal__to__fwd_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:equal__to__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for tml/equal_to.hpp. <br /></td></tr>
+<tr class="memdesc:equal__to__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="equal__to_8hpp.html">tml/equal_to.hpp</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:erase_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="erase_8hpp.html">erase.hpp</a> <a href="erase_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:erase_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1erase.html">tml::erase</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:erase__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="erase__fwd_8hpp.html">erase_fwd.hpp</a> <a href="erase__fwd_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:erase__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for tml/erase.hpp. <br /></td></tr>
+<tr class="memdesc:erase__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="erase_8hpp.html">tml/erase.hpp</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:front_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="front_8hpp.html">front.hpp</a> <a href="front_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:front_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1front.html">tml::front</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:front__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="front__fwd_8hpp.html">front_fwd.hpp</a> <a href="front__fwd_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:front__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for tml/front.hpp. <br /></td></tr>
+<tr class="memdesc:front__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="front_8hpp.html">tml/front.hpp</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:greater_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="greater_8hpp.html">greater.hpp</a> <a href="greater_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:greater_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1greater.html">tml::greater</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:greater__equal_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="greater__equal_8hpp.html">greater_equal.hpp</a> <a href="greater__equal_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:greater__equal_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1greater__equal.html">tml::greater_equal</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:greater__equal__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="greater__equal__fwd_8hpp.html">greater_equal_fwd.hpp</a> <a href="greater__equal__fwd_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:greater__equal__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for tml/greater_equal.hpp. <br /></td></tr>
+<tr class="memdesc:greater__equal__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="greater__equal_8hpp.html">tml/greater_equal.hpp</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:greater__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="greater__fwd_8hpp.html">greater_fwd.hpp</a> <a href="greater__fwd_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:greater__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for tml/greater.hpp. <br /></td></tr>
+<tr class="memdesc:greater__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="greater_8hpp.html">tml/greater.hpp</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:identity_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="identity_8hpp.html">identity.hpp</a> <a href="identity_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:identity_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1identity.html">tml::identity</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:identity__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="identity__fwd_8hpp.html">identity_fwd.hpp</a> <a href="identity__fwd_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:identity__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for tml/identity.hpp. <br /></td></tr>
+<tr class="memdesc:identity__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="identity_8hpp.html">tml/identity.hpp</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:if_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="if_8hpp.html">if.hpp</a> <a href="if_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:if_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provider <a class="el" href="structtml_1_1if__.html">tml::if_</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:if__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="if__fwd_8hpp.html">if_fwd.hpp</a> <a href="if__fwd_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:if__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for tml/if.hpp. <br /></td></tr>
+<tr class="memdesc:if__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="if_8hpp.html">tml/if.hpp</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:insert_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="insert_8hpp.html">insert.hpp</a> <a href="insert_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:insert_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1insert.html">tml::insert</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:insert__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="insert__fwd_8hpp.html">insert_fwd.hpp</a> <a href="insert__fwd_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:insert__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for tml/insert.hpp. <br /></td></tr>
+<tr class="memdesc:insert__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="insert_8hpp.html">tml/insert.hpp</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:int_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="int_8hpp.html">int.hpp</a> <a href="int_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:int_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="group__TypesNumericGroup.html#gac454c5c1e43e63d81df7a9fc8a65295e">tml::int_</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:int__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="int__fwd_8hpp.html">int_fwd.hpp</a> <a href="int__fwd_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:int__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for tml/int.hpp. <br /></td></tr>
+<tr class="memdesc:int__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="int_8hpp.html">tml/int.hpp</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:integral__c_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="integral__c_8hpp.html">integral_c.hpp</a> <a href="integral__c_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:integral__c_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provies <a class="el" href="structtml_1_1integral__c.html">tml::integral_c</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:integral__c__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="integral__c__fwd_8hpp.html">integral_c_fwd.hpp</a> <a href="integral__c__fwd_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:integral__c__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for tml/integral_c.hpp. <br /></td></tr>
+<tr class="memdesc:integral__c__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="integral__c_8hpp.html">tml/integral_c.hpp</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:integral__c__tag_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="integral__c__tag_8hpp.html">integral_c_tag.hpp</a> <a href="integral__c__tag_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:integral__c__tag_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines <a class="el" href="structtml_1_1integral__c__tag.html">tml::integral_c_tag</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:is__bind__expr_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="is__bind__expr_8hpp.html">is_bind_expr.hpp</a> <a href="is__bind__expr_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:is__bind__expr_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1is__bind__expr.html">tml::is_bind_expr</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:is__bind__expr__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="is__bind__expr__fwd_8hpp.html">is_bind_expr_fwd.hpp</a> <a href="is__bind__expr__fwd_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:is__bind__expr__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for tml/is_bind_expr.hpp. <br /></td></tr>
+<tr class="memdesc:is__bind__expr__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="is__bind__expr_8hpp.html">tml/is_bind_expr.hpp</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:is__placeholder_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="is__placeholder_8hpp.html">is_placeholder.hpp</a> <a href="is__placeholder_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:is__placeholder_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1is__placeholder.html">tml::is_placeholder</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:is__placeholder__expr_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="is__placeholder__expr_8hpp.html">is_placeholder_expr.hpp</a> <a href="is__placeholder__expr_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:is__placeholder__expr_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1is__placeholder__expr.html">tml::is_placeholder_expr</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:is__placeholder__expr__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="is__placeholder__expr__fwd_8hpp.html">is_placeholder_expr_fwd.hpp</a> <a href="is__placeholder__expr__fwd_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:is__placeholder__expr__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for tml/is_placeholder_expr.hpp. <br /></td></tr>
+<tr class="memdesc:is__placeholder__expr__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="is__placeholder__expr_8hpp.html">tml/is_placeholder_expr.hpp</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:is__placeholder__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="is__placeholder__fwd_8hpp.html">is_placeholder_fwd.hpp</a> <a href="is__placeholder__fwd_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:is__placeholder__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for tml/is_placeholder.hpp. <br /></td></tr>
+<tr class="memdesc:is__placeholder__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="is__placeholder_8hpp.html">tml/is_placeholder.hpp</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:is__same_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="is__same_8hpp.html">is_same.hpp</a> <a href="is__same_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:is__same_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1is__same.html">tml::is_same</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:is__same__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="is__same__fwd_8hpp.html">is_same_fwd.hpp</a> <a href="is__same__fwd_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:is__same__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for tml/is_same.hpp. <br /></td></tr>
+<tr class="memdesc:is__same__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="is__same_8hpp.html">tml/is_same.hpp</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:iterator__tag_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="iterator__tag_8hpp.html">iterator_tag.hpp</a> <a href="iterator__tag_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:iterator__tag_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1iterator__tag.html">tml::iterator_tag</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:iterator__tag__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="iterator__tag__fwd_8hpp.html">iterator_tag_fwd.hpp</a> <a href="iterator__tag__fwd_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:iterator__tag__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for tml/iterator_tag.hpp. <br /></td></tr>
+<tr class="memdesc:iterator__tag__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="iterator__tag_8hpp.html">tml/iterator_tag.hpp</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:join_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="join_8hpp.html">join.hpp</a> <a href="join_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:join_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1join.html">tml::join</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:join__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="join__fwd_8hpp.html">join_fwd.hpp</a> <a href="join__fwd_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:join__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for tml/join.hpp. <br /></td></tr>
+<tr class="memdesc:join__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="join_8hpp.html">tml/join.hpp</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:lambda_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lambda_8hpp.html">lambda.hpp</a> <a href="lambda_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:lambda_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1lambda.html">tml::lambda</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:lambda__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lambda__fwd_8hpp.html">lambda_fwd.hpp</a> <a href="lambda__fwd_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:lambda__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for tml/lambda.hpp. <br /></td></tr>
+<tr class="memdesc:lambda__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="lambda_8hpp.html">tml/lambda.hpp</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:less_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="less_8hpp.html">less.hpp</a> <a href="less_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:less_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1less.html">tml::less</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:less__equal_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="less__equal_8hpp.html">less_equal.hpp</a> <a href="less__equal_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:less__equal_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1less__equal.html">tml::less_equal</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:less__equal__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="less__equal__fwd_8hpp.html">less_equal_fwd.hpp</a> <a href="less__equal__fwd_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:less__equal__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for tml/less_equal.hpp. <br /></td></tr>
+<tr class="memdesc:less__equal__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="less__equal_8hpp.html">tml/less_equal.hpp</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:less__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="less__fwd_8hpp.html">less_fwd.hpp</a> <a href="less__fwd_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:less__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for tml/less.hpp. <br /></td></tr>
+<tr class="memdesc:less__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="less_8hpp.html">tml/less.hpp</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:long_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="long_8hpp.html">long.hpp</a> <a href="long_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:long_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="group__TypesNumericGroup.html#gad9ae7acdaeb59691837cce4da4a048d1">tml::long_</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:long__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="long__fwd_8hpp.html">long_fwd.hpp</a> <a href="long__fwd_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:long__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for tml/long.hpp. <br /></td></tr>
+<tr class="memdesc:long__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="long_8hpp.html">tml/long.hpp</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:max_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="max_8hpp.html">max.hpp</a> <a href="max_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:max_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1max.html">tml::max</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:max__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="max__fwd_8hpp.html">max_fwd.hpp</a> <a href="max__fwd_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:max__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="max_8hpp.html">tml/max.hpp</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:min_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="min_8hpp.html">min.hpp</a> <a href="min_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:min_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1min.html">tml::min</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:min__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="min__fwd_8hpp.html">min_fwd.hpp</a> <a href="min__fwd_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:min__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="min_8hpp.html">tml/min.hpp</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:min__max_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="min__max_8hpp.html">min_max.hpp</a> <a href="min__max_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:min__max_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1min.html">tml::min</a> and <a class="el" href="structtml_1_1max.html">tml::max</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:minus_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="minus_8hpp.html">minus.hpp</a> <a href="minus_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:minus_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1minus.html">tml::minus</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:minus__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="minus__fwd_8hpp.html">minus_fwd.hpp</a> <a href="minus__fwd_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:minus__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for tml/minus.hpp. <br /></td></tr>
+<tr class="memdesc:minus__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="minus_8hpp.html">tml/minus.hpp</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:modulus_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modulus_8hpp.html">modulus.hpp</a> <a href="modulus_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:modulus_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1modulus.html">tml::modulus</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:modulus__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modulus__fwd_8hpp.html">modulus_fwd.hpp</a> <a href="modulus__fwd_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:modulus__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for tml/modulus.hpp. <br /></td></tr>
+<tr class="memdesc:modulus__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="modulus_8hpp.html">tml/modulus.hpp</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:negate_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="negate_8hpp.html">negate.hpp</a> <a href="negate_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:negate_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1negate.html">tml::negate</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:negate__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="negate__fwd_8hpp.html">negate_fwd.hpp</a> <a href="negate__fwd_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:negate__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for tml/negate.hpp. <br /></td></tr>
+<tr class="memdesc:negate__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="negate_8hpp.html">tml/negate.hpp</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:next_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="next_8hpp.html">next.hpp</a> <a href="next_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:next_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1next.html">tml::next</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:next__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="next__fwd_8hpp.html">next_fwd.hpp</a> <a href="next__fwd_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:next__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for tml/next.hpp. <br /></td></tr>
+<tr class="memdesc:next__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="next_8hpp.html">tml/next.hpp</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:not_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="not_8hpp.html">not.hpp</a> <a href="not_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:not_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1not__.html">tml::not_</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:not__equal__to_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="not__equal__to_8hpp.html">not_equal_to.hpp</a> <a href="not__equal__to_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:not__equal__to_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1not__equal__to.html">tml::not_equal_to</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:not__equal__to__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="not__equal__to__fwd_8hpp.html">not_equal_to_fwd.hpp</a> <a href="not__equal__to__fwd_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:not__equal__to__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for tml/not_equal_to.hpp. <br /></td></tr>
+<tr class="memdesc:not__equal__to__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="not__equal__to_8hpp.html">tml/not_equal_to.hpp</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:not__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="not__fwd_8hpp.html">not_fwd.hpp</a> <a href="not__fwd_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:not__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for tml/not.hpp. <br /></td></tr>
+<tr class="memdesc:not__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="not_8hpp.html">tml/not.hpp</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:num__to__string_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="num__to__string_8hpp.html">num_to_string.hpp</a> <a href="num__to__string_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:num__to__string_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1num__to__string.html">tml::num_to_string</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:num__to__string__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="num__to__string__fwd_8hpp.html">num_to_string_fwd.hpp</a> <a href="num__to__string__fwd_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:num__to__string__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="num__to__string_8hpp.html">tml/num_to_string.hpp</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:numeric__cast_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="numeric__cast_8hpp.html">numeric_cast.hpp</a> <a href="numeric__cast_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:numeric__cast_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1numeric__cast.html">tml::numeric_cast</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:numeric__cast__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="numeric__cast__fwd_8hpp.html">numeric_cast_fwd.hpp</a> <a href="numeric__cast__fwd_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:numeric__cast__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="numeric__cast_8hpp.html">tml/numeric_cast.hpp</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:numeric__tag_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="numeric__tag_8hpp.html">numeric_tag.hpp</a> <a href="numeric__tag_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:numeric__tag_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1numeric__tag.html">tml::numeric_tag</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:numeric__tag__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="numeric__tag__fwd_8hpp.html">numeric_tag_fwd.hpp</a> <a href="numeric__tag__fwd_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:numeric__tag__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for tml/numeric_tag.hpp. <br /></td></tr>
+<tr class="memdesc:numeric__tag__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="numeric__tag_8hpp.html">tml/numeric_tag.hpp</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:or_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="or_8hpp.html">or.hpp</a> <a href="or_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:or_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1or__.html">tml::or_</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:or__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="or__fwd_8hpp.html">or_fwd.hpp</a> <a href="or__fwd_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:or__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for tml/or.hpp. <br /></td></tr>
+<tr class="memdesc:or__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="or_8hpp.html">tml/or.hpp</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:placeholders_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="placeholders_8hpp.html">placeholders.hpp</a> <a href="placeholders_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:placeholders_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides argument placeholders. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:plus_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plus_8hpp.html">plus.hpp</a> <a href="plus_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:plus_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1plus.html">tml::plus</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:plus__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plus__fwd_8hpp.html">plus_fwd.hpp</a> <a href="plus__fwd_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:plus__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for tml/plus.hpp. <br /></td></tr>
+<tr class="memdesc:plus__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="plus_8hpp.html">tml/plus.hpp</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:pop__back_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pop__back_8hpp.html">pop_back.hpp</a> <a href="pop__back_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:pop__back_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1pop__back.html">tml::pop_back</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:pop__back__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pop__back__fwd_8hpp.html">pop_back_fwd.hpp</a> <a href="pop__back__fwd_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:pop__back__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for tml/pop_back.hpp. <br /></td></tr>
+<tr class="memdesc:pop__back__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="pop__back_8hpp.html">tml/pop_back.hpp</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:pop__front_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pop__front_8hpp.html">pop_front.hpp</a> <a href="pop__front_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:pop__front_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1pop__front.html">tml::pop_front</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:pop__front__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pop__front__fwd_8hpp.html">pop_front_fwd.hpp</a> <a href="pop__front__fwd_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:pop__front__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for tml/pop_front.hpp. <br /></td></tr>
+<tr class="memdesc:pop__front__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="pop__front_8hpp.html">tml/pop_front.hpp</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:prior_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="prior_8hpp.html">prior.hpp</a> <a href="prior_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:prior_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1prior.html">tml::prior</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:prior__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="prior__fwd_8hpp.html">prior_fwd.hpp</a> <a href="prior__fwd_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:prior__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for tml/prior.hpp. <br /></td></tr>
+<tr class="memdesc:prior__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="prior_8hpp.html">tml/prior.hpp</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:protect_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="protect_8hpp.html">protect.hpp</a> <a href="protect_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:protect_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1protect.html">tml::protect</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:protect__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="protect__fwd_8hpp.html">protect_fwd.hpp</a> <a href="protect__fwd_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:protect__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for tml/protect.hpp. <br /></td></tr>
+<tr class="memdesc:protect__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="protect_8hpp.html">tml/protect.hpp</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:push__back_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="push__back_8hpp.html">push_back.hpp</a> <a href="push__back_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:push__back_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1push__back.html">tml::push_back</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:push__back__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="push__back__fwd_8hpp.html">push_back_fwd.hpp</a> <a href="push__back__fwd_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:push__back__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for tml/push_back.hpp. <br /></td></tr>
+<tr class="memdesc:push__back__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="push__back_8hpp.html">tml/push_back.hpp</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:push__front_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="push__front_8hpp.html">push_front.hpp</a> <a href="push__front_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:push__front_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1push__front.html">tml::push_front</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:push__front__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="push__front__fwd_8hpp.html">push_front_fwd.hpp</a> <a href="push__front__fwd_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:push__front__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for tml/push_front.hpp. <br /></td></tr>
+<tr class="memdesc:push__front__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="push__front_8hpp.html">tml/push_front.hpp</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:quote_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quote_8hpp.html">quote.hpp</a> <a href="quote_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:quote_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1quote.html">tml::quote</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:quote__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quote__fwd_8hpp.html">quote_fwd.hpp</a> <a href="quote__fwd_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:quote__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for tml/quote.hpp. <br /></td></tr>
+<tr class="memdesc:quote__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="quote_8hpp.html">tml/quote.hpp</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ref_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ref_8hpp.html">ref.hpp</a> <a href="ref_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:ref_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1ref.html">tml::ref</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ref__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ref__fwd_8hpp.html">ref_fwd.hpp</a> <a href="ref__fwd_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:ref__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for tml/ref.hpp. <br /></td></tr>
+<tr class="memdesc:ref__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="ref_8hpp.html">tml/ref.hpp</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:sequence_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sequence_8hpp.html">sequence.hpp</a> <a href="sequence_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:sequence_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1sequence.html">tml::sequence</a> and <a class="el" href="structtml_1_1sequence__c.html">tml::sequence_c</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:sequence__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sequence__fwd_8hpp.html">sequence_fwd.hpp</a> <a href="sequence__fwd_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:sequence__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for tml/sequence.hpp. <br /></td></tr>
+<tr class="memdesc:sequence__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="sequence_8hpp.html">tml/sequence.hpp</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:sequence__generator_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sequence__generator_8hpp.html">sequence_generator.hpp</a> <a href="sequence__generator_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:sequence__generator_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1sequence__generator.html">tml::sequence_generator</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:sequence__generator__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sequence__generator__fwd_8hpp.html">sequence_generator_fwd.hpp</a> <a href="sequence__generator__fwd_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:sequence__generator__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for tml/sequence_generator.hpp. <br /></td></tr>
+<tr class="memdesc:sequence__generator__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="sequence__generator_8hpp.html">tml/sequence_generator.hpp</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:sequence__tag_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sequence__tag_8hpp.html">sequence_tag.hpp</a> <a href="sequence__tag_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:sequence__tag_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1sequence__tag.html">tml::sequence_tag</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:sequence__tag__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sequence__tag__fwd_8hpp.html">sequence_tag_fwd.hpp</a> <a href="sequence__tag__fwd_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:sequence__tag__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for tml/sequence_tag.hpp. <br /></td></tr>
+<tr class="memdesc:sequence__tag__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="sequence__tag_8hpp.html">tml/sequence_tag.hpp</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:shift__left_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shift__left_8hpp.html">shift_left.hpp</a> <a href="shift__left_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:shift__left_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1shift__left.html">tml::shift_left</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:shift__left__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shift__left__fwd_8hpp.html">shift_left_fwd.hpp</a> <a href="shift__left__fwd_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:shift__left__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="shift__left_8hpp.html">tml/shift_left.hpp</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:shift__right_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shift__right_8hpp.html">shift_right.hpp</a> <a href="shift__right_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:shift__right_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1shift__right.html">tml::shift_right</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:shift__right__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shift__right__fwd_8hpp.html">shift_right_fwd.hpp</a> <a href="shift__right__fwd_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:shift__right__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="shift__right_8hpp.html">tml/shift_right.hpp</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:size_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="size_8hpp.html">size.hpp</a> <a href="size_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:size_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1size.html">tml::size</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:size__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="size__fwd_8hpp.html">size_fwd.hpp</a> <a href="size__fwd_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:size__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for tml/size.hpp. <br /></td></tr>
+<tr class="memdesc:size__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="size_8hpp.html">tml/size.hpp</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:size__t_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="size__t_8hpp.html">size_t.hpp</a> <a href="size__t_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:size__t_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="group__TypesNumericGroup.html#gaceea694f33c0211e1d496affdef53ad5">tml::size_t_</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:size__t__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="size__t__fwd_8hpp.html">size_t_fwd.hpp</a> <a href="size__t__fwd_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:size__t__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for tml/size_t.hpp. <br /></td></tr>
+<tr class="memdesc:size__t__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="size__t_8hpp.html">tml/size_t.hpp</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:terminal__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="terminal__fwd_8hpp.html">terminal_fwd.hpp</a> <a href="terminal__fwd_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:terminal__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for tml/terminal.hpp. <br /></td></tr>
+<tr class="memitem:sizeof_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sizeof_8hpp.html">sizeof.hpp</a> <a href="sizeof_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:sizeof_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1sizeof__.html">tml::sizeof_</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:sizeof__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sizeof__fwd_8hpp.html">sizeof_fwd.hpp</a> <a href="sizeof__fwd_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:sizeof__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="sizeof_8hpp.html">tml/sizeof.hpp</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:times_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="times_8hpp.html">times.hpp</a> <a href="times_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:times_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1times.html">tml::times</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:times__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="times__fwd_8hpp.html">times_fwd.hpp</a> <a href="times__fwd_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:times__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for tml/times.hpp. <br /></td></tr>
+<tr class="memdesc:times__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="times_8hpp.html">tml/times.hpp</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:unpack__args_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unpack__args_8hpp.html">unpack_args.hpp</a> <a href="unpack__args_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:unpack__args_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="structtml_1_1unpack__args.html">tml::unpack_args</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:unpack__args__fwd_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unpack__args__fwd_8hpp.html">unpack_args_fwd.hpp</a> <a href="unpack__args__fwd_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:unpack__args__fwd_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declarations for <a class="el" href="unpack__args_8hpp.html">tml/unpack_args.hpp</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:void_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="void_8hpp.html">void.hpp</a> <a href="void_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:void_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides tml::void_. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.7-->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 2 2014 14:08:29 for TML by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.7
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_705f6b619ad903a3abb125f10ebcf64e.html">tml</a></li>
+    <li class="footer">Generated on Tue Jul 8 2014 21:50:34 for TML by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
 </body>
 </html>

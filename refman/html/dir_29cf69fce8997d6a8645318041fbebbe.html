@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -65,6 +72,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       </li>
     </ul>
   </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('dir_29cf69fce8997d6a8645318041fbebbe.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -79,11 +101,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_705f6b619ad903a3abb125f10ebcf64e.html">tml</a></li><li class="navelem"><a class="el" href="dir_29cf69fce8997d6a8645318041fbebbe.html">aux_</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">aux_ Directory Reference</div>  </div>
@@ -92,16 +109,92 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="files"></a>
 Files</h2></td></tr>
+<tr class="memitem:aux___2and_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aux___2and_8hpp.html">and.hpp</a> <a href="aux___2and_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:aux___2and_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements <a class="el" href="structtml_1_1and__.html">tml::and_</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aux___2bitand_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aux___2bitand_8hpp.html">bitand.hpp</a> <a href="aux___2bitand_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:aux___2bitand_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements <a class="el" href="structtml_1_1bitand__.html">tml::bitand_</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aux___2bitor_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aux___2bitor_8hpp.html">bitor.hpp</a> <a href="aux___2bitor_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:aux___2bitor_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements <a class="el" href="structtml_1_1bitor__.html">tml::bitor_</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aux___2bitxor_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aux___2bitxor_8hpp.html">bitxor.hpp</a> <a href="aux___2bitxor_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:aux___2bitxor_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements <a class="el" href="structtml_1_1bitxor__.html">tml::bitxor_</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aux___2divides_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aux___2divides_8hpp.html">divides.hpp</a> <a href="aux___2divides_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:aux___2divides_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements <a class="el" href="structtml_1_1divides.html">tml::divides</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aux___2equal__to_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aux___2equal__to_8hpp.html">equal_to.hpp</a> <a href="aux___2equal__to_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:aux___2equal__to_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements <a class="el" href="structtml_1_1equal__to.html">tml::equal_to</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aux___2greater_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aux___2greater_8hpp.html">greater.hpp</a> <a href="aux___2greater_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:aux___2greater_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements <a class="el" href="structtml_1_1greater.html">tml::greater</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aux___2greater__equal_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aux___2greater__equal_8hpp.html">greater_equal.hpp</a> <a href="aux___2greater__equal_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:aux___2greater__equal_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements <a class="el" href="structtml_1_1greater__equal.html">tml::greater_equal</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aux___2less_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aux___2less_8hpp.html">less.hpp</a> <a href="aux___2less_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:aux___2less_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements <a class="el" href="structtml_1_1less.html">tml::less</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aux___2less__equal_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aux___2less__equal_8hpp.html">less_equal.hpp</a> <a href="aux___2less__equal_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:aux___2less__equal_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements <a class="el" href="structtml_1_1less__equal.html">tml::less_equal</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aux___2minus_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aux___2minus_8hpp.html">minus.hpp</a> <a href="aux___2minus_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:aux___2minus_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements <a class="el" href="structtml_1_1minus.html">tml::minus</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aux___2modulus_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aux___2modulus_8hpp.html">modulus.hpp</a> <a href="aux___2modulus_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:aux___2modulus_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements <a class="el" href="structtml_1_1modulus.html">tml::modulus</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aux___2negate_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aux___2negate_8hpp.html">negate.hpp</a> <a href="aux___2negate_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:aux___2negate_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements <a class="el" href="structtml_1_1negate.html">tml::negate</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aux___2not_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aux___2not_8hpp.html">not.hpp</a> <a href="aux___2not_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:aux___2not_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements <a class="el" href="structtml_1_1not__.html">tml::not_</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aux___2not__equal__to_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aux___2not__equal__to_8hpp.html">not_equal_to.hpp</a> <a href="aux___2not__equal__to_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:aux___2not__equal__to_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements <a class="el" href="structtml_1_1not__equal__to.html">tml::not_equal_to</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aux___2num__op_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aux___2num__op_8hpp.html">num_op.hpp</a> <a href="aux___2num__op_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:aux___2num__op_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Preprocessor iteration used to implement several numerical operations. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aux___2num__op__cleanup_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aux___2num__op__cleanup_8hpp.html">num_op_cleanup.hpp</a> <a href="aux___2num__op__cleanup_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:aux___2num__op__cleanup_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Undefine temporary macros used by <a class="el" href="aux___2num__op_8hpp.html">tml/aux_/num_op.hpp</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aux___2num__op__includes_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aux___2num__op__includes_8hpp.html">num_op_includes.hpp</a> <a href="aux___2num__op__includes_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:aux___2num__op__includes_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Includes used by <a class="el" href="aux___2num__op_8hpp.html">tml/aux_/num_op.hpp</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:numeric__cast__utils_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="numeric__cast__utils_8hpp.html">numeric_cast_utils.hpp</a> <a href="numeric__cast__utils_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:numeric__cast__utils_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utilities used by <a class="el" href="numeric__cast_8hpp.html">tml/numeric_cast.hpp</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aux___2or_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aux___2or_8hpp.html">or.hpp</a> <a href="aux___2or_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:aux___2or_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements <a class="el" href="structtml_1_1or__.html">tml::or_</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aux___2placeholders_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><b>placeholders.hpp</b> <a href="aux___2placeholders_8hpp_source.html">[code]</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aux___2plus_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aux___2plus_8hpp.html">plus.hpp</a> <a href="aux___2plus_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:aux___2plus_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements <a class="el" href="structtml_1_1plus.html">tml::plus</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aux___2shift__left_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aux___2shift__left_8hpp.html">shift_left.hpp</a> <a href="aux___2shift__left_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:aux___2shift__left_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements <a class="el" href="structtml_1_1shift__left.html">tml::shift_left</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aux___2shift__right_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aux___2shift__right_8hpp.html">shift_right.hpp</a> <a href="aux___2shift__right_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:aux___2shift__right_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements <a class="el" href="structtml_1_1shift__right.html">tml::shift_right</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aux___2times_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aux___2times_8hpp.html">times.hpp</a> <a href="aux___2times_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:aux___2times_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements <a class="el" href="structtml_1_1times.html">tml::times</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.7-->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 2 2014 14:08:29 for TML by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.7
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_705f6b619ad903a3abb125f10ebcf64e.html">tml</a></li><li class="navelem"><a class="el" href="dir_29cf69fce8997d6a8645318041fbebbe.html">aux_</a></li>
+    <li class="footer">Generated on Tue Jul 8 2014 21:50:34 for TML by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
 </body>
 </html>

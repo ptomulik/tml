@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -72,6 +79,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
     </ul>
   </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('structtml_1_1apply__sequence.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -86,11 +108,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacetml.html">tml</a></li><li class="navelem"><a class="el" href="structtml_1_1apply__sequence.html">apply_sequence</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">tml::apply_sequence&lt; F, Sequence &gt; Struct Template Reference<div class="ingroups"><a class="el" href="group__MetafunInvocationGroup.html">Invocation</a></div></div>  </div>
@@ -130,7 +147,7 @@ struct tml::apply_sequence&lt; F, Sequence &gt;</h3>
 <p>For any <a class="el" href="LambdaExprConcept.html">Lambda Expression</a> <code>f</code>, and a sequence <code>s</code> of size <code>n</code>: </p><div class="fragment"><div class="line"><span class="keyword">typedef</span> apply_sequence&lt;f,s&gt;::type t;</div>
 </div><!-- fragment --><ul>
 <li><b>Return type</b>: Unspecified</li>
-<li><b>Semantics</b>: Equivalent to <div class="fragment"><div class="line"><span class="keyword">typedef</span> apply&lt;f,at&lt;s,0&gt;::type,...at&lt;s,n-1&gt;::type&gt;::type t;</div>
+<li><b>Semantics</b>: Equivalent to <div class="fragment"><div class="line"><span class="keyword">typedef</span> apply&lt;f,at&lt;s,0&gt;::type,...at&lt;<a class="code" href="structtml_1_1c__str.html">s</a>,n-1&gt;::type&gt;::type t;</div>
 </div><!-- fragment --></li>
 </ul>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="sequence_8hpp.html">tml/sequence.hpp</a>&gt;</span></div>
@@ -147,26 +164,30 @@ struct tml::apply_sequence&lt; F, Sequence &gt;</h3>
 <div class="line">static_assert(<a class="code" href="structtml_1_1is__same.html">is_same</a>&lt;r1, seq2&lt;char,short,int,float&gt; &gt;::value, <span class="stringliteral">&quot;&quot;</span>);</div>
 </div><!-- fragment --> </dd></dl>
 <dl class="section user"><dt>Specialization for Template Sequences</dt><dd></dd></dl>
-<p>For any <a class="el" href="LambdaExprConcept.html">Lambda Expression</a> <code>f</code> and <a class="el" href="TemplateSeqConcept.html">Template Sequence</a> <code>s&lt;a1,...an&gt;</code> of arbitrary types <code>a1,...an</code>: </p><div class="fragment"><div class="line"><span class="keyword">typedef</span> apply_sequence&lt;f,s&lt;a1,...an&gt; &gt;::type t;</div>
+<p>For any <a class="el" href="LambdaExprConcept.html">Lambda Expression</a> <code>f</code> and <a class="el" href="TemplateSeqConcept.html">Template Sequence</a> <code>s&lt;a1,...an&gt;</code> of arbitrary types <code>a1,...an</code>: </p><div class="fragment"><div class="line"><span class="keyword">typedef</span> apply_sequence&lt;f,<a class="code" href="structtml_1_1c__str.html">s</a>&lt;a1,...an&gt; &gt;::type t;</div>
 </div><!-- fragment --><ul>
 <li><b>Return type</b>: Unspecified</li>
 <li><b>Semantics</b>: Equivalent to <div class="fragment"><div class="line"><span class="keyword">typedef</span> apply&lt;f,a1,...an&gt;::type t;</div>
 </div><!-- fragment --></li>
 </ul>
-<p>For any <a class="el" href="LambdaExprConcept.html">Lambda Expression</a> <code>f</code>, integral type <code>t</code>, values <code>a1,...an</code> of type <code>t</code> and a template <code>s</code> </p><div class="fragment"><div class="line"><span class="keyword">typedef</span> apply_sequence&lt;f,s&lt;t,a1,...an&gt; &gt;::type t;</div>
+<p>For any <a class="el" href="LambdaExprConcept.html">Lambda Expression</a> <code>f</code>, integral type <code>t</code>, values <code>a1,...an</code> of type <code>t</code> and a template <code>s</code> </p><div class="fragment"><div class="line"><span class="keyword">typedef</span> apply_sequence&lt;f,<a class="code" href="structtml_1_1c__str.html">s</a>&lt;t,a1,...an&gt; &gt;::type t;</div>
 </div><!-- fragment --><ul>
 <li><b>Return type</b>: Unspecified</li>
 <li><b>Semantics</b>: Equivalent to <div class="fragment"><div class="line"><span class="keyword">typedef</span> apply&lt;f,integral_c&lt;t,a1&gt;,...integral_c&lt;t,an&gt; &gt;::type t;</div>
 </div><!-- fragment --> </li>
 </ul>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="tml_2apply_sequence_8cpp-example.html#_a1">tml/apply_sequence.cpp</a>, and <a class="el" href="tml_2template_sequence_2aux__2apply_sequence_8cpp-example.html#_a1">tml/template_sequence/aux_/apply_sequence.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="tml_2apply_sequence_8cpp-example.html#_a1">tml/apply_sequence.cpp</a>, and <a class="el" href="tml_2template_sequence_2aux__2apply_sequence_8cpp-example.html#_a2">tml/template_sequence/aux_/apply_sequence.cpp</a>.</dd>
 </dl></div></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.7-->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 2 2014 14:08:27 for TML by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.7
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacetml.html">tml</a></li><li class="navelem"><a class="el" href="structtml_1_1apply__sequence.html">apply_sequence</a></li>
+    <li class="footer">Generated on Tue Jul 8 2014 21:50:30 for TML by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
 </body>
 </html>

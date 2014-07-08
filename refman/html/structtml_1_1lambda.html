@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -72,6 +79,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
     </ul>
   </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('structtml_1_1lambda.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -86,16 +108,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacetml.html">tml</a></li><li class="navelem"><a class="el" href="structtml_1_1lambda.html">lambda</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="structtml_1_1lambda-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">tml::lambda&lt; X, Tag &gt; Struct Template Reference</div>  </div>
+<div class="title">tml::lambda&lt; X, Tag &gt; Struct Template Reference<div class="ingroups"><a class="el" href="group__MetafunComposeBindGroup.html">Composition and Argument Binding</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -127,31 +144,38 @@ struct tml::lambda&lt; X, Tag &gt;</h3>
 </div><!-- fragment --><dl class="section user"><dt>Description</dt><dd></dd></dl>
 <p>If <code>X</code> is a <a class="el" href="PlaceholderExprConcept.html">Placeholder Expression</a>, transforms <code>X</code> into a corresponding <a class="el" href="MetafunClassConcept.html">Metafunction Class</a>, otherwise <code>X</code> is returned unchanged.</p>
 <dl class="section user"><dt>Expression semantics</dt><dd></dd></dl>
-<p>For arbitrary types <code>x</code> and <code>tag</code> </p><div class="fragment"><div class="line"><span class="keyword">typedef</span> lambda&lt;x&gt;::type f;</div>
+<p>For arbitrary types <code>x</code> and <code>tag</code> </p><div class="fragment"><div class="line"><span class="keyword">typedef</span> lambda&lt;protect&lt;x&gt; &gt;::type f;</div>
+<div class="line"><span class="keyword">typedef</span> lambda&lt;protect&lt;x&gt;, tag &gt;::type f;</div>
 </div><!-- fragment --><ul>
 <li><b>Return type</b>: <a class="el" href="MetafunClassConcept.html">Metafunction Class</a>.</li>
-<li><p class="startli"><b>Semantics</b>: If <code>x</code> is a <a class="el" href="PlaceholderExprConcept.html">Placeholder Expression</a> in a general form <code>X&lt;args...&gt;</code>, where <code>X</code> si a class template and <code>args...</code> are arbitrary types, equivalent to </p><div class="fragment"><div class="line"><span class="keyword">typedef</span> protect&lt; bind&lt;</div>
+<li><b>Semantics</b>: equivalent to <div class="fragment"><div class="line"><span class="keyword">typedef</span> protect&lt;x&gt; f;</div>
+</div><!-- fragment --></li>
+</ul>
+<div class="fragment"><div class="line"><span class="keyword">typedef</span> lambda&lt;x&gt;::type f;</div>
+</div><!-- fragment --><ul>
+<li><b>Return type</b>: <a class="el" href="MetafunClassConcept.html">Metafunction Class</a>.</li>
+<li><p class="startli"><b>Semantics</b>: If <code>x</code> is a template class specialization in a general form <code>X&lt;args...&gt;</code>, where <code>args...</code> are arbitrary types </p><div class="fragment"><div class="line"><span class="keyword">typedef</span> protect&lt; bind&lt;</div>
 <div class="line">      quote&lt;X&gt;</div>
 <div class="line">    , lambda&lt;args&gt;::type...</div>
 <div class="line">    &gt; &gt; f;</div>
-</div><!-- fragment --><p class="startli">otherwise, <code>f</code> is identical to <code>x</code>.</p>
-</li>
+</div><!-- fragment --><p class="startli">if one or more <code>args...</code> are placeholders, or </p><div class="fragment"><div class="line"><span class="keyword">typedef</span> X&lt;lambda&lt;args&gt;::type...&gt; f;</div>
+</div><!-- fragment --><p class="startli">if none of the <code>args...</code> are placeholders. If <code>x</code> is not a template specialization, euqivalent to </p><div class="fragment"><div class="line"><span class="keyword">typedef</span> x r;</div>
+</div><!-- fragment --></li>
 </ul>
 <div class="fragment"><div class="line"><span class="keyword">typedef</span> lambda&lt;x,tag&gt;::type f;</div>
 </div><!-- fragment --><ul>
 <li><b>Return type</b>: <a class="el" href="MetafunClassConcept.html">Metafunction Class</a>.</li>
-<li><p class="startli"><b>Semantics</b>: If <code>x</code> is a <a class="el" href="PlaceholderExprConcept.html">Placeholder Expression</a> in a general form <code>X&lt;args...&gt;</code>, where <code>X</code> si a class template and <code>args...</code> are arbitrary types, equivalent to </p><div class="fragment"><div class="line"><span class="keyword">typedef</span> protect&lt; bind&lt;</div>
+<li><p class="startli"><b>Semantics</b>: If <code>x</code> is a template class specialization in a general form <code>X&lt;args...&gt;</code>, where <code>args...</code> are arbitrary types </p><div class="fragment"><div class="line"><span class="keyword">typedef</span> protect&lt; bind&lt;</div>
 <div class="line">      quote&lt;X,tag&gt;</div>
 <div class="line">    , lambda&lt;args,tag&gt;::type...</div>
 <div class="line">    &gt; &gt; f;</div>
-</div><!-- fragment --><p class="startli">otherwise, <code>f</code> is identical to <code>x</code>.</p>
-</li>
+</div><!-- fragment --><p class="startli">if one or more <code>args...</code> are placeholders, or </p><div class="fragment"><div class="line"><span class="keyword">typedef</span> X&lt;lambda&lt;args,tag&gt;::type...&gt; f;</div>
+</div><!-- fragment --><p class="startli">if none of the <code>args...</code> are placeholders. If <code>x</code> is not a template instantiation, euqivalent to </p><div class="fragment"><div class="line"><span class="keyword">typedef</span> x r;</div>
+</div><!-- fragment --></li>
 </ul>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="int_8hpp.html">tml/int.hpp</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="placeholders_8hpp.html">tml/placeholders.hpp</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="lambda_8hpp.html">tml/lambda.hpp</a>&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="bind_8hpp.html">tml/bind.hpp</a>&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="quote_8hpp.html">tml/quote.hpp</a>&gt;</span></div>
 <div class="line"></div>
 <div class="line"><span class="keyword">using namespace </span>tml;</div>
 <div class="line"></div>
@@ -160,17 +184,28 @@ struct tml::lambda&lt; X, Tag &gt;</h3>
 <div class="line">    : <a class="code" href="structtml_1_1integral__c.html">int_</a>&lt;( N1::value + N2::value )&gt;</div>
 <div class="line">  { };</div>
 <div class="line"></div>
+<div class="line"><span class="keyword">template</span> &lt;<span class="keyword">class</span> F&gt;</div>
+<div class="line">  <span class="keyword">struct </span>wrap</div>
+<div class="line">    : F</div>
+<div class="line">  { };</div>
 <div class="line"><span class="keyword">typedef</span> <a class="code" href="structtml_1_1lambda.html">lambda&lt; int_plus&lt;_1, int_&lt;42&gt;</a> &gt; &gt;::type f1;</div>
+<div class="line"><span class="keyword">typedef</span> <a class="code" href="structtml_1_1lambda.html">lambda&lt; wrap&lt; int_plus&lt; _1, int_&lt;42&gt;</a> &gt; &gt; &gt;::type f2;</div>
+<div class="line"></div>
 <div class="line">static_assert(f1::apply&lt;<a class="code" href="structtml_1_1integral__c.html">int_&lt;42&gt;</a> &gt;::type::value == 84, <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line">static_assert(f2::apply&lt;<a class="code" href="structtml_1_1integral__c.html">int_&lt;42&gt;</a> &gt;::type::value == 84, <span class="stringliteral">&quot;&quot;</span>);</div>
 </div><!-- fragment --></dd></dl>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="tml_2lambda_8cpp-example.html#_a1">tml/lambda.cpp</a>.</dd>
 </dl></div></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.7-->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 2 2014 14:08:28 for TML by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.7
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacetml.html">tml</a></li><li class="navelem"><a class="el" href="structtml_1_1lambda.html">lambda</a></li>
+    <li class="footer">Generated on Tue Jul 8 2014 21:50:32 for TML by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
 </body>
 </html>

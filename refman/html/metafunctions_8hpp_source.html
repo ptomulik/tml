@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -71,6 +78,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('metafunctions_8hpp_source.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,11 +107,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_705f6b619ad903a3abb125f10ebcf64e.html">tml</a></li><li class="navelem"><a class="el" href="dir_e4ee4d7a0bbf8b57e4006b7a83cd438f.html">template_sequence</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">metafunctions.hpp</div>  </div>
@@ -103,54 +120,60 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// tml/template_sequence/metafunctions.hpp</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#ifndef TML_TEMPLATE_SEQUENCE_METAFUNCTIONS_HPP</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#define TML_TEMPLATE_SEQUENCE_METAFUNCTIONS_HPP</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="template__sequence_2aux___2apply__sequence_8hpp.html">tml/template_sequence/aux_/apply_sequence.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="template__sequence_2aux___2at_8hpp.html">tml/template_sequence/aux_/at.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="template__sequence_2aux___2back_8hpp.html">tml/template_sequence/aux_/back.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="template__sequence_2aux___2begin_8hpp.html">tml/template_sequence/aux_/begin.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="template__sequence_2aux___2clear_8hpp.html">tml/template_sequence/aux_/clear.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="template__sequence_2aux___2empty_8hpp.html">tml/template_sequence/aux_/empty.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="template__sequence_2aux___2end_8hpp.html">tml/template_sequence/aux_/end.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="template__sequence_2aux___2erase_8hpp.html">tml/template_sequence/aux_/erase.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="template__sequence_2aux___2front_8hpp.html">tml/template_sequence/aux_/front.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="template__sequence_2aux___2insert_8hpp.html">tml/template_sequence/aux_/insert.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="template__sequence_2aux___2join_8hpp.html">tml/template_sequence/aux_/join.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="template__sequence_2aux___2pop__back_8hpp.html">tml/template_sequence/aux_/pop_back.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="template__sequence_2aux___2pop__front_8hpp.html">tml/template_sequence/aux_/pop_front.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="template__sequence_2aux___2push__back_8hpp.html">tml/template_sequence/aux_/push_back.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="template__sequence_2aux___2push__front_8hpp.html">tml/template_sequence/aux_/push_front.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="template__sequence_2aux___2sequence__generator_8hpp.html">tml/template_sequence/aux_/sequence_generator.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="template__sequence_2aux___2size_8hpp.html">tml/template_sequence/aux_/size.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* TML_TEMPLATE_SEQUENCE_METAFUNCTIONS_HPP */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">// vim: set expandtab tabstop=2 shiftwidth=2:</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">// vim: set foldmethod=marker foldcolumn=4:</span></div>
-<div class="ttc" id="template__sequence_2aux___2empty_8hpp_html"><div class="ttname"><a href="template__sequence_2aux___2empty_8hpp.html">empty.hpp</a></div></div>
-<div class="ttc" id="template__sequence_2aux___2erase_8hpp_html"><div class="ttname"><a href="template__sequence_2aux___2erase_8hpp.html">erase.hpp</a></div></div>
-<div class="ttc" id="template__sequence_2aux___2join_8hpp_html"><div class="ttname"><a href="template__sequence_2aux___2join_8hpp.html">join.hpp</a></div></div>
-<div class="ttc" id="template__sequence_2aux___2at_8hpp_html"><div class="ttname"><a href="template__sequence_2aux___2at_8hpp.html">at.hpp</a></div></div>
-<div class="ttc" id="template__sequence_2aux___2end_8hpp_html"><div class="ttname"><a href="template__sequence_2aux___2end_8hpp.html">end.hpp</a></div></div>
-<div class="ttc" id="template__sequence_2aux___2push__back_8hpp_html"><div class="ttname"><a href="template__sequence_2aux___2push__back_8hpp.html">push_back.hpp</a></div></div>
-<div class="ttc" id="template__sequence_2aux___2clear_8hpp_html"><div class="ttname"><a href="template__sequence_2aux___2clear_8hpp.html">clear.hpp</a></div></div>
-<div class="ttc" id="template__sequence_2aux___2apply__sequence_8hpp_html"><div class="ttname"><a href="template__sequence_2aux___2apply__sequence_8hpp.html">apply_sequence.hpp</a></div></div>
-<div class="ttc" id="template__sequence_2aux___2push__front_8hpp_html"><div class="ttname"><a href="template__sequence_2aux___2push__front_8hpp.html">push_front.hpp</a></div></div>
-<div class="ttc" id="template__sequence_2aux___2size_8hpp_html"><div class="ttname"><a href="template__sequence_2aux___2size_8hpp.html">size.hpp</a></div></div>
-<div class="ttc" id="template__sequence_2aux___2pop__front_8hpp_html"><div class="ttname"><a href="template__sequence_2aux___2pop__front_8hpp.html">pop_front.hpp</a></div></div>
-<div class="ttc" id="template__sequence_2aux___2front_8hpp_html"><div class="ttname"><a href="template__sequence_2aux___2front_8hpp.html">front.hpp</a></div></div>
-<div class="ttc" id="template__sequence_2aux___2back_8hpp_html"><div class="ttname"><a href="template__sequence_2aux___2back_8hpp.html">back.hpp</a></div></div>
-<div class="ttc" id="template__sequence_2aux___2insert_8hpp_html"><div class="ttname"><a href="template__sequence_2aux___2insert_8hpp.html">insert.hpp</a></div></div>
-<div class="ttc" id="template__sequence_2aux___2sequence__generator_8hpp_html"><div class="ttname"><a href="template__sequence_2aux___2sequence__generator_8hpp.html">sequence_generator.hpp</a></div></div>
-<div class="ttc" id="template__sequence_2aux___2pop__back_8hpp_html"><div class="ttname"><a href="template__sequence_2aux___2pop__back_8hpp.html">pop_back.hpp</a></div></div>
-<div class="ttc" id="template__sequence_2aux___2begin_8hpp_html"><div class="ttname"><a href="template__sequence_2aux___2begin_8hpp.html">begin.hpp</a></div></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#ifndef TML_TEMPLATE_SEQUENCE_METAFUNCTIONS_HPP</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#define TML_TEMPLATE_SEQUENCE_METAFUNCTIONS_HPP</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="template__sequence_2aux___2apply__sequence_8hpp.html">tml/template_sequence/aux_/apply_sequence.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="template__sequence_2aux___2at_8hpp.html">tml/template_sequence/aux_/at.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="template__sequence_2aux___2back_8hpp.html">tml/template_sequence/aux_/back.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="template__sequence_2aux___2begin_8hpp.html">tml/template_sequence/aux_/begin.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="template__sequence_2aux___2clear_8hpp.html">tml/template_sequence/aux_/clear.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="template__sequence_2aux___2empty_8hpp.html">tml/template_sequence/aux_/empty.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="template__sequence_2aux___2end_8hpp.html">tml/template_sequence/aux_/end.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="template__sequence_2aux___2erase_8hpp.html">tml/template_sequence/aux_/erase.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="template__sequence_2aux___2front_8hpp.html">tml/template_sequence/aux_/front.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="template__sequence_2aux___2insert_8hpp.html">tml/template_sequence/aux_/insert.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="template__sequence_2aux___2join_8hpp.html">tml/template_sequence/aux_/join.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="template__sequence_2aux___2pop__back_8hpp.html">tml/template_sequence/aux_/pop_back.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="template__sequence_2aux___2pop__front_8hpp.html">tml/template_sequence/aux_/pop_front.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="template__sequence_2aux___2push__back_8hpp.html">tml/template_sequence/aux_/push_back.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="template__sequence_2aux___2push__front_8hpp.html">tml/template_sequence/aux_/push_front.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="template__sequence_2aux___2sequence__generator_8hpp.html">tml/template_sequence/aux_/sequence_generator.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="template__sequence_2aux___2size_8hpp.html">tml/template_sequence/aux_/size.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="template__sequence_2aux___2c__str_8hpp.html">tml/template_sequence/aux_/c_str.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* TML_TEMPLATE_SEQUENCE_METAFUNCTIONS_HPP */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">// vim: set expandtab tabstop=2 shiftwidth=2:</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">// vim: set foldmethod=marker foldcolumn=4:</span></div>
+<div class="ttc" id="template__sequence_2aux___2empty_8hpp_html"><div class="ttname"><a href="template__sequence_2aux___2empty_8hpp.html">empty.hpp</a></div><div class="ttdoc">Implements tml::empty for Template Sequence. </div></div>
+<div class="ttc" id="template__sequence_2aux___2erase_8hpp_html"><div class="ttname"><a href="template__sequence_2aux___2erase_8hpp.html">erase.hpp</a></div><div class="ttdoc">Implements tml::erase for Template Sequence. </div></div>
+<div class="ttc" id="template__sequence_2aux___2join_8hpp_html"><div class="ttname"><a href="template__sequence_2aux___2join_8hpp.html">join.hpp</a></div><div class="ttdoc">Implements tml::join for Template Sequence. </div></div>
+<div class="ttc" id="template__sequence_2aux___2at_8hpp_html"><div class="ttname"><a href="template__sequence_2aux___2at_8hpp.html">at.hpp</a></div><div class="ttdoc">Implements tml::at for Template Sequence. </div></div>
+<div class="ttc" id="template__sequence_2aux___2end_8hpp_html"><div class="ttname"><a href="template__sequence_2aux___2end_8hpp.html">end.hpp</a></div><div class="ttdoc">Implements tml::end for Template Sequence. </div></div>
+<div class="ttc" id="template__sequence_2aux___2push__back_8hpp_html"><div class="ttname"><a href="template__sequence_2aux___2push__back_8hpp.html">push_back.hpp</a></div><div class="ttdoc">Implements tml::push_back for Template Sequence. </div></div>
+<div class="ttc" id="template__sequence_2aux___2c__str_8hpp_html"><div class="ttname"><a href="template__sequence_2aux___2c__str_8hpp.html">c_str.hpp</a></div><div class="ttdoc">Implements tml::c_str for Template Sequence. </div></div>
+<div class="ttc" id="template__sequence_2aux___2clear_8hpp_html"><div class="ttname"><a href="template__sequence_2aux___2clear_8hpp.html">clear.hpp</a></div><div class="ttdoc">Implements tml::clear for Template Sequence. </div></div>
+<div class="ttc" id="template__sequence_2aux___2apply__sequence_8hpp_html"><div class="ttname"><a href="template__sequence_2aux___2apply__sequence_8hpp.html">apply_sequence.hpp</a></div><div class="ttdoc">Implements tml::apply_sequence for Template Sequence. </div></div>
+<div class="ttc" id="template__sequence_2aux___2push__front_8hpp_html"><div class="ttname"><a href="template__sequence_2aux___2push__front_8hpp.html">push_front.hpp</a></div><div class="ttdoc">Implements tml::push_front for Template Sequence. </div></div>
+<div class="ttc" id="template__sequence_2aux___2size_8hpp_html"><div class="ttname"><a href="template__sequence_2aux___2size_8hpp.html">size.hpp</a></div><div class="ttdoc">Implements tml::size for Template Sequence. </div></div>
+<div class="ttc" id="template__sequence_2aux___2pop__front_8hpp_html"><div class="ttname"><a href="template__sequence_2aux___2pop__front_8hpp.html">pop_front.hpp</a></div><div class="ttdoc">Implements tml::pop_front for Template Sequence. </div></div>
+<div class="ttc" id="template__sequence_2aux___2front_8hpp_html"><div class="ttname"><a href="template__sequence_2aux___2front_8hpp.html">front.hpp</a></div><div class="ttdoc">Implements tml::front for Template Sequence. </div></div>
+<div class="ttc" id="template__sequence_2aux___2back_8hpp_html"><div class="ttname"><a href="template__sequence_2aux___2back_8hpp.html">back.hpp</a></div><div class="ttdoc">Implements tml::back for Template Sequence. </div></div>
+<div class="ttc" id="template__sequence_2aux___2insert_8hpp_html"><div class="ttname"><a href="template__sequence_2aux___2insert_8hpp.html">insert.hpp</a></div><div class="ttdoc">Implements tml::insert for Template Sequence. </div></div>
+<div class="ttc" id="template__sequence_2aux___2sequence__generator_8hpp_html"><div class="ttname"><a href="template__sequence_2aux___2sequence__generator_8hpp.html">sequence_generator.hpp</a></div><div class="ttdoc">Implements tml::sequence_generator for Template Sequence. </div></div>
+<div class="ttc" id="template__sequence_2aux___2pop__back_8hpp_html"><div class="ttname"><a href="template__sequence_2aux___2pop__back_8hpp.html">pop_back.hpp</a></div><div class="ttdoc">Implements tml::pop_back for Template Sequence. </div></div>
+<div class="ttc" id="template__sequence_2aux___2begin_8hpp_html"><div class="ttname"><a href="template__sequence_2aux___2begin_8hpp.html">begin.hpp</a></div><div class="ttdoc">Implements tml::begin for Template Sequence. </div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.7-->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 2 2014 14:08:26 for TML by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.7
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_705f6b619ad903a3abb125f10ebcf64e.html">tml</a></li><li class="navelem"><a class="el" href="dir_e4ee4d7a0bbf8b57e4006b7a83cd438f.html">template_sequence</a></li><li class="navelem"><a class="el" href="metafunctions_8hpp.html">metafunctions.hpp</a></li>
+    <li class="footer">Generated on Tue Jul 8 2014 21:50:29 for TML by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
 </body>
 </html>

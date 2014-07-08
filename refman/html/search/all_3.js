@@ -15,7 +15,7 @@ var searchData=
   ['divides',['divides',['../structtml_1_1divides.html',1,'tml']]],
   ['divides_2ecpp',['divides.cpp',['../divides_8cpp.html',1,'']]],
   ['divides_2ehpp',['divides.hpp',['../divides_8hpp.html',1,'']]],
-  ['divides_2ehpp',['divides.hpp',['../integral__c_2aux___2divides_8hpp.html',1,'']]],
+  ['divides_2ehpp',['divides.hpp',['../aux___2divides_8hpp.html',1,'']]],
   ['divides_5ffwd_2ehpp',['divides_fwd.hpp',['../divides__fwd_8hpp.html',1,'']]],
   ['data_20types',['Data Types',['../group__TypesGroup.html',1,'']]]
 ];

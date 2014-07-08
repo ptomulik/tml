@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -71,6 +78,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('aux___2remove_8hpp_source.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,11 +107,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_705f6b619ad903a3abb125f10ebcf64e.html">tml</a></li><li class="navelem"><a class="el" href="dir_b05dc52c9e1170a8c9d49bc9a33381df.html">variadic</a></li><li class="navelem"><a class="el" href="dir_0918a5d0e5898f7a890b9426e91a5644.html">aux_</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">remove.hpp</div>  </div>
@@ -100,7 +117,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"># ifndef TML_VARIADIC_AUX_REMOVE_HPP</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor"># define TML_VARIADIC_AUX_REMOVE_HPP</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#   include &lt;tml/limits/variadic.hpp&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#   include &lt;<a class="code" href="variadic_8hpp.html">tml/limits/variadic.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#   include &lt;<a class="code" href="apply_8hpp.html">tml/apply.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#   include &lt;boost/preprocessor/iteration/iterate.hpp&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#   include &lt;boost/preprocessor/repetition/enum_params.hpp&gt;</span></div>
@@ -128,15 +145,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;} } } <span class="comment">// end namespace tml::variadic</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#endif // BOOST_PP_IS_ITERATING</span></div>
-<div class="ttc" id="apply_8hpp_html"><div class="ttname"><a href="apply_8hpp.html">apply.hpp</a></div></div>
+<div class="ttc" id="variadic_8hpp_html"><div class="ttname"><a href="variadic_8hpp.html">variadic.hpp</a></div><div class="ttdoc">Defines limits for variadic metafunctions and metafunction classes. </div></div>
+<div class="ttc" id="apply_8hpp_html"><div class="ttname"><a href="apply_8hpp.html">apply.hpp</a></div><div class="ttdoc">Provides tml::apply. </div></div>
 <div class="ttc" id="structtml_1_1apply_html"><div class="ttname"><a href="structtml_1_1apply.html">tml::apply</a></div><div class="ttdoc">Invokes a Metafunction Class or a Lambda Expression. </div><div class="ttdef"><b>Definition:</b> apply.hpp:60</div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.7-->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 2 2014 14:08:26 for TML by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.7
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_705f6b619ad903a3abb125f10ebcf64e.html">tml</a></li><li class="navelem"><a class="el" href="dir_b05dc52c9e1170a8c9d49bc9a33381df.html">variadic</a></li><li class="navelem"><a class="el" href="dir_0918a5d0e5898f7a890b9426e91a5644.html">aux_</a></li><li class="navelem"><b>remove.hpp</b></li>
+    <li class="footer">Generated on Tue Jul 8 2014 21:50:30 for TML by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
 </body>
 </html>

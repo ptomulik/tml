@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -72,6 +79,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
     </ul>
   </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('structtml_1_1variadic_1_1any.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -86,14 +108,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacetml.html">tml</a></li><li class="navelem"><a class="el" href="namespacetml_1_1variadic.html">variadic</a></li><li class="navelem"><a class="el" href="structtml_1_1variadic_1_1any.html">any</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">tml::variadic::any&lt; F &gt; Struct Template Reference<div class="ingroups"><a class="el" href="group__AlgoQueryGroup.html">Querying Algorithms</a></div></div>  </div>
+<div class="title">tml::variadic::any&lt; F &gt; Struct Template Reference<div class="ingroups"><a class="el" href="group__AlgoQueryVariadicGroup.html">Variadic Metafunction Classes</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -109,7 +126,7 @@ struct tml::variadic::any&lt; F &gt;</h3>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">F</td><td>Predicate. Unary <a class="el" href="LambdaExprConcept.html">Lambda Expression</a>. </td></tr>
-    <tr><td class="paramname">Args</td><td>Arguments to check. Any types. Any types.</td></tr>
+    <tr><td class="paramname">Args</td><td>Arguments to check. Any types.</td></tr>
   </table>
   </dd>
 </dl>
@@ -126,14 +143,14 @@ struct tml::variadic::any&lt; F &gt;</h3>
 <div class="line">  };</div>
 <div class="line">}</div>
 </div><!-- fragment --><dl class="section user"><dt>Description</dt><dd></dd></dl>
-<p>If the predicate <code>F</code> holds for any of the arguments from <code>Args...</code>, then <code>variadic::any&lt;F&gt;apply&lt;Args...&gt;type</code> is <code>true</code>. Otherwise it's <code>false</code>.</p>
+<p>If the predicate <code>F</code> holds for any of the arguments from <code>Args...</code>, then <code>variadic::any&lt;F&gt;apply&lt;Args...&gt;type</code> is <code>true_</code>. Otherwise it's <code>false_</code>.</p>
 <dl class="section user"><dt>Model of</dt><dd></dd></dl>
 <p><a class="el" href="MetafunClassConcept.html">Metafunction Class</a></p>
 <dl class="section user"><dt>Expression semantics</dt><dd></dd></dl>
 <p>For an unary <a class="el" href="LambdaExprConcept.html">Lambda Expression</a> <code>f</code> and any types <code>args...</code> </p><div class="fragment"><div class="line"><span class="keyword">typedef</span> variadic::any&lt;f&gt;::apply&lt;args...&gt;::type r;</div>
 </div><!-- fragment --><ul>
 <li><b>Return type</b>: Boolean <a class="el" href="IntConstConcept.html">Integral Constant</a></li>
-<li><b>Semantics</b>: <code>r</code> is a boolean <a class="el" href="IntConstConcept.html">Integral Constant</a> with <code>r::value == true</code> if and only if for any type <code>ai</code> from <code>args...</code> the expression <code>apply&lt;f,ai&gt;type</code> is true.</li>
+<li><b>Semantics</b>: <code>r</code> is a boolean <a class="el" href="IntConstConcept.html">Integral Constant</a> with <code>r::value == true</code> if and only if for any type <code>ai</code> from <code>args...</code> <code>apply&lt;f,ai&gt;type::value == true</code> holds.</li>
 </ul>
 <div class="fragment"><div class="line"><span class="keyword">typedef</span> variadic::any&lt;f&gt;::apply&lt;&gt; t;</div>
 </div><!-- fragment --><ul>
@@ -157,15 +174,20 @@ struct tml::variadic::any&lt; F &gt;</h3>
 <div class="line">static_assert(!variadic::any&lt;negative&gt;::apply&lt;&gt;::value, &quot;&quot;);</div>
 <div class="line">static_assert(!variadic::any&lt;negative&gt;::apply&lt;int_&lt;1&gt; &gt;::value, &quot;&quot;);</div>
 <div class="line">static_assert(!variadic::any&lt;negative&gt;::apply&lt;int_&lt;1&gt;, int_&lt;2&gt; &gt;::value, &quot;&quot;);</div>
+<div class="line"></div>
 <div class="line">static_assert( variadic::any&lt;negative&gt;::apply&lt;int_&lt;1&gt;, int_&lt;-1&gt;, int_&lt;2&gt; &gt;::value, &quot;&quot;);</div>
 </div><!-- fragment --></dd></dl>
 </div></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.7-->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 2 2014 14:08:28 for TML by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.7
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacetml.html">tml</a></li><li class="navelem"><a class="el" href="namespacetml_1_1variadic.html">variadic</a></li><li class="navelem"><a class="el" href="structtml_1_1variadic_1_1any.html">any</a></li>
+    <li class="footer">Generated on Tue Jul 8 2014 21:50:33 for TML by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
 </body>
 </html>

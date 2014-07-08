@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -72,6 +79,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
     </ul>
   </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('structtml_1_1advance.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -86,11 +108,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacetml.html">tml</a></li><li class="navelem"><a class="el" href="structtml_1_1advance.html">advance</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">tml::advance&lt; Iterator, N &gt; Struct Template Reference<div class="ingroups"><a class="el" href="group__IterMetafunGroup.html">Iterator Metafunctions</a></div></div>  </div>
@@ -114,7 +131,7 @@ struct tml::advance&lt; Iterator, N &gt;</h3>
   </dd>
 </dl>
 <dl class="section user"><dt>Synopsis</dt><dd></dd></dl>
-<div class="fragment"><div class="line"><span class="keyword">template</span>&lt; </div>
+<div class="fragment"><div class="line"><span class="keyword">template</span>&lt;</div>
 <div class="line">      <span class="keyword">class </span>Iterator</div>
 <div class="line">    , <span class="keyword">class </span>N</div>
 <div class="line">    &gt;</div>
@@ -134,11 +151,11 @@ struct tml::advance&lt; Iterator, N &gt;</h3>
 <li><b>Semantics</b>: Equivalent to: <div class="fragment"><div class="line"><span class="keyword">typedef</span> iter i0;</div>
 <div class="line"><span class="keyword">typedef</span> next&lt;i0&gt;::type i1;</div>
 <div class="line">...</div>
-<div class="line">typedef next&lt;i{n-1}&gt;::type j;</div>
+<div class="line">typedef next&lt;<a class="code" href="structtml_1_1integral__c.html">i</a>{n-1}&gt;::type j;</div>
 </div><!-- fragment --> if <code>n::value &gt; 0</code>, and <div class="fragment"><div class="line"><span class="keyword">typedef</span> iter i0;</div>
 <div class="line"><span class="keyword">typedef</span> prior&lt;i0&gt;::type i1;</div>
 <div class="line">...</div>
-<div class="line">typedef prior&lt;i{n-1}&gt;::type j;</div>
+<div class="line">typedef prior&lt;<a class="code" href="structtml_1_1integral__c.html">i</a>{n-1}&gt;::type j;</div>
 </div><!-- fragment --> otherwise.</li>
 <li><b>Postcondition</b>: <code>j</code> is dereferencable of past-the-end; <div class="fragment"><div class="line">distance&lt;iter,j&gt;::value == n::value</div>
 </div><!-- fragment --> if <code>n::value &gt; 0</code>, and <div class="fragment"><div class="line">distance&lt;j,iter&gt;::value == n::value</div>
@@ -160,12 +177,16 @@ struct tml::advance&lt; Iterator, N &gt;</h3>
 </div><!-- fragment --></dd></dl>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="tml_2advance_8cpp-example.html#_a1">tml/advance.cpp</a>, <a class="el" href="tml_2deref_8cpp-example.html#_a1">tml/deref.cpp</a>, and <a class="el" href="tml_2template_sequence_2aux__2advance_8cpp-example.html#_a0">tml/template_sequence/aux_/advance.cpp</a>.</dd>
 </dl></div></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.7-->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 2 2014 14:08:27 for TML by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.7
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacetml.html">tml</a></li><li class="navelem"><a class="el" href="structtml_1_1advance.html">advance</a></li>
+    <li class="footer">Generated on Tue Jul 8 2014 21:50:30 for TML by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
 </body>
 </html>

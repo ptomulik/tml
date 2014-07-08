@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -66,6 +73,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     </ul>
   </div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('examples.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -88,6 +109,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="textblock">Here is a list of all examples:</div><ul>
 <li><a class="el" href="tml_2advance_8cpp-example.html">tml/advance.cpp</a></li>
 
+<li><a class="el" href="tml_2always_8cpp-example.html">tml/always.cpp</a></li>
+
 <li><a class="el" href="tml_2and_8cpp-example.html">tml/and.cpp</a></li>
 
 <li><a class="el" href="tml_2apply_8cpp-example.html">tml/apply.cpp</a></li>
@@ -106,7 +129,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <li><a class="el" href="tml_2bind_8cpp-example.html">tml/bind.cpp</a></li>
 
+<li><a class="el" href="tml_2bitand_8cpp-example.html">tml/bitand.cpp</a></li>
+
+<li><a class="el" href="tml_2bitor_8cpp-example.html">tml/bitor.cpp</a></li>
+
+<li><a class="el" href="tml_2bitxor_8cpp-example.html">tml/bitxor.cpp</a></li>
+
 <li><a class="el" href="tml_2bool_8cpp-example.html">tml/bool.cpp</a></li>
+
+<li><a class="el" href="tml_2c_str_8cpp-example.html">tml/c_str.cpp</a></li>
 
 <li><a class="el" href="tml_2char_8cpp-example.html">tml/char.cpp</a></li>
 
@@ -125,6 +156,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li><a class="el" href="tml_2enable_if_type_8cpp-example.html">tml/enable_if_type.cpp</a></li>
 
 <li><a class="el" href="tml_2end_8cpp-example.html">tml/end.cpp</a></li>
+
+<li><a class="el" href="tml_2equal_8cpp-example.html">tml/equal.cpp</a></li>
 
 <li><a class="el" href="tml_2equal_to_8cpp-example.html">tml/equal_to.cpp</a></li>
 
@@ -164,6 +197,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <li><a class="el" href="tml_2long_8cpp-example.html">tml/long.cpp</a></li>
 
+<li><a class="el" href="tml_2max_8cpp-example.html">tml/max.cpp</a></li>
+
+<li><a class="el" href="tml_2min_8cpp-example.html">tml/min.cpp</a></li>
+
 <li><a class="el" href="tml_2minus_8cpp-example.html">tml/minus.cpp</a></li>
 
 <li><a class="el" href="tml_2modulus_8cpp-example.html">tml/modulus.cpp</a></li>
@@ -176,6 +213,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <li><a class="el" href="tml_2not_equal_to_8cpp-example.html">tml/not_equal_to.cpp</a></li>
 
+<li><a class="el" href="tml_2num_to_string_8cpp-example.html">tml/num_to_string.cpp</a></li>
+
+<li><a class="el" href="tml_2numeric_cast_8cpp-example.html">tml/numeric_cast.cpp</a></li>
+
 <li><a class="el" href="tml_2numeric_tag_8cpp-example.html">tml/numeric_tag.cpp</a></li>
 
 <li><a class="el" href="tml_2or_8cpp-example.html">tml/or.cpp</a></li>
@@ -183,6 +224,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li><a class="el" href="tml_2plus_8cpp-example.html">tml/plus.cpp</a></li>
 
 <li><a class="el" href="tml_2pop_back_8cpp-example.html">tml/pop_back.cpp</a></li>
+
+<li><a class="el" href="tml_2pop_front_8cpp-example.html">tml/pop_front.cpp</a></li>
 
 <li><a class="el" href="tml_2prior_8cpp-example.html">tml/prior.cpp</a></li>
 
@@ -198,9 +241,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <li><a class="el" href="tml_2sequence_generator_8cpp-example.html">tml/sequence_generator.cpp</a></li>
 
+<li><a class="el" href="tml_2shift_left_8cpp-example.html">tml/shift_left.cpp</a></li>
+
+<li><a class="el" href="tml_2shift_right_8cpp-example.html">tml/shift_right.cpp</a></li>
+
 <li><a class="el" href="tml_2size_8cpp-example.html">tml/size.cpp</a></li>
 
 <li><a class="el" href="tml_2size_t_8cpp-example.html">tml/size_t.cpp</a></li>
+
+<li><a class="el" href="tml_2sizeof_8cpp-example.html">tml/sizeof.cpp</a></li>
 
 <li><a class="el" href="tml_2template_sequence_2aux__2advance_8cpp-example.html">tml/template_sequence/aux_/advance.cpp</a></li>
 
@@ -232,6 +281,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <li><a class="el" href="tml_2template_sequence_2aux__2pop_back_8cpp-example.html">tml/template_sequence/aux_/pop_back.cpp</a></li>
 
+<li><a class="el" href="tml_2template_sequence_2aux__2pop_front_8cpp-example.html">tml/template_sequence/aux_/pop_front.cpp</a></li>
+
 <li><a class="el" href="tml_2template_sequence_2aux__2push_back_8cpp-example.html">tml/template_sequence/aux_/push_back.cpp</a></li>
 
 <li><a class="el" href="tml_2template_sequence_2aux__2push_front_8cpp-example.html">tml/template_sequence/aux_/push_front.cpp</a></li>
@@ -242,15 +293,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <li><a class="el" href="tml_2times_8cpp-example.html">tml/times.cpp</a></li>
 
+<li><a class="el" href="tml_2unpack_args_8cpp-example.html">tml/unpack_args.cpp</a></li>
+
+<li><a class="el" href="tml_2variadic_2all_8cpp-example.html">tml/variadic/all.cpp</a></li>
+
 <li><a class="el" href="tml_2variadic_2any_8cpp-example.html">tml/variadic/any.cpp</a></li>
 
 <li><a class="el" href="tml_2variadic_2at_8cpp-example.html">tml/variadic/at.cpp</a></li>
 
 <li><a class="el" href="tml_2variadic_2back_8cpp-example.html">tml/variadic/back.cpp</a></li>
 
+<li><a class="el" href="tml_2variadic_2c_str_8cpp-example.html">tml/variadic/c_str.cpp</a></li>
+
 <li><a class="el" href="tml_2variadic_2clear_8cpp-example.html">tml/variadic/clear.cpp</a></li>
 
 <li><a class="el" href="tml_2variadic_2empty_8cpp-example.html">tml/variadic/empty.cpp</a></li>
+
+<li><a class="el" href="tml_2variadic_2equal_8cpp-example.html">tml/variadic/equal.cpp</a></li>
 
 <li><a class="el" href="tml_2variadic_2erase_8cpp-example.html">tml/variadic/erase.cpp</a></li>
 
@@ -278,12 +337,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.7-->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 2 2014 14:08:29 for TML by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.7
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated on Tue Jul 8 2014 21:50:34 for TML by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
 </body>
 </html>
