@@ -30,7 +30,7 @@ namespace tml {
  * \code
  *  template<
  *        class Sequence
- *      , class CharT = char
+ *      , class CharT = unspecified
  *      >
  *  struct c_str
  *  {
@@ -51,8 +51,19 @@ namespace tml {
  *
  * \par Expression semantics
  *
- * For a sequence `s` of \ref IntConstConcept "Int Constants" with
- * values implicitly convertible to `char`
+ * For a sequence `s` of \ref IntConstConcept "Integral Constants", with
+ * `s::value_type` being a valid type of string character
+ * \code
+ *  s::value_type const* r = c_str<s>::value;
+ * \endcode
+ *
+ * - **Return type**: pointer to string
+ * - **Semantics**: `r` is a pointer to null-terminated string created from all
+ *   the characters contained in sequence `s`.
+ *
+ * For a sequence `s` of \ref IntConstConcept "Integral Constants", with
+ * values implicitly convertible to `char` and `s::value_type` not being a
+ * valid type
  * \code
  *  char const* r = c_str<s>::value;
  * \endcode

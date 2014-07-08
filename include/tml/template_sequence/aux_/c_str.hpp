@@ -20,6 +20,8 @@
 #include <tml/template_sequence/aux_/tag.hpp>
 #include <tml/template_sequence/aux_/apply_sequence.hpp>
 #include <tml/template_sequence/aux_/sequence_generator.hpp>
+#include <tml/enable_if_type.hpp>
+#include <tml/void.hpp>
 
 namespace tml {
 template <>
@@ -29,6 +31,16 @@ template <>
       struct apply
         : apply_sequence<
               variadic::c_str<T>
+            , Sequence
+          >
+      { };
+    template<class Sequence>
+      struct apply<
+          Sequence
+        , typename enable_if_type<typename Sequence::value_type,char>::type
+        >
+        : apply_sequence<
+              variadic::c_str<typename Sequence::value_type>
             , Sequence
           >
       { };
