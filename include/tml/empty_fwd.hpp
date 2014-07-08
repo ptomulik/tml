@@ -8,7 +8,7 @@
 
 /** // doc: tml/empty_fwd.hpp {{{
  * \file tml/empty_fwd.hpp
- * \brief Forward declarations for tml/empty.hpp
+ * \brief Forward declarations for \ref tml/empty.hpp
  */ // }}}
 #ifndef TML_EMPTY_FWD_HPP
 #define TML_EMPTY_FWD_HPP

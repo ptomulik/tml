@@ -8,7 +8,7 @@
 
 /** // doc: tml/integral_c/aux_/negate.hpp {{{
  * \file tml/integral_c/aux_/negate.hpp
- * \todo Write documentation
+ * \brief Implements \ref tml::negate for \ref IntConstConcept
  */ // }}}
 #ifndef TML_INTEGRAL_C_AUX_NEGATE_HPP
 #define TML_INTEGRAL_C_AUX_NEGATE_HPP

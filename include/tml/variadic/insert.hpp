@@ -8,7 +8,7 @@
 
 /** // doc: tml/variadic/insert.hpp {{{
  * \file tml/variadic/insert.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::variadic::insert and \ref tml::variadic::insert_c
  */ // }}}
 #ifndef TML_VARIADIC_INSERT_HPP
 #define TML_VARIADIC_INSERT_HPP

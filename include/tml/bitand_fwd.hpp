@@ -8,7 +8,7 @@
 
 /** // doc: tml/bitand_fwd.hpp {{{
  * \file tml/bitand_fwd.hpp
- * \brief Forward declarations for tml/bitand.hpp
+ * \brief Forward declarations for \ref tml/bitand.hpp
  */ // }}}
 #ifndef TML_BITAND_FWD_HPP
 #define TML_BITAND_FWD_HPP

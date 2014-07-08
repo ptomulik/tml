@@ -8,7 +8,7 @@
 
 /** // doc: tml/is_same_fwd.hpp {{{
  * \file tml/is_same_fwd.hpp
- * \brief Forward declarations for tml/is_same.hpp
+ * \brief Forward declarations for \ref tml/is_same.hpp
  */ // }}}
 #ifndef TML_IS_SAME_FWD_HPP
 #define TML_IS_SAME_FWD_HPP

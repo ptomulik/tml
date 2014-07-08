@@ -8,7 +8,7 @@
 
 /** // doc: tml/template_sequence/aux_/iterator.hpp {{{
  * \file tml/template_sequence/aux_/iterator.hpp
- * \todo Write documentation
+ * \brief Defines \ref TemplateSeqConcept iterator.
  */ // }}}
 #ifndef TML_TEMPLATE_SEQUENCE_AUX_ITERATOR_HPP
 #define TML_TEMPLATE_SEQUENCE_AUX_ITERATOR_HPP

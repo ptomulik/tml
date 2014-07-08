@@ -8,7 +8,7 @@
 
 /** // doc: tml/placeholders.hpp {{{
  * \file tml/placeholders.hpp
- * \todo Write documentation
+ * \brief Provides argument placeholders
  */ // }}}
 #ifndef TML_PLACEHOLDERS_HPP
 #define TML_PLACEHOLDERS_HPP

@@ -8,7 +8,7 @@
 
 /** // doc: tml/variadic/push_back_fwd.hpp {{{
  * \file tml/variadic/push_back_fwd.hpp
- * \brief Forward declarations for tml/variadic/push_back.hpp
+ * \brief Forward declarations for \ref tml/variadic/push_back.hpp
  */ // }}}
 #ifndef TML_VARIADIC_PUSH_BACK_FWD_HPP
 #define TML_VARIADIC_PUSH_BACK_FWD_HPP

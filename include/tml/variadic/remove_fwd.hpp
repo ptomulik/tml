@@ -8,7 +8,7 @@
 
 /** // doc: tml/variadic/remove_fwd.hpp {{{
  * \file tml/variadic/remove_fwd.hpp
- * \brief Forward declarations for tml/variadic/remove.hpp
+ * \brief Forward declarations for \ref tml/variadic/remove.hpp
  */ // }}}
 #ifndef TML_VARIADIC_REMOVE_FWD_HPP
 #define TML_VARIADIC_REMOVE_FWD_HPP

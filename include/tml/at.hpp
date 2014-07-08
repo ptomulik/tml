@@ -8,7 +8,7 @@
 
 /** // doc: tml/at.hpp {{{
  * \file tml/at.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::at
  */ // }}}
 #ifndef TML_AT_HPP
 #define TML_AT_HPP

@@ -8,7 +8,7 @@
 
 /** // doc: tml/empty.hpp {{{
  * \file tml/empty.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::empty
  */ // }}}
 #ifndef TML_EMPTY_HPP
 #define TML_EMPTY_HPP

@@ -8,7 +8,7 @@
 
 /** // doc: tml/bitxor_fwd.hpp {{{
  * \file tml/bitxor_fwd.hpp
- * \brief Forward declarations for tml/bitxor.hpp
+ * \brief Forward declarations for \ref tml/bitxor.hpp
  */ // }}}
 #ifndef TML_BITXOR_FWD_HPP
 #define TML_BITXOR_FWD_HPP

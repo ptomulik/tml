@@ -8,7 +8,7 @@
 
 /** // doc: tml/integral_c/aux_/num_op_includes.hpp {{{
  * \file tml/integral_c/aux_/num_op_includes.hpp
- * \todo Write documentation
+ * \brief Includes used by tml/integral_c/aux_/num_op.hpp
  */ // }}}
 # include <tml/integral_c_tag.hpp>
 # include <tml/integral_c.hpp>

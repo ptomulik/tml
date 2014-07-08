@@ -8,7 +8,7 @@
 
 /** // doc: tml/end_fwd.hpp {{{
  * \file tml/end_fwd.hpp
- * \brief Forward declarations for tml/end.hpp
+ * \brief Forward declarations for \ref tml/end.hpp
  */ // }}}
 #ifndef TML_END_FWD_HPP
 #define TML_END_FWD_HPP

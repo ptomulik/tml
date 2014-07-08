@@ -8,7 +8,7 @@
 
 /** // doc: tml/integral_c/aux_/num_op.hpp {{{
  * \file tml/integral_c/aux_/num_op.hpp
- * \todo Write documentation
+ * \brief Preprocessor iteration for several numerical operators
  */ // }}}
 #if !BOOST_PP_IS_ITERATING
 

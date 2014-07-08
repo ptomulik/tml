@@ -8,7 +8,7 @@
 
 /** // doc: tml/variadic/clear.hpp {{{
  * \file tml/variadic/clear.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::variadic::clear
  */ // }}}
 #ifndef TML_VARIADIC_CLEAR_HPP
 #define TML_VARIADIC_CLEAR_HPP

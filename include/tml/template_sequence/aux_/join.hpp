@@ -8,7 +8,7 @@
 
 /** // doc: tml/template_sequence/aux_/join.hpp {{{
  * \file tml/template_sequence/aux_/join.hpp
- * \todo Write documentation
+ * \brief Implements \ref tml::join for \ref TemplateSeqConcept
  */ // }}}
 #ifndef TML_TEMPLATE_SEQUENCE_AUX_JOIN_HPP
 #define TML_TEMPLATE_SEQUENCE_AUX_JOIN_HPP

@@ -8,7 +8,7 @@
 
 /** // doc: tml/template_sequence/aux_/push_back.hpp {{{
  * \file tml/template_sequence/aux_/push_back.hpp
- * \todo Write documentation
+ * \brief Implements \ref tml::push_back for \ref TemplateSeqConcept
  */ // }}}
 #ifndef TML_TEMPLATE_SEQUENCE_AUX_PUSH_BACK_HPP
 #define TML_TEMPLATE_SEQUENCE_AUX_PUSH_BACK_HPP

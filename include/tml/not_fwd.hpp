@@ -8,7 +8,7 @@
 
 /** // doc: tml/not_fwd.hpp {{{
  * \file tml/not_fwd.hpp
- * \brief Forward declarations for tml/not.hpp
+ * \brief Forward declarations for \ref tml/not.hpp
  */ // }}}
 #ifndef TML_NOT_FWD_HPP
 #define TML_NOT_FWD_HPP

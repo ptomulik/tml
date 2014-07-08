@@ -8,7 +8,7 @@
 
 /** // doc: tml/variadic/insert_fwd.hpp {{{
  * \file tml/variadic/insert_fwd.hpp
- * \brief Forward declarations for tml/variadic/insert.hpp
+ * \brief Forward declarations for \ref tml/variadic/insert.hpp
  */ // }}}
 #ifndef TML_VARIADIC_INSERT_FWD_HPP
 #define TML_VARIADIC_INSERT_FWD_HPP

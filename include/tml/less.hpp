@@ -8,7 +8,7 @@
 
 /** // doc: tml/less.hpp {{{
  * \file tml/less.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::less
  */ // }}}
 #ifndef TML_LESS_HPP
 #define TML_LESS_HPP

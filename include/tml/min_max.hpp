@@ -8,7 +8,7 @@
 
 /** // doc: tml/min_max.hpp {{{
  * \file tml/min_max.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::min and \ref tml::max
  */ // }}}
 #ifndef TML_MIN_MAX_HPP
 #define TML_MIN_MAX_HPP

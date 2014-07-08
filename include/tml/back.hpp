@@ -8,7 +8,7 @@
 
 /** // doc: tml/back.hpp {{{
  * \file tml/back.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::back
  */ // }}}
 #ifndef TML_BACK_HPP
 #define TML_BACK_HPP

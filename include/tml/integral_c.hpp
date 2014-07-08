@@ -8,7 +8,7 @@
 
 /** // doc: tml/integral_c.hpp {{{
  * \file tml/integral_c.hpp
- * \todo Write documentation
+ * \brief Provies \ref tml::integral_c
  */ // }}}
 #ifndef TML_INTEGRAL_C_HPP
 #define TML_INTEGRAL_C_HPP

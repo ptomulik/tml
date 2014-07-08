@@ -8,7 +8,7 @@
 
 /** // doc: tml/or.hpp {{{
  * \file tml/or.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::or_
  */ // }}}
 #ifndef TML_OR_HPP
 #define TML_OR_HPP

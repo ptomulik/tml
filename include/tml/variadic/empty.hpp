@@ -8,7 +8,7 @@
 
 /** // doc: tml/variadic/empty.hpp {{{
  * \file tml/variadic/empty.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::variadic::empty
  */ // }}}
 #ifndef TML_VARIADIC_EMPTY_HPP
 #define TML_VARIADIC_EMPTY_HPP

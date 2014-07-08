@@ -8,7 +8,7 @@
 
 /** // doc: tml/template_sequence/aux_/distance.hpp {{{
  * \file tml/template_sequence/aux_/distance.hpp
- * \todo Write documentation
+ * \brief Implements \ref tml::distance for \ref TemplateSeqConcept iterator
  */ // }}}
 #ifndef TML_TEMPLATE_SEQUENCE_AUX_DISTANCE_HPP
 #define TML_TEMPLATE_SEQUENCE_AUX_DISTANCE_HPP

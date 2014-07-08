@@ -8,7 +8,7 @@
 
 /** // doc: tml/apply.hpp {{{
  * \file tml/apply.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::apply
  */ // }}}
 #ifndef TML_APPLY_HPP
 #define TML_APPLY_HPP

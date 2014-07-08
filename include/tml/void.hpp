@@ -8,7 +8,7 @@
 
 /** // doc: tml/void.hpp {{{
  * \file tml/void.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::void_
  */ // }}}
 #ifndef TML_VOID_HPP
 #define TML_VOID_HPP

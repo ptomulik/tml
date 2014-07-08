@@ -8,7 +8,7 @@
 
 /** // doc: tml/apply_wrap_fwd.hpp {{{
  * \file tml/apply_wrap_fwd.hpp
- * \brief Forward declarations for tml/apply_wrap.hpp
+ * \brief Forward declarations for \ref tml/apply_wrap.hpp
  */ // }}}
 #ifndef TML_APPLY_WRAP_FWD_HPP
 #define TML_APPLY_WRAP_FWD_HPP

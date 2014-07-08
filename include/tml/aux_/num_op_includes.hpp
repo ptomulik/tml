@@ -8,7 +8,7 @@
 
 /** // doc: tml/aux_/num_op_includes.hpp {{{
  * \file tml/aux_/num_op_includes.hpp
- * \todo Write documentation
+ * \brief Includes used by \ref tml/aux_/num_op.hpp
  */ // }}}
 #include <tml/aux_/numeric_cast_utils.hpp>
 // vim: set expandtab tabstop=2 shiftwidth=2:

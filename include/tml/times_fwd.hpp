@@ -8,7 +8,7 @@
 
 /** // doc: tml/times_fwd.hpp {{{
  * \file tml/times_fwd.hpp
- * \brief Forward declarations for tml/times.hpp
+ * \brief Forward declarations for \ref tml/times.hpp
  */ // }}}
 #ifndef TML_TIMES_FWD_HPP
 #define TML_TIMES_FWD_HPP

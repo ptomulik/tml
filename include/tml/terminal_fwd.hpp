@@ -8,7 +8,7 @@
 
 /** // doc: tml/terminal_fwd.hpp {{{
  * \file tml/terminal_fwd.hpp
- * \brief Forward declarations for tml/terminal.hpp
+ * \brief Forward declarations for \ref tml/terminal.hpp
  */ // }}}
 #ifndef TML_TERMINAL_FWD_HPP
 #define TML_TERMINAL_FWD_HPP

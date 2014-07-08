@@ -8,7 +8,7 @@
 
 /** // doc: tml/bitand.hpp {{{
  * \file tml/bitand.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::bitand_
  */ // }}}
 #ifndef TML_BITAND_HPP
 #define TML_BITAND_HPP

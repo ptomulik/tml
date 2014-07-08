@@ -8,7 +8,7 @@
 
 /** // doc: tml/variadic/erase_front_fwd.hpp {{{
  * \file tml/variadic/erase_front_fwd.hpp
- * \brief Forward declarations for tml/variadic/erase_front.hpp
+ * \brief Forward declarations for \ref tml/variadic/erase_front.hpp
  */ // }}}
 #ifndef TML_VARIADIC_ERASE_FRONT_FWD_HPP
 #define TML_VARIADIC_ERASE_FRONT_FWD_HPP

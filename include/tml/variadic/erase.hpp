@@ -8,7 +8,7 @@
 
 /** // doc: tml/variadic/erase.hpp {{{
  * \file tml/variadic/erase.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::variadic::erase and \ref tml::variadic::erase_c
  */ // }}}
 #ifndef TML_VARIADIC_ERASE_HPP
 #define TML_VARIADIC_ERASE_HPP

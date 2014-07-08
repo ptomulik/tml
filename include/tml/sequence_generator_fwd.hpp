@@ -8,7 +8,7 @@
 
 /** // doc: tml/sequence_generator_fwd.hpp {{{
  * \file tml/sequence_generator_fwd.hpp
- * \brief Forward declarations for tml/sequence_generator.hpp
+ * \brief Forward declarations for \ref tml/sequence_generator.hpp
  */ // }}}
 #ifndef TML_SEQUENCE_GENERATOR_FWD_HPP
 #define TML_SEQUENCE_GENERATOR_FWD_HPP

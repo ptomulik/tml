@@ -8,7 +8,7 @@
 
 /** // doc: tml/template_sequence/aux_/clear.hpp {{{
  * \file tml/template_sequence/aux_/clear.hpp
- * \todo Write documentation
+ * \brief Implements \ref tml::clear for \ref TemplateSeqConcept
  */ // }}}
 #ifndef TML_TEMPLATE_SEQUENCE_AUX_CLEAR_HPP
 #define TML_TEMPLATE_SEQUENCE_AUX_CLEAR_HPP

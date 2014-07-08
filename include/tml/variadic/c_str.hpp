@@ -8,7 +8,7 @@
 
 /** // doc: tml/variadic/c_str.hpp {{{
  * \file tml/variadic/c_str.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::variadic::c_str
  */ // }}}
 #ifndef TML_VARIADIC_C_STR_HPP
 #define TML_VARIADIC_C_STR_HPP

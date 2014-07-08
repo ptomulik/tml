@@ -8,7 +8,7 @@
 
 /** // doc: tml/aux_/divides.hpp {{{
  * \file tml/aux_/divides.hpp
- * \todo Write documentation
+ * \brief Implements \ref tml::divides
  */ // }}}
 # ifndef TML_AUX_DIVIDES_HPP
 # define TML_AUX_DIVIDES_HPP

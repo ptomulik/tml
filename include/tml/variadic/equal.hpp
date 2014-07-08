@@ -8,7 +8,7 @@
 
 /** // doc: tml/variadic/equal.hpp {{{
  * \file tml/variadic/equal.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::variadic::equal
  */ // }}}
 #ifndef TML_VARIADIC_EQUAL_HPP
 #define TML_VARIADIC_EQUAL_HPP

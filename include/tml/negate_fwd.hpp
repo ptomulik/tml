@@ -8,7 +8,7 @@
 
 /** // doc: tml/negate_fwd.hpp {{{
  * \file tml/negate_fwd.hpp
- * \brief Forward declarations for tml/negate.hpp
+ * \brief Forward declarations for \ref tml/negate.hpp
  */ // }}}
 #ifndef TML_NEGATE_FWD_HPP
 #define TML_NEGATE_FWD_HPP

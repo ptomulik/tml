@@ -8,7 +8,7 @@
 
 /** // doc: tml/template_sequence/aux_/back.hpp {{{
  * \file tml/template_sequence/aux_/back.hpp
- * \todo Write documentation
+ * \brief Implements \ref tml::back for \ref TemplateSeqConcept
  */ // }}}
 #ifndef TML_TEMPLATE_SEQUENCE_AUX_BACK_HPP
 #define TML_TEMPLATE_SEQUENCE_AUX_BACK_HPP

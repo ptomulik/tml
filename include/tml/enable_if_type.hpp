@@ -8,7 +8,7 @@
 
 /** // doc: tml/enable_if_type.hpp {{{
  * \file tml/enable_if_type.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::enable_if_type
  */ // }}}
 #ifndef TML_ENABLE_IF_TYPE_HPP
 #define TML_ENABLE_IF_TYPE_HPP

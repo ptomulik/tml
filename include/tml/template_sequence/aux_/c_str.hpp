@@ -8,7 +8,7 @@
 
 /** // doc: tml/template_sequence/aux_/c_str.hpp {{{
  * \file tml/template_sequence/aux_/c_str.hpp
- * \todo Write documentation
+ * \brief Implements \ref tml::c_str for \ref TemplateSeqConcept
  */ // }}}
 #ifndef TML_TEMPLATE_SEQUENCE_AUX_C_STR_HPP
 #define TML_TEMPLATE_SEQUENCE_AUX_C_STR_HPP

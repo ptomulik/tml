@@ -8,7 +8,7 @@
 
 /** // doc: tml/num_to_string_fwd.hpp {{{
  * \file tml/num_to_string_fwd.hpp
- * \brief Forward declarations for tml/num_to_string.hpp
+ * \brief Forward declarations for \ref tml/num_to_string.hpp
  */ // }}}
 #ifndef TML_NUM_TO_STRING_FWD_HPP
 #define TML_NUM_TO_STRING_FWD_HPP

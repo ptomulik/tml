@@ -8,7 +8,7 @@
 
 /** // doc: tml/is_placeholder.hpp {{{
  * \file tml/is_placeholder.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::is_placeholder
  */ // }}}
 #ifndef TML_IS_PLACEHOLDER_HPP
 #define TML_IS_PLACEHOLDER_HPP

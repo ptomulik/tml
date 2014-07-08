@@ -8,7 +8,7 @@
 
 /** // doc: tml/quote_fwd.hpp {{{
  * \file tml/quote_fwd.hpp
- * \brief Forward declarations for tml/quote.hpp
+ * \brief Forward declarations for \ref tml/quote.hpp
  */ // }}}
 #ifndef TML_QUOTE_FWD_HPP
 #define TML_QUOTE_FWD_HPP

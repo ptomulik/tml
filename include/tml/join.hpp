@@ -8,7 +8,7 @@
 
 /** // doc: tml/join.hpp {{{
  * \file tml/join.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::join
  */ // }}}
 #ifndef TML_JOIN_HPP
 #define TML_JOIN_HPP

@@ -8,7 +8,7 @@
 
 /** // doc: tml/min_fwd.hpp {{{
  * \file tml/min_fwd.hpp
- * \brief Forward declarations for tml/min.hpp
+ * \brief Forward declarations for \ref tml/min.hpp
  */ // }}}
 #ifndef TML_MIN_FWD_HPP
 #define TML_MIN_FWD_HPP

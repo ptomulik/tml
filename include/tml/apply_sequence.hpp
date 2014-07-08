@@ -8,7 +8,7 @@
 
 /** // doc: tml/apply_sequence.hpp {{{
  * \file tml/apply_sequence.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::apply_sequence
  */ // }}}
 #ifndef TML_APPLY_SEQUENCE_HPP
 #define TML_APPLY_SEQUENCE_HPP

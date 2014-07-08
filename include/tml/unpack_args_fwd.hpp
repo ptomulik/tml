@@ -8,7 +8,7 @@
 
 /** // doc: tml/unpack_args_fwd.hpp {{{
  * \file tml/unpack_args_fwd.hpp
- * \brief Forward declarations for tml/unpack_args.hpp
+ * \brief Forward declarations for \ref tml/unpack_args.hpp
  */ // }}}
 #ifndef TML_UNPACK_ARGS_FWD_HPP
 #define TML_UNPACK_ARGS_FWD_HPP

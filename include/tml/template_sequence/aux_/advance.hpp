@@ -8,7 +8,7 @@
 
 /** // doc: tml/template_sequence/aux_/advance.hpp {{{
  * \file tml/template_sequence/aux_/advance.hpp
- * \todo Write documentation
+ * \brief Implements \ref tml::advance for \ref TemplateSeqConcept
  */ // }}}
 #ifndef TML_TEMPLATE_SEQUENCE_AUX_ADVANCE_HPP
 #define TML_TEMPLATE_SEQUENCE_AUX_ADVANCE_HPP

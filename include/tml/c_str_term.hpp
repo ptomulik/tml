@@ -8,7 +8,7 @@
 
 /** // doc: tml/c_str_term.hpp {{{
  * \file tml/c_str_term.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::c_str_term
  */ // }}}
 #ifndef TML_C_STR_TERM_HPP
 #define TML_C_STR_TERM_HPP

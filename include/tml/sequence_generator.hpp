@@ -8,7 +8,7 @@
 
 /** // doc: tml/sequence_generator.hpp {{{
  * \file tml/sequence_generator.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::sequence_generator
  */ // }}}
 #ifndef TML_SEQUENCE_GENERATOR_HPP
 #define TML_SEQUENCE_GENERATOR_HPP

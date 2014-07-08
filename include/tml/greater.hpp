@@ -8,7 +8,7 @@
 
 /** // doc: tml/greater.hpp {{{
  * \file tml/greater.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::greater
  */ // }}}
 #ifndef TML_GREATER_HPP
 #define TML_GREATER_HPP

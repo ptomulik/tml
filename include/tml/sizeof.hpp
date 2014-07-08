@@ -8,7 +8,7 @@
 
 /** // doc: tml/sizeof.hpp {{{
  * \file tml/sizeof.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::sizeof_
  */ // }}}
 #ifndef TML_SIZEOF_HPP
 #define TML_SIZEOF_HPP

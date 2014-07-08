@@ -8,7 +8,7 @@
 
 /** // doc: tml/sequence_tag_fwd.hpp {{{
  * \file tml/sequence_tag_fwd.hpp
- * \brief Forward declarations for tml/sequence_tag.hpp
+ * \brief Forward declarations for \ref tml/sequence_tag.hpp
  */ // }}}
 #ifndef TML_SEQUENCE_TAG_FWD_HPP
 #define TML_SEQUENCE_TAG_FWD_HPP

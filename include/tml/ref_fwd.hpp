@@ -8,7 +8,7 @@
 
 /** // doc: tml/ref_fwd.hpp {{{
  * \file tml/ref_fwd.hpp
- * \brief Forward declarations for tml/ref.hpp
+ * \brief Forward declarations for \ref tml/ref.hpp
  */ // }}}
 #ifndef TML_REF_FWD_HPP
 #define TML_REF_FWD_HPP

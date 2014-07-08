@@ -8,7 +8,7 @@
 
 /** // doc: tml/numeric_tag.hpp {{{
  * \file tml/numeric_tag.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::numeric_tag
  */ // }}}
 #ifndef TML_NUMERIC_TAG_HPP
 #define TML_NUMERIC_TAG_HPP

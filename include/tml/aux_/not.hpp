@@ -4,11 +4,11 @@
 // (See accompanying file LICENSE_1_0.txt or copy at
 //  http://www.boost.org/LICENSE_1_0.txt)
 
-// tml/integral_c/aux_/not.hpp
+// tml/aux_/not.hpp
 
-/** // doc: tml/integral_c/aux_/not.hpp {{{
- * \file tml/integral_c/aux_/not.hpp
- * \todo Write documentation
+/** // doc: tml/aux_/not.hpp {{{
+ * \file tml/aux_/not.hpp
+ * \brief Implements \ref tml::not_
  */ // }}}
 #ifndef TML_AUX_NOT_HPP
 #define TML_AUX_NOT_HPP

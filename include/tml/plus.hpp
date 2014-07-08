@@ -8,7 +8,7 @@
 
 /** // doc: tml/plus.hpp {{{
  * \file tml/plus.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::plus
  */ // }}}
 #ifndef TML_PLUS_HPP
 #define TML_PLUS_HPP

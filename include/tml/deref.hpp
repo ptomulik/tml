@@ -8,7 +8,7 @@
 
 /** // doc: tml/deref.hpp {{{
  * \file tml/deref.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::deref
  */ // }}}
 #ifndef TML_DEREF_HPP
 #define TML_DEREF_HPP

@@ -8,7 +8,7 @@
 
 /** // doc: tml/push_front.hpp {{{
  * \file tml/push_front.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::push_front
  */ // }}}
 #ifndef TML_PUSH_FRONT_HPP
 #define TML_PUSH_FRONT_HPP

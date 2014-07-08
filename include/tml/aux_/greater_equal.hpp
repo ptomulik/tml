@@ -8,7 +8,7 @@
 
 /** // doc: tml/aux_/greater_equal.hpp {{{
  * \file tml/aux_/greater_equal.hpp
- * \todo Write documentation
+ * \brief Implements \ref tml::greater_equal
  */ // }}}
 # ifndef TML_AUX_GREATER_EQUAL_HPP
 # define TML_AUX_GREATER_EQUAL_HPP

@@ -4,11 +4,11 @@
 // (See accompanying file LICENSE_1_0.txt or copy at
 //  http://www.boost.org/LICENSE_1_0.txt)
 
-// unit.hpp
+// tml/limits/variadic.hpp
 
-/** // doc: unit.hpp {{{
- * \file unit.hpp
- * \todo Write documentation
+/** // doc: tml/limits/variadic.hpp {{{
+ * \file tml/limits/variadic.hpp
+ * \brief Defines limits for variadic metafunctions and metafunction classes.
  */ // }}}
 #ifndef TML_LIMITS_VARIADIC_HPP
 #define TML_LIMITS_VARIADIC_HPP

@@ -8,7 +8,7 @@
 
 /** // doc: tml/integral_c/aux_/not.hpp {{{
  * \file tml/integral_c/aux_/not.hpp
- * \todo Write documentation
+ * \brief Implements \ref tml::not_ for \ref IntConstConcept
  */ // }}}
 #ifndef TML_INTEGRAL_C_AUX_NOT_HPP
 #define TML_INTEGRAL_C_AUX_NOT_HPP

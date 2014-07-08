@@ -8,7 +8,7 @@
 
 /** // doc: tml/max.hpp {{{
  * \file tml/max.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::max
  */ // }}}
 #ifndef TML_MAX_HPP
 #define TML_MAX_HPP

@@ -8,7 +8,7 @@
 
 /** // doc: tml/front.hpp {{{
  * \file tml/front.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::front
  */ // }}}
 #ifndef TML_FRONT_HPP
 #define TML_FRONT_HPP

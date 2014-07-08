@@ -8,7 +8,7 @@
 
 /** // doc: tml/template_sequence/aux_/deref.hpp {{{
  * \file tml/template_sequence/aux_/deref.hpp
- * \todo Write documentation
+ * \brief Implements \ref tml::deref for \ref TemplateSeqConcept
  */ // }}}
 #ifndef TML_TEMPLATE_SEQUENCE_AUX_DEREF_HPP
 #define TML_TEMPLATE_SEQUENCE_AUX_DEREF_HPP

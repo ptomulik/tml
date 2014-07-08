@@ -8,7 +8,7 @@
 
 /** // doc: tml/template_sequence/aux_/sequence_generator.hpp {{{
  * \file tml/template_sequence/aux_/sequence_generator.hpp
- * \todo Write documentation
+ * \brief Implements \ref tml::sequence_generator for \ref TemplateSeqConcept
  */ // }}}
 #ifndef TML_TEMPLATE_SEQUENCE_AUX_SEQUENCE_GENERATOR_HPP
 #define TML_TEMPLATE_SEQUENCE_AUX_SEQUENCE_GENERATOR_HPP

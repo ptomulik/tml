@@ -8,7 +8,7 @@
 
 /** // doc: tml/erase.hpp {{{
  * \file tml/erase.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::erase
  */ // }}}
 #ifndef TML_ERASE_HPP
 #define TML_ERASE_HPP

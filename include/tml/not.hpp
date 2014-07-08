@@ -8,7 +8,7 @@
 
 /** // doc: tml/not.hpp {{{
  * \file tml/not.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::not_
  */ // }}}
 #ifndef TML_NOT_HPP
 #define TML_NOT_HPP

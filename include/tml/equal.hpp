@@ -8,7 +8,7 @@
 
 /** // doc: tml/equal.hpp {{{
  * \file tml/equal.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::equal
  */ // }}}
 #ifndef TML_EQUAL_HPP
 #define TML_EQUAL_HPP

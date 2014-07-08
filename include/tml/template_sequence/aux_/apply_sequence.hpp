@@ -8,7 +8,7 @@
 
 /** // doc: tml/template_sequence/aux_/apply_sequence.hpp {{{
  * \file tml/template_sequence/aux_/apply_sequence.hpp
- * \todo Write documentation
+ * \brief Implements \ref tml::apply_sequence for \ref TemplateSeqConcept
  */ // }}}
 #ifndef TML_TEMPLATE_SEQUENCE_AUX_APPLY_SEQUENCE_HPP
 #define TML_TEMPLATE_SEQUENCE_AUX_APPLY_SEQUENCE_HPP

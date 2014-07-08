@@ -8,7 +8,7 @@
 
 /** // doc: tml/minus_fwd.hpp {{{
  * \file tml/minus_fwd.hpp
- * \brief Forward declarations for tml/minus.hpp
+ * \brief Forward declarations for \ref tml/minus.hpp
  */ // }}}
 #ifndef TML_MINUS_FWD_HPP
 #define TML_MINUS_FWD_HPP

@@ -8,7 +8,7 @@
 
 /** // doc: tml/arg.hpp {{{
  * \file tml/arg.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::arg
  */ // }}}
 #ifndef TML_ARG_HPP
 #define TML_ARG_HPP

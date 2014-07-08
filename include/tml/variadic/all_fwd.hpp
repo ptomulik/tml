@@ -8,7 +8,7 @@
 
 /** // doc: tml/variadic/all_fwd.hpp {{{
  * \file tml/variadic/all_fwd.hpp
- * \brief Forward declarations for tml/all.hpp
+ * \brief Forward declarations for \ref tml/all.hpp
  */ // }}}
 #ifndef TML_VARIADIC_ALL_FWD_HPP
 #define TML_VARIADIC_ALL_FWD_HPP

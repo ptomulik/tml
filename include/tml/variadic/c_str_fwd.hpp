@@ -8,7 +8,7 @@
 
 /** // doc: tml/variadic/c_str_fwd.hpp {{{
  * \file tml/variadic/c_str_fwd.hpp
- * \brief Forward declarations for tml/variadic/c_str.hpp
+ * \brief Forward declarations for \ref tml/variadic/c_str.hpp
  */ // }}}
 #ifndef TML_VARIADIC_C_STR_FWD_HPP
 #define TML_VARIADIC_C_STR_FWD_HPP

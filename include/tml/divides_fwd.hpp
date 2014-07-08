@@ -8,7 +8,7 @@
 
 /** // doc: tml/divides_fwd.hpp {{{
  * \file tml/divides_fwd.hpp
- * \brief Forward declarations for tml/divides.hpp
+ * \brief Forward declarations for \ref tml/divides.hpp
  */ // }}}
 #ifndef TML_DIVIDES_FWD_HPP
 #define TML_DIVIDES_FWD_HPP

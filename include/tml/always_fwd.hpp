@@ -8,7 +8,7 @@
 
 /** // doc: tml/always_fwd.hpp {{{
  * \file tml/always_fwd.hpp
- * \brief Forward declarations for tml/always.hpp
+ * \brief Forward declarations for \ref tml/always.hpp
  */ // }}}
 #ifndef TML_ALWAYS_FWD_HPP
 #define TML_ALWAYS_FWD_HPP

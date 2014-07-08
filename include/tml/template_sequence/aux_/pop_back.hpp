@@ -8,7 +8,7 @@
 
 /** // doc: tml/template_sequence/aux_/pop_back.hpp {{{
  * \file tml/template_sequence/aux_/pop_back.hpp
- * \todo Write documentation
+ * \brief Implements \ref tml::pop_back for \ref TemplateSeqConcept
  */ // }}}
 #ifndef TML_TEMPLATE_SEQUENCE_AUX_POP_BACK_HPP
 #define TML_TEMPLATE_SEQUENCE_AUX_POP_BACK_HPP

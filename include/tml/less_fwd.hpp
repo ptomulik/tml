@@ -8,7 +8,7 @@
 
 /** // doc: tml/less_fwd.hpp {{{
  * \file tml/less_fwd.hpp
- * \brief Forward declarations for tml/less.hpp
+ * \brief Forward declarations for \ref tml/less.hpp
  */ // }}}
 #ifndef TML_LESS_FWD_HPP
 #define TML_LESS_FWD_HPP

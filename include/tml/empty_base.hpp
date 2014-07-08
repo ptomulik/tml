@@ -8,10 +8,10 @@
 
 /** // doc: tml/empty_base.hpp {{{
  * \file tml/empty_base.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::empty_base
  */ // }}}
-#ifndef TML_TERMINAL_HPP
-#define TML_TERMINAL_HPP
+#ifndef TML_EMPTY_BASE_HPP
+#define TML_EMPTY_BASE_HPP
 
 #include <tml/empty_base_fwd.hpp>
 
@@ -37,6 +37,6 @@ namespace tml {
 struct empty_base { };
 } // end namespace tml
 
-#endif /* TML_TERMINAL_HPP */
+#endif /* TML_EMPTY_BASE_HPP */
 // vim: set expandtab tabstop=2 shiftwidth=2:
 // vim: set foldmethod=marker foldcolumn=4:

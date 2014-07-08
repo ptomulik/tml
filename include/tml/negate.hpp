@@ -8,7 +8,7 @@
 
 /** // doc: tml/negate.hpp {{{
  * \file tml/negate.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::negate
  */ // }}}
 #ifndef TML_NEGATE_HPP
 #define TML_NEGATE_HPP

@@ -8,7 +8,7 @@
 
 /** // doc: tml/shift_right_fwd.hpp {{{
  * \file tml/shift_right_fwd.hpp
- * \brief Forward declarations for tml/shift_right.hpp
+ * \brief Forward declarations for \ref tml/shift_right.hpp
  */ // }}}
 #ifndef TML_SHIFT_RIGHT_FWD_HPP
 #define TML_SHIFT_RIGHT_FWD_HPP

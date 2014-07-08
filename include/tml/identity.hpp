@@ -8,7 +8,7 @@
 
 /** // doc: tml/identity.hpp {{{
  * \file tml/identity.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::identity
  */ // }}}
 #ifndef TML_IDENTITY_HPP
 #define TML_IDENTITY_HPP

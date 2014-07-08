@@ -4,19 +4,19 @@
 // (See accompanying file LICENSE_1_0.txt or copy at
 //  http://www.boost.org/LICENSE_1_0.txt)
 
-// tml/terminal_fwd.hpp
+// tml/empty_base_fwd.hpp
 
-/** // doc: tml/terminal_fwd.hpp {{{
- * \file tml/terminal_fwd.hpp
- * \brief Forward declarations for tml/terminal.hpp
+/** // doc: tml/empty_base_fwd.hpp {{{
+ * \file tml/empty_base_fwd.hpp
+ * \brief Forward declarations for \ref tml/empty_base.hpp
  */ // }}}
-#ifndef TML_TERMINAL_FWD_HPP
-#define TML_TERMINAL_FWD_HPP
+#ifndef TML_EMPTY_BASE_FWD_HPP
+#define TML_EMPTY_BASE_FWD_HPP
 
 namespace tml {
-struct terminal;
+struct empty_base;
 } // end namespace tml
 
-#endif /* TML_TERMINAL_FWD_HPP */
+#endif /* TML_EMPTY_BASE_FWD_HPP */
 // vim: set expandtab tabstop=2 shiftwidth=2:
 // vim: set foldmethod=marker foldcolumn=4:

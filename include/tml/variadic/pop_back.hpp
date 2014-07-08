@@ -8,7 +8,7 @@
 
 /** // doc: tml/variadic/pop_back.hpp {{{
  * \file tml/variadic/pop_back.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::variadic::pop_back
  */ // }}}
 #ifndef TML_VARIADIC_POP_BACK_HPP
 #define TML_VARIADIC_POP_BACK_HPP

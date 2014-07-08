@@ -8,7 +8,7 @@
 
 /** // doc: tml/insert.hpp {{{
  * \file tml/insert.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::insert
  */ // }}}
 #ifndef TML_INSERT_HPP
 #define TML_INSERT_HPP

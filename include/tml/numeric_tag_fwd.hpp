@@ -8,7 +8,7 @@
 
 /** // doc: tml/numeric_tag_fwd.hpp {{{
  * \file tml/numeric_tag_fwd.hpp
- * \brief Forward declarations for tml/numeric_tag.hpp
+ * \brief Forward declarations for \ref tml/numeric_tag.hpp
  */ // }}}
 #ifndef TML_NUMERIC_TAG_FWD_HPP
 #define TML_NUMERIC_TAG_FWD_HPP

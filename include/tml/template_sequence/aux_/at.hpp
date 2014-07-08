@@ -8,7 +8,7 @@
 
 /** // doc: tml/template_sequence/aux_/at.hpp {{{
  * \file tml/template_sequence/aux_/at.hpp
- * \todo Write documentation
+ * \brief Implements \ref tml::at for \ref TemplateSeqConcept
  */ // }}}
 #ifndef TML_TEMPLATE_SEQUENCE_AUX_AT_HPP
 #define TML_TEMPLATE_SEQUENCE_AUX_AT_HPP

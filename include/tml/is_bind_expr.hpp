@@ -8,7 +8,7 @@
 
 /** // doc: tml/is_bind_expr.hpp {{{
  * \file tml/is_bind_expr.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::is_bind_expr
  */ // }}}
 #ifndef TML_IS_BIND_EXPR_HPP
 #define TML_IS_BIND_EXPR_HPP

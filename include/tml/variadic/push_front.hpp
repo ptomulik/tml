@@ -8,7 +8,7 @@
 
 /** // doc: tml/variadic/push_front.hpp {{{
  * \file tml/variadic/push_front.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::variadic::push_front
  */ // }}}
 #ifndef TML_VARIADIC_PUSH_FRONT_HPP
 #define TML_VARIADIC_PUSH_FRONT_HPP

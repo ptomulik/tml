@@ -8,7 +8,7 @@
 
 /** // doc: tml/int.hpp {{{
  * \file tml/int.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::int_
  */ // }}}
 #ifndef TML_INT_HPP
 #define TML_INT_HPP

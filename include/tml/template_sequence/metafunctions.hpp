@@ -8,7 +8,8 @@
 
 /** // doc: tml/template_sequence/metafunctions.hpp {{{
  * \file tml/template_sequence/metafunctions.hpp
- * \todo Write documentation
+ * \brief Include implementations of intrinsic metafunctions for
+ *        \ref TemplateSeqConcept
  */ // }}}
 #ifndef TML_TEMPLATE_SEQUENCE_METAFUNCTIONS_HPP
 #define TML_TEMPLATE_SEQUENCE_METAFUNCTIONS_HPP

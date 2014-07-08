@@ -8,7 +8,7 @@
 
 /** // doc: tml/lambda_fwd.hpp {{{
  * \file tml/lambda_fwd.hpp
- * \brief Forward declarations for tml/lambda.hpp
+ * \brief Forward declarations for \ref tml/lambda.hpp
  */ // }}}
 #ifndef TML_LAMBDA_FWD_HPP
 #define TML_LAMBDA_FWD_HPP

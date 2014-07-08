@@ -8,7 +8,7 @@
 
 /** // doc: tml/aux_/num_op.hpp {{{
  * \file tml/aux_/num_op.hpp
- * \todo Write documentation
+ * \brief Preprocessor iteration used to implement several numerical operations
  */ // }}}
 #include <tml/limits/variadic.hpp>
 #include <boost/preprocessor/iteration/iterate.hpp>

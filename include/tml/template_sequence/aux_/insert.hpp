@@ -8,7 +8,7 @@
 
 /** // doc: tml/template_sequence/aux_/insert.hpp {{{
  * \file tml/template_sequence/aux_/insert.hpp
- * \todo Write documentation
+ * \brief Implements \ref tml::insert for \ref TemplateSeqConcept
  */ // }}}
 #ifndef TML_TEMPLATE_SEQUENCE_AUX_INSERT_HPP
 #define TML_TEMPLATE_SEQUENCE_AUX_INSERT_HPP

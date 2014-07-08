@@ -8,7 +8,7 @@
 
 /** // doc: tml/bitor_fwd.hpp {{{
  * \file tml/bitor_fwd.hpp
- * \brief Forward declarations for tml/bitor.hpp
+ * \brief Forward declarations for \ref tml/bitor.hpp
  */ // }}}
 #ifndef TML_BITOR_FWD_HPP
 #define TML_BITOR_FWD_HPP

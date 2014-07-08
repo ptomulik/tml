@@ -8,7 +8,7 @@
 
 /** // doc: tml/is_bind_expr_fwd.hpp {{{
  * \file tml/is_bind_expr_fwd.hpp
- * \brief Forward declarations for tml/is_bind_expr.hpp
+ * \brief Forward declarations for \ref tml/is_bind_expr.hpp
  */ // }}}
 #ifndef TML_IS_BIND_EXPR_FWD_HPP
 #define TML_IS_BIND_EXPR_FWD_HPP

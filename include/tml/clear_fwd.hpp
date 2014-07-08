@@ -8,7 +8,7 @@
 
 /** // doc: tml/clear_fwd.hpp {{{
  * \file tml/clear_fwd.hpp
- * \brief Forward declarations for tml/clear.hpp
+ * \brief Forward declarations for \ref tml/clear.hpp
  */ // }}}
 #ifndef TML_CLEAR_FWD_HPP
 #define TML_CLEAR_FWD_HPP

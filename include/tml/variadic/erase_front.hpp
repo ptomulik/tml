@@ -8,7 +8,8 @@
 
 /** // doc: tml/variadic/erase_front.hpp {{{
  * \file tml/variadic/erase_front.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::variadic::erase_front and
+ *        \ref tml::variadic::erase_front_c
  */ // }}}
 #ifndef TML_VARIADIC_ERASE_FRONT_HPP
 #define TML_VARIADIC_ERASE_FRONT_HPP

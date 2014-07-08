@@ -8,7 +8,7 @@
 
 /** // doc: tml/variadic/join_fwd.hpp {{{
  * \file tml/variadic/join_fwd.hpp
- * \brief Forward declarations for tml/variadic/join.hpp
+ * \brief Forward declarations for \ref tml/variadic/join.hpp
  */ // }}}
 #ifndef TML_VARIADIC_JOIN_FWD_HPP
 #define TML_VARIADIC_JOIN_FWD_HPP

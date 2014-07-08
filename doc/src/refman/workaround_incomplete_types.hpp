@@ -8,7 +8,7 @@
 // force doxygen to generate documentation for these classes.
 
 namespace tml { namespace aux {
-struct variadic_template_tag {};
+struct template_sequence_tag {};
 } } // end namespace tml::aux
 
 // vim: set expandtab tabstop=2 shiftwidth=2:

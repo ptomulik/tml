@@ -8,7 +8,7 @@
 
 /** // doc: tml/pop_back.hpp {{{
  * \file tml/pop_back.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::pop_back
  */ // }}}
 #ifndef TML_POP_BACK_HPP
 #define TML_POP_BACK_HPP

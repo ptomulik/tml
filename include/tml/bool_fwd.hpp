@@ -8,7 +8,7 @@
 
 /** // doc: tml/bool_fwd.hpp {{{
  * \file tml/bool_fwd.hpp
- * \brief Forward declarations for tml/bool.hpp
+ * \brief Forward declarations for \ref tml/bool.hpp
  */ // }}}
 #ifndef TML_BOOL_FWD_HPP
 #define TML_BOOL_FWD_HPP

@@ -8,7 +8,7 @@
 
 /** // doc: tml/variadic/join.hpp {{{
  * \file tml/variadic/join.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::variadic::join
  */ // }}}
 #ifndef TML_VARIADIC_JOIN_HPP
 #define TML_VARIADIC_JOIN_HPP

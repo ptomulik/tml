@@ -8,7 +8,7 @@
 
 /** // doc: tml/long.hpp {{{
  * \file tml/long.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::long_
  */ // }}}
 #ifndef TML_LONG_HPP
 #define TML_LONG_HPP

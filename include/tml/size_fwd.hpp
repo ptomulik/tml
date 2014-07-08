@@ -8,7 +8,7 @@
 
 /** // doc: tml/size_fwd.hpp {{{
  * \file tml/size_fwd.hpp
- * \brief Forward declarations for tml/size.hpp
+ * \brief Forward declarations for \ref tml/size.hpp
  */ // }}}
 #ifndef TML_SIZE_FWD_HPP
 #define TML_SIZE_FWD_HPP

@@ -8,7 +8,7 @@
 
 /** // doc: tml/begin.hpp {{{
  * \file tml/begin.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::begin
  */ // }}}
 #ifndef TML_BEGIN_HPP
 #define TML_BEGIN_HPP

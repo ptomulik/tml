@@ -8,7 +8,7 @@
 
 /** // doc: tml/variadic/empty_fwd.hpp {{{
  * \file tml/variadic/empty_fwd.hpp
- * \brief Forward declarations for tml/variadic/empty.hpp
+ * \brief Forward declarations for \ref tml/variadic/empty.hpp
  */ // }}}
 #ifndef TML_VARIADIC_EMPTY_FWD_HPP
 #define TML_VARIADIC_EMPTY_FWD_HPP

@@ -8,7 +8,7 @@
 
 /** // doc: tml/variadic/front.hpp {{{
  * \file tml/variadic/front.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::variadic::front
  */ // }}}
 #ifndef TML_VARIADIC_FRONT_HPP
 #define TML_VARIADIC_FRONT_HPP

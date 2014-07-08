@@ -8,7 +8,7 @@
 
 /** // doc: tml/next_fwd.hpp {{{
  * \file tml/next_fwd.hpp
- * \brief Forward declarations for tml/next.hpp
+ * \brief Forward declarations for \ref tml/next.hpp
  */ // }}}
 #ifndef TML_NEXT_FWD_HPP
 #define TML_NEXT_FWD_HPP

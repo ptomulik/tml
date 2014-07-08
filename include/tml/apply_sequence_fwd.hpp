@@ -8,7 +8,7 @@
 
 /** // doc: tml/apply_sequence_fwd.hpp {{{
  * \file tml/apply_sequence_fwd.hpp
- * \brief Forward declarations for tml/apply_sequence.hpp
+ * \brief Forward declarations for \ref tml/apply_sequence.hpp
  */ // }}}
 #ifndef TML_APPLY_SEQUENCE_FWD_HPP
 #define TML_APPLY_SEQUENCE_FWD_HPP

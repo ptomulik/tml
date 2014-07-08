@@ -8,7 +8,7 @@
 
 /** // doc: tml/erase_fwd.hpp {{{
  * \file tml/erase_fwd.hpp
- * \brief Forward declarations for tml/erase.hpp
+ * \brief Forward declarations for \ref tml/erase.hpp
  */ // }}}
 #ifndef TML_ERASE_FWD_HPP
 #define TML_ERASE_FWD_HPP

@@ -8,7 +8,7 @@
 
 /** // doc: tml/template_sequence/aux_/empty.hpp {{{
  * \file tml/template_sequence/aux_/empty.hpp
- * \todo Write documentation
+ * \brief Implements \ref tml::empty for \ref TemplateSeqConcept
  */ // }}}
 #ifndef TML_TEMPLATE_SEQUENCE_AUX_EMPTY_HPP
 #define TML_TEMPLATE_SEQUENCE_AUX_EMPTY_HPP

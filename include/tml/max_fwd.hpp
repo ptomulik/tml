@@ -8,7 +8,7 @@
 
 /** // doc: tml/max_fwd.hpp {{{
  * \file tml/max_fwd.hpp
- * \brief Forward declarations for tml/max.hpp
+ * \brief Forward declarations for \ref tml/max.hpp
  */ // }}}
 #ifndef TML_MAX_FWD_HPP
 #define TML_MAX_FWD_HPP

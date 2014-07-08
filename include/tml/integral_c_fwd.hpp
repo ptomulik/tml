@@ -8,7 +8,7 @@
 
 /** // doc: tml/integral_c_fwd.hpp {{{
  * \file tml/integral_c_fwd.hpp
- * \brief Forward declarations for tml/integral_c.hpp
+ * \brief Forward declarations for \ref tml/integral_c.hpp
  */ // }}}
 #ifndef TML_INTEGRAL_C_FWD_HPP
 #define TML_INTEGRAL_C_FWD_HPP

@@ -8,7 +8,7 @@
 
 /** // doc: tml/char.hpp {{{
  * \file tml/char.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::char_
  */ // }}}
 #ifndef TML_CHAR_HPP
 #define TML_CHAR_HPP

@@ -8,7 +8,7 @@
 
 /** // doc: tml/equal_to_fwd.hpp {{{
  * \file tml/equal_to_fwd.hpp
- * \brief Forward declarations for tml/equal_to.hpp
+ * \brief Forward declarations for \ref tml/equal_to.hpp
  */ // }}}
 #ifndef TML_EQUAL_TO_FWD_HPP
 #define TML_EQUAL_TO_FWD_HPP

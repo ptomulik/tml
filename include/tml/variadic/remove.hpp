@@ -8,7 +8,7 @@
 
 /** // doc: tml/variadic/remove.hpp {{{
  * \file tml/variadic/remove.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::variadic::remove and \ref tml::variadic::remove_c
  */ // }}}
 #ifndef TML_VARIADIC_REMOVE_HPP
 #define TML_VARIADIC_REMOVE_HPP

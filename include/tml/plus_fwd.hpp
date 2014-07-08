@@ -8,7 +8,7 @@
 
 /** // doc: tml/plus_fwd.hpp {{{
  * \file tml/plus_fwd.hpp
- * \brief Forward declarations for tml/plus.hpp
+ * \brief Forward declarations for \ref tml/plus.hpp
  */ // }}}
 #ifndef TML_PLUS_FWD_HPP
 #define TML_PLUS_FWD_HPP

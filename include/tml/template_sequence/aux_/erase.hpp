@@ -8,7 +8,7 @@
 
 /** // doc: tml/template_sequence/aux_/erase.hpp {{{
  * \file tml/template_sequence/aux_/erase.hpp
- * \todo Write documentation
+ * \brief Implements \ref tml::erase for \ref TemplateSeqConcept
  */ // }}}
 #ifndef TML_TEMPLATE_SEQUENCE_AUX_ERASE_HPP
 #define TML_TEMPLATE_SEQUENCE_AUX_ERASE_HPP

@@ -8,7 +8,7 @@
 
 /** // doc: tml/distance.hpp {{{
  * \file tml/distance.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::distance
  */ // }}}
 #ifndef TML_DISTANCE_HPP
 #define TML_DISTANCE_HPP

@@ -8,7 +8,7 @@
 
 /** // doc: tml/insert_fwd.hpp {{{
  * \file tml/insert_fwd.hpp
- * \brief Forward declarations for tml/insert.hpp
+ * \brief Forward declarations for \ref tml/insert.hpp
  */ // }}}
 #ifndef TML_INSERT_FWD_HPP
 #define TML_INSERT_FWD_HPP

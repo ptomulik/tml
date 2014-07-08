@@ -8,7 +8,7 @@
 
 /** // doc: tml/advance.hpp {{{
  * \file tml/advance.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::advance
  */ // }}}
 #ifndef TML_ADVANCE_HPP
 #define TML_ADVANCE_HPP

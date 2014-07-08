@@ -8,7 +8,7 @@
 
 /** // doc: tml/sequence_tag.hpp {{{
  * \file tml/sequence_tag.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::sequence_tag
  */ // }}}
 #ifndef TML_SEQUENCE_TAG_HPP
 #define TML_SEQUENCE_TAG_HPP
@@ -58,9 +58,6 @@ namespace tml {
  *   `t` is a type used to dispatch execution of \ref TagDispatchedMetafunConcept
  *   "Tag Dispatched Metafunctions" operating on sequences to appropriate
  *   implementations.
- *
- * \par Example
- * \snippet tml/sequence_tag.cpp Code
  *
  */ // }}}
 template <class Sequence>

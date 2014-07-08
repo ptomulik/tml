@@ -8,7 +8,7 @@
 
 /** // doc: tml/aux_/bitor.hpp {{{
  * \file tml/aux_/bitor.hpp
- * \todo Write documentation
+ * \brief Implements \ref tml::bitor_
  */ // }}}
 # ifndef TML_AUX_BITOR_HPP
 # define TML_AUX_BITOR_HPP

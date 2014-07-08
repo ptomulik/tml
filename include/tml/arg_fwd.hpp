@@ -8,7 +8,7 @@
 
 /** // doc: tml/arg_fwd.hpp {{{
  * \file tml/arg_fwd.hpp
- * \brief Forward declarations for tml/arg.hpp
+ * \brief Forward declarations for \ref tml/arg.hpp
  */ // }}}
 #ifndef TML_ARG_FWD_HPP
 #define TML_ARG_FWD_HPP

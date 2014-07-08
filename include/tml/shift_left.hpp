@@ -8,7 +8,7 @@
 
 /** // doc: tml/shift_left.hpp {{{
  * \file tml/shift_left.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::shift_left
  */ // }}}
 #ifndef TML_SHIFT_LEFT_HPP
 #define TML_SHIFT_LEFT_HPP

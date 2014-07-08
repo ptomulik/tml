@@ -8,7 +8,7 @@
 
 /** // doc: tml/aux_/bitxor.hpp {{{
  * \file tml/aux_/bitxor.hpp
- * \todo Write documentation
+ * \brief Implements \ref tml::bitxor_
  */ // }}}
 # ifndef TML_AUX_BITXOR_HPP
 # define TML_AUX_BITXOR_HPP

@@ -8,7 +8,7 @@
 
 /** // doc: tml/begin_fwd.hpp {{{
  * \file tml/begin_fwd.hpp
- * \brief Forward declarations for tml/begin.hpp
+ * \brief Forward declarations for \ref tml/begin.hpp
  */ // }}}
 #ifndef TML_BEGIN_FWD_HPP
 #define TML_BEGIN_FWD_HPP

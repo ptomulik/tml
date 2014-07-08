@@ -8,7 +8,7 @@
 
 /** // doc: tml/integral_c/aux_/num_op_cleanup.hpp {{{
  * \file tml/integral_c/aux_/num_op_cleanup.hpp
- * \todo Write documentation
+ * \brief Deletes temporary macros used by tml/integral_c/aux_/num_op.hpp
  */ // }}}
 
 # ifdef AUX862492_SAME

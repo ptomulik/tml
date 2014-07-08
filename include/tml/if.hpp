@@ -8,7 +8,7 @@
 
 /** // doc: tml/if.hpp {{{
  * \file tml/if.hpp
- * \todo Write documentation
+ * \brief Provider \ref tml::if_
  */ // }}}
 #ifndef TML_IF_HPP
 #define TML_IF_HPP

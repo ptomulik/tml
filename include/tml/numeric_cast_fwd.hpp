@@ -8,7 +8,7 @@
 
 /** // doc: tml/numeric_cast_fwd.hpp {{{
  * \file tml/numeric_cast_fwd.hpp
- * \brief Forward declarations for tml/numeric_cast.hpp
+ * \brief Forward declarations for \ref tml/numeric_cast.hpp
  */ // }}}
 #ifndef TML_NUMERIC_CAST_FWD_HPP
 #define TML_NUMERIC_CAST_FWD_HPP

@@ -8,7 +8,7 @@
 
 /** // doc: tml/iterator_tag_fwd.hpp {{{
  * \file tml/iterator_tag_fwd.hpp
- * \brief Forward declarations for tml/iterator_tag.hpp
+ * \brief Forward declarations for \ref tml/iterator_tag.hpp
  */ // }}}
 #ifndef TML_ITERATOR_TAG_FWD_HPP
 #define TML_ITERATOR_TAG_FWD_HPP

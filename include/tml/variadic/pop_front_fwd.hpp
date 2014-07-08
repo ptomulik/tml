@@ -8,7 +8,7 @@
 
 /** // doc: tml/variadic/pop_front_fwd.hpp {{{
  * \file tml/variadic/pop_front_fwd.hpp
- * \brief Forward declarations for tml/variadic/pop_front.hpp
+ * \brief Forward declarations for \ref tml/variadic/pop_front.hpp
  */ // }}}
 #ifndef TML_VARIADIC_POP_FRONT_FWD_HPP
 #define TML_VARIADIC_POP_FRONT_FWD_HPP

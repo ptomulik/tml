@@ -8,7 +8,7 @@
 
 /** // doc: tml/variadic/any.hpp {{{
  * \file tml/variadic/any.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::variadic::any
  */ // }}}
 #ifndef TML_VARIADIC_ANY_HPP
 #define TML_VARIADIC_ANY_HPP

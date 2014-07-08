@@ -8,7 +8,7 @@
 
 /** // doc: tml/greater_fwd.hpp {{{
  * \file tml/greater_fwd.hpp
- * \brief Forward declarations for tml/greater.hpp
+ * \brief Forward declarations for \ref tml/greater.hpp
  */ // }}}
 #ifndef TML_GREATER_FWD_HPP
 #define TML_GREATER_FWD_HPP

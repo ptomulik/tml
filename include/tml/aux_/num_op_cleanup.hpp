@@ -8,7 +8,7 @@
 
 /** // doc: tml/aux_/num_op_cleanup.hpp {{{
  * \file tml/aux_/num_op_cleanup.hpp
- * \todo Write documentation
+ * \brief Undefine temporary macros used by \ref tml/aux_/num_op.hpp
  */ // }}}
 
 #ifdef AUX862492_OP_FWD_HEADER

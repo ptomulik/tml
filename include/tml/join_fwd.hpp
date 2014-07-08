@@ -8,7 +8,7 @@
 
 /** // doc: tml/join_fwd.hpp {{{
  * \file tml/join_fwd.hpp
- * \brief Forward declarations for tml/join.hpp
+ * \brief Forward declarations for \ref tml/join.hpp
  */ // }}}
 #ifndef TML_JOIN_FWD_HPP
 #define TML_JOIN_FWD_HPP

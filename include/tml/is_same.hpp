@@ -8,7 +8,7 @@
 
 /** // doc: tml/is_same.hpp {{{
  * \file tml/is_same.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::is_same
  */ // }}}
 #ifndef TML_IS_SAME_HPP
 #define TML_IS_SAME_HPP

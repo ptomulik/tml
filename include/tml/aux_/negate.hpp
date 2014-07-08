@@ -4,11 +4,11 @@
 // (See accompanying file LICENSE_1_0.txt or copy at
 //  http://www.boost.org/LICENSE_1_0.txt)
 
-// tml/integral_c/aux_/negate.hpp
+// tml/aux_/negate.hpp
 
-/** // doc: tml/integral_c/aux_/negate.hpp {{{
- * \file tml/integral_c/aux_/negate.hpp
- * \todo Write documentation
+/** // doc: tml/aux_/negate.hpp {{{
+ * \file tml/aux_/negate.hpp
+ * \brief Implements \ref tml::negate
  */ // }}}
 #ifndef TML_AUX_NEGATE_HPP
 #define TML_AUX_NEGATE_HPP

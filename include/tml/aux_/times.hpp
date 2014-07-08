@@ -8,7 +8,7 @@
 
 /** // doc: tml/aux_/times.hpp {{{
  * \file tml/aux_/times.hpp
- * \todo Write documentation
+ * \brief Implements \ref tml::times
  */ // }}}
 # ifndef TML_AUX_TIMES_HPP
 # define TML_AUX_TIMES_HPP

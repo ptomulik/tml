@@ -8,7 +8,7 @@
 
 /** // doc: tml/apply_wrap.hpp {{{
  * \file tml/apply_wrap.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::apply_wrap
  */ // }}}
 #ifndef TML_APPLY_WRAP_HPP
 #define TML_APPLY_WRAP_HPP

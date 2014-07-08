@@ -8,7 +8,7 @@
 
 /** // doc: tml/template_sequence/aux_/tag.hpp {{{
  * \file tml/template_sequence/aux_/tag.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::aux::template_sequence_tag class
  */ // }}}
 #ifndef TML_TEMPLATE_SEQUENCE_AUX_TAG_HPP
 #define TML_TEMPLATE_SEQUENCE_AUX_TAG_HPP

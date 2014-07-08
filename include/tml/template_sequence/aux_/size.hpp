@@ -8,7 +8,7 @@
 
 /** // doc: tml/template_sequence/aux_/size.hpp {{{
  * \file tml/template_sequence/aux_/size.hpp
- * \todo Write documentation
+ * \brief Implements \ref tml::size for \ref TemplateSeqConcept
  */ // }}}
 #ifndef TML_TEMPLATE_SEQUENCE_AUX_SIZE_HPP
 #define TML_TEMPLATE_SEQUENCE_AUX_SIZE_HPP

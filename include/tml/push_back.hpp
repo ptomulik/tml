@@ -8,7 +8,7 @@
 
 /** // doc: tml/push_back.hpp {{{
  * \file tml/push_back.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::push_back
  */ // }}}
 #ifndef TML_PUSH_BACK_HPP
 #define TML_PUSH_BACK_HPP

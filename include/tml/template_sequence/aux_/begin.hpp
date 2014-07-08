@@ -8,7 +8,7 @@
 
 /** // doc: tml/template_sequence/aux_/begin.hpp {{{
  * \file tml/template_sequence/aux_/begin.hpp
- * \todo Write documentation
+ * \brief Implements \ref tml::begin for \ref TemplateSeqConcept
  */ // }}}
 #ifndef TML_TEMPLATE_SEQUENCE_AUX_BEGIN_HPP
 #define TML_TEMPLATE_SEQUENCE_AUX_BEGIN_HPP

@@ -8,7 +8,7 @@
 
 /** // doc: tml/quote.hpp {{{
  * \file tml/quote.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::quote
  */ // }}}
 #ifndef TML_QUOTE_HPP
 #define TML_QUOTE_HPP
@@ -23,7 +23,7 @@ namespace tml {
  * \brief Wraps a \ref MetafunConcept to create a corresponding
  *        \ref MetafunClassConcept
  *
- * \tparam F A \ref MetafuncClassConcept to wrap
+ * \tparam F A \ref MetafunClassConcept to wrap
  * \tparam Tag A tag determining wrap semantics. Any type.
  *
  * \par Synopsis

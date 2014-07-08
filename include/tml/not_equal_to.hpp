@@ -8,7 +8,7 @@
 
 /** // doc: tml/not_equal_to.hpp {{{
  * \file tml/not_equal_to.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::not_equal_to
  */ // }}}
 #ifndef TML_NOT_EQUAL_TO_HPP
 #define TML_NOT_EQUAL_TO_HPP

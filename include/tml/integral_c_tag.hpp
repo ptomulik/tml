@@ -8,7 +8,7 @@
 
 /** // doc: tml/integral_c_tag.hpp {{{
  * \file tml/integral_c_tag.hpp
- * \todo Write documentation
+ * \brief Defines \ref tml::integral_c_tag
  */ // }}}
 #ifndef TML_INTEGRAL_C_TAG_HPP
 #define TML_INTEGRAL_C_TAG_HPP

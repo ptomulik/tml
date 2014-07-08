@@ -8,7 +8,7 @@
 
 /** // doc: tml/minus.hpp {{{
  * \file tml/minus.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::minus
  */ // }}}
 #ifndef TML_MINUS_HPP
 #define TML_MINUS_HPP

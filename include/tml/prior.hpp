@@ -8,7 +8,7 @@
 
 /** // doc: tml/prior.hpp {{{
  * \file tml/prior.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::prior
  */ // }}}
 #ifndef TML_PRIOR_HPP
 #define TML_PRIOR_HPP

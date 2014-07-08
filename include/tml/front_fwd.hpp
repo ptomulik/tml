@@ -8,7 +8,7 @@
 
 /** // doc: tml/front_fwd.hpp {{{
  * \file tml/front_fwd.hpp
- * \brief Forward declarations for tml/front.hpp
+ * \brief Forward declarations for \ref tml/front.hpp
  */ // }}}
 #ifndef TML_FRONT_FWD_HPP
 #define TML_FRONT_FWD_HPP

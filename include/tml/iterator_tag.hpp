@@ -8,7 +8,7 @@
 
 /** // doc: tml/iterator_tag.hpp {{{
  * \file tml/iterator_tag.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::iterator_tag
  */ // }}}
 #ifndef TML_ITERATOR_TAG_HPP
 #define TML_ITERATOR_TAG_HPP
@@ -58,9 +58,6 @@ namespace tml {
  *   `t` is a type used to dispatch execution of \ref TagDispatchedMetafunConcept
  *   "Tag Dispatched Metafunctions" operating on iterators to appropriate
  *   implementations.
- *
- * \par Example
- * \snippet tml/iterator_tag.cpp Code
  *
  */ // }}}
 template <class Iterator>

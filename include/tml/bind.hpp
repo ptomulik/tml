@@ -8,7 +8,7 @@
 
 /** // doc: tml/bind.hpp {{{
  * \file tml/bind.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::bind
  */ // }}}
 #ifndef TML_BIND_HPP
 #define TML_BIND_HPP

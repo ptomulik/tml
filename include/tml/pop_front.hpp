@@ -8,7 +8,7 @@
 
 /** // doc: tml/pop_front.hpp {{{
  * \file tml/pop_front.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::pop_front
  */ // }}}
 #ifndef TML_POP_FRONT_HPP
 #define TML_POP_FRONT_HPP

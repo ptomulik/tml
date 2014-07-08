@@ -8,7 +8,7 @@
 
 /** // doc: tml/bool.hpp {{{
  * \file tml/bool.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::bool_
  */ // }}}
 #ifndef TML_BOOL_HPP
 #define TML_BOOL_HPP

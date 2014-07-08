@@ -8,7 +8,7 @@
 
 /** // doc: tml/next.hpp {{{
  * \file tml/next.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::next
  */ // }}}
 #ifndef TML_NEXT_HPP
 #define TML_NEXT_HPP

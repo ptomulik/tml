@@ -8,7 +8,7 @@
 
 /** // doc: tml/protect.hpp {{{
  * \file tml/protect.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::protect
  */ // }}}
 #ifndef TML_PROTECT_HPP
 #define TML_PROTECT_HPP

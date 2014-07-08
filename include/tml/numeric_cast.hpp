@@ -8,7 +8,7 @@
 
 /** // doc: tml/numeric_cast.hpp {{{
  * \file tml/numeric_cast.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::numeric_cast
  */ // }}}
 #ifndef TML_NUMERIC_CAST_HPP
 #define TML_NUMERIC_CAST_HPP

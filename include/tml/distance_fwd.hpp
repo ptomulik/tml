@@ -8,7 +8,7 @@
 
 /** // doc: tml/distance_fwd.hpp {{{
  * \file tml/distance_fwd.hpp
- * \brief Forward declarations for tml/distance.hpp
+ * \brief Forward declarations for \ref tml/distance.hpp
  */ // }}}
 #ifndef TML_DISTANCE_FWD_HPP
 #define TML_DISTANCE_FWD_HPP

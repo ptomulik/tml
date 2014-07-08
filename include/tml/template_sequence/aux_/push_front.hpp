@@ -8,7 +8,7 @@
 
 /** // doc: tml/template_sequence/aux_/push_front.hpp {{{
  * \file tml/template_sequence/aux_/push_front.hpp
- * \todo Write documentation
+ * \brief Implements \ref tml::push_front for \ref TemplateSeqConcept
  */ // }}}
 #ifndef TML_TEMPLATE_SEQUENCE_AUX_PUSH_FRONT_HPP
 #define TML_TEMPLATE_SEQUENCE_AUX_PUSH_FRONT_HPP

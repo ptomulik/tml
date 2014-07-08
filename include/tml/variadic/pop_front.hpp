@@ -8,7 +8,7 @@
 
 /** // doc: tml/variadic/pop_front.hpp {{{
  * \file tml/variadic/pop_front.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::variadic::pop_front
  */ // }}}
 #ifndef TML_VARIADIC_POP_FRONT_HPP
 #define TML_VARIADIC_POP_FRONT_HPP

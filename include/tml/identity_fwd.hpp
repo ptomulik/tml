@@ -8,7 +8,7 @@
 
 /** // doc: tml/identity_fwd.hpp {{{
  * \file tml/identity_fwd.hpp
- * \brief Forward declarations for tml/identity.hpp
+ * \brief Forward declarations for \ref tml/identity.hpp
  */ // }}}
 #ifndef TML_IDENTITY_FWD_HPP
 #define TML_IDENTITY_FWD_HPP

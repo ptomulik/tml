@@ -8,7 +8,7 @@
 
 /** // doc: tml/clear.hpp {{{
  * \file tml/clear.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::clear
  */ // }}}
 #ifndef TML_CLEAR_HPP
 #define TML_CLEAR_HPP

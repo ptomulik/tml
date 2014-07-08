@@ -8,7 +8,7 @@
 
 /** // doc: tml/lambda.hpp {{{
  * \file tml/lambda.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::lambda
  */ // }}}
 #ifndef TML_LAMBDA_HPP
 #define TML_LAMBDA_HPP

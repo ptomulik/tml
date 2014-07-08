@@ -8,7 +8,7 @@
 
 /** // doc: tml/variadic/equal_fwd.hpp {{{
  * \file tml/variadic/equal_fwd.hpp
- * \brief Forward declarations for tml/variadic/equal.hpp
+ * \brief Forward declarations for \ref tml/variadic/equal.hpp
  */ // }}}
 #ifndef TML_VARIADIC_EQUAL_FWD_HPP
 #define TML_VARIADIC_EQUAL_FWD_HPP

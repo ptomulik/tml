@@ -8,7 +8,7 @@
 
 /** // doc: tml/protect_fwd.hpp {{{
  * \file tml/protect_fwd.hpp
- * \brief Forward declarations for tml/protect.hpp
+ * \brief Forward declarations for \ref tml/protect.hpp
  */ // }}}
 #ifndef TML_PROTECT_FWD_HPP
 #define TML_PROTECT_FWD_HPP

@@ -8,7 +8,7 @@
 
 /** // doc: tml/aux_/less_equal.hpp {{{
  * \file tml/aux_/less_equal.hpp
- * \todo Write documentation
+ * \brief Implements \ref tml::less_equal
  */ // }}}
 # ifndef TML_AUX_LESS_EQUAL_HPP
 # define TML_AUX_LESS_EQUAL_HPP

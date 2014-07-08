@@ -8,7 +8,7 @@
 
 /** // doc: tml/aux_/plus.hpp {{{
  * \file tml/aux_/plus.hpp
- * \todo Write documentation
+ * \brief Implements \ref tml::plus
  */ // }}}
 # ifndef TML_AUX_PLUS_HPP
 # define TML_AUX_PLUS_HPP

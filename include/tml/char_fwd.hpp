@@ -8,7 +8,7 @@
 
 /** // doc: tml/char_fwd.hpp {{{
  * \file tml/char_fwd.hpp
- * \brief Forward declarations for tml/char.hpp
+ * \brief Forward declarations for \ref tml/char.hpp
  */ // }}}
 #ifndef TML_CHAR_FWD_HPP
 #define TML_CHAR_FWD_HPP

@@ -8,7 +8,7 @@
 
 /** // doc: tml/is_placeholder_fwd.hpp {{{
  * \file tml/is_placeholder_fwd.hpp
- * \brief Forward declarations for tml/is_placeholder.hpp
+ * \brief Forward declarations for \ref tml/is_placeholder.hpp
  */ // }}}
 #ifndef TML_IS_PLACEHOLDER_FWD_HPP
 #define TML_IS_PLACEHOLDER_FWD_HPP

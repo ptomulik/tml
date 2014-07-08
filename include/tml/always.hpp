@@ -8,7 +8,7 @@
 
 /** // doc: tml/always.hpp {{{
  * \file tml/always.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::always
  */ // }}}
 #ifndef TML_ALWAYS_HPP
 #define TML_ALWAYS_HPP

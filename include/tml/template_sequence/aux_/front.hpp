@@ -8,7 +8,7 @@
 
 /** // doc: tml/template_sequence/aux_/front.hpp {{{
  * \file tml/template_sequence/aux_/front.hpp
- * \todo Write documentation
+ * \brief Implements \ref tml::front for \ref TemplateSeqConcept
  */ // }}}
 #ifndef TML_TEMPLATE_SEQUENCE_AUX_FRONT_HPP
 #define TML_TEMPLATE_SEQUENCE_AUX_FRONT_HPP

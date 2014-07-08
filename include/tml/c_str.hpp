@@ -8,7 +8,7 @@
 
 /** // doc: tml/c_str.hpp {{{
  * \file tml/c_str.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::c_str
  */ // }}}
 #ifndef TML_C_STR_HPP
 #define TML_C_STR_HPP
@@ -51,7 +51,7 @@ namespace tml {
  *
  * \par Expression semantics
  *
- * For a sequence `s` of \ref IntegralConstConcept "Integral Constants" with
+ * For a sequence `s` of \ref IntConstConcept "Int Constants" with
  * values implicitly convertible to `char`
  * \code
  *  char const* r = c_str<s>::value;
@@ -61,8 +61,8 @@ namespace tml {
  * - **Semantics**: `r` is a pointer to null-terminated string created from all
  *   the characters contained in sequence `s`.
  *
- * For an integral type `t` and a sequence `s` of \ref IntegralConstConcept
- * "Integral Constants" with values implicitly convertible to `t`
+ * For an integral type `t` and a sequence `s` of \ref IntConstConcept
+ * "Int Constants" with values implicitly convertible to `t`
  * \code
  *  t const* r = c_str<s,t>::value;
  * \endcode

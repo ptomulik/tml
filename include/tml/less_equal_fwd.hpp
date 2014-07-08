@@ -8,7 +8,7 @@
 
 /** // doc: tml/less_equal_fwd.hpp {{{
  * \file tml/less_equal_fwd.hpp
- * \brief Forward declarations for tml/less_equal.hpp
+ * \brief Forward declarations for \ref tml/less_equal.hpp
  */ // }}}
 #ifndef TML_LESS_EQUAL_FWD_HPP
 #define TML_LESS_EQUAL_FWD_HPP

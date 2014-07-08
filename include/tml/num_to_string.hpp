@@ -8,7 +8,7 @@
 
 /** // doc: tml/num_to_string.hpp {{{
  * \file tml/num_to_string.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::num_to_string
  */ // }}}
 #ifndef TML_NUM_TO_STRING_HPP
 #define TML_NUM_TO_STRING_HPP

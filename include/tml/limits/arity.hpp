@@ -8,7 +8,7 @@
 
 /** // doc: tml/limits/arity.hpp {{{
  * \file tml/limits/arity.hpp
- * \todo Write documentation
+ * \brief Defines limit for metafunction arity
  */ // }}}
 #ifndef TML_LIMITS_ARITY_HPP
 #define TML_LIMITS_ARITY_HPP

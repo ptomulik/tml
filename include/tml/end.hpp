@@ -8,7 +8,7 @@
 
 /** // doc: tml/end.hpp {{{
  * \file tml/end.hpp
- * \todo Write documentation
+ * \brief Provides \ref tml::end
  */ // }}}
 #ifndef TML_END_HPP
 #define TML_END_HPP
