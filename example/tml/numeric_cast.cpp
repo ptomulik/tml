@@ -40,7 +40,7 @@ template <>
         :complex_<N, integral_c< typename N::value_type, 0> >
       { };
   };
-  
+
 template <>
   struct plus_impl<complex_tag, complex_tag>
   {

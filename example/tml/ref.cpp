@@ -15,11 +15,11 @@
 
 using namespace tml;
 
-struct s1 
+struct s1
   {
     typedef int type;
   };
-struct s2 
+struct s2
   {
     typedef s2 type;
     typedef int value_type;

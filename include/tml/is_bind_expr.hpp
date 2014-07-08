@@ -41,7 +41,7 @@ namespace tml {
  *
  * \par Description
  *
- * Tests if `F` is a bind expression. Returns boolean \ref IntConstConcept, 
+ * Tests if `F` is a bind expression. Returns boolean \ref IntConstConcept,
  * which equals `true` if and only if `F` is a bind expression.
  *
  * \par Expression semantics

@@ -38,9 +38,9 @@ namespace tml {
  * \par Description
  *
  * Returns the last element in the sequence.
- * 
+ *
  * \par Model of
- * 
+ *
  * \ref TagDispatchedMetafunConcept
  *
  * \par Expression semantics

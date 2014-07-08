@@ -48,7 +48,7 @@ namespace tml {
  * \endcode
  *
  * - **Return type**: Any type
- * - **Semantics**: Equivalent to 
+ * - **Semantics**: Equivalent to
  *   \code
  *    typedef apply_wrap<lambda<F>::type,a1,...,an>::type t;
  *   \endcode

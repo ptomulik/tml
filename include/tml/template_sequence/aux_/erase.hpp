@@ -33,7 +33,7 @@ template <>
             , typename First::pos
             , typename Last::pos
             >
-          , Sequence 
+          , Sequence
           >
       { };
   };

@@ -20,7 +20,7 @@ namespace tml {
 /** // doc: always {{{
  * \ingroup MetafunMiscGroup
  * \struct always
- * \brief \ref MetafunClassConcept which always returns same type 
+ * \brief \ref MetafunClassConcept which always returns same type
  *
  * \tparam X A type to be returned.
  *

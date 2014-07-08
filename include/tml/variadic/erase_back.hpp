@@ -26,7 +26,7 @@ template <class F, long N>
   };
 } } } // end namespace tml::variadic::detail
 
-namespace tml { namespace variadic { 
+namespace tml { namespace variadic {
 /** // doc: erase_back {{{
  * \ingroup SeqIntrVariadicGroup
  * \struct erase_back

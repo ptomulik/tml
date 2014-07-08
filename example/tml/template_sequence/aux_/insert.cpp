@@ -20,7 +20,7 @@ using namespace tml;
 
 template <class ...> struct seq { typedef aux::template_sequence_tag sequence_tag; };
 template <long N>
-  struct iter 
+  struct iter
   {
     typedef long_<N> pos;
   };

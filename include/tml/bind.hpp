@@ -48,7 +48,7 @@ namespace tml {
  *
  * ``bind`` is a higher-order primitive for \ref MetafunClassConcept
  * composition and argument binding. In essence, it's a compile-time
- * counterpart of the similar run-time functionality provided by 
+ * counterpart of the similar run-time functionality provided by
  * [Boost.Bind](http://www.boost.org/libs/bind/bind.html) and
  * [Boost.Lambda](http://www.boost.org/libs/lambda/index.html).
  *

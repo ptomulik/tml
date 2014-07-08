@@ -50,7 +50,7 @@ namespace tml {
  * \ref MetafunClassConcept, otherwise `X` is returned unchanged.
  *
  * \par Expression semantics
- * 
+ *
  * For arbitrary types `x` and `tag`
  * \code
  *  typedef lambda<protect<x> >::type f;

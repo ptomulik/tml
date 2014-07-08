@@ -58,9 +58,9 @@ namespace tml {
  *   \code
  *    typedef t r;
  *   \endcode
- * 
+ *
  * For any type `t` such that `is_class<t>::value == true` and having nested
- * attribute `t::attribute` 
+ * attribute `t::attribute`
  * \code
  *  ref<t>::attribute
  * \endcode
@@ -78,7 +78,7 @@ namespace tml {
 template <class T, class Inherit>
   struct ref
     : if_<boost::is_class<T>, T, identity<T> >::type
-  { 
+  {
     typedef T type;
   };
 } // end namespace tml

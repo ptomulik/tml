@@ -43,7 +43,7 @@ namespace tml {
  *
  * `quote` is a higher-order primitive that wraps a \ref MetafunConcept
  * to create a corresponding \ref MetafunClassConcept.
- * 
+ *
  * \par Model of
  *
  * \ref MetafunClassConcept
@@ -93,7 +93,7 @@ template <template <class...> class F, class Tag>
       {
         typedef X type;
       };
-    template <class X> 
+    template <class X>
       struct apply_impl<X, typename enable_if_type<typename X::type>::type>
         : X
       { };

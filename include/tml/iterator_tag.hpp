@@ -62,7 +62,7 @@ namespace tml {
  */ // }}}
 template <class Iterator>
   struct iterator_tag
-  { 
+  {
     typedef typename Iterator::iterator_tag type;
   };
 } // end namespace tml

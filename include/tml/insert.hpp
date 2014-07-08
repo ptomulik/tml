@@ -30,7 +30,7 @@ namespace tml {
  * \par Synopsis
  *
  * \code
- *  template< 
+ *  template<
  *        class Sequence
  *      , class Pos
  *      , class T

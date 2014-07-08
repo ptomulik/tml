@@ -79,7 +79,7 @@ namespace tml { namespace variadic {
  * - **Semantics**: `r` is a boolean \ref IntConstConcept with
  *   `r::value == true` if and only if for any type `ai` from `args...`
  *   `apply<f,ai>::type::value == true` holds.
- *   
+ *
  * \code
  *  typedef variadic::any<f>::apply<> t;
  * \endcode

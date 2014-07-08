@@ -49,8 +49,8 @@ namespace tml { namespace variadic {
  * \ref MetafunClassConcept
  *
  * \par Expression semantics
- * 
- * For any types `args...` 
+ *
+ * For any types `args...`
  * \code
  *  typedef variadic::empty::apply<args...>::type c;
  * \endcode

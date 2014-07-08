@@ -28,7 +28,7 @@ namespace tml {
  * \par Synopsis
  *
  * \code
- *  template< 
+ *  template<
  *        class First
  *      , class Last
  *      >

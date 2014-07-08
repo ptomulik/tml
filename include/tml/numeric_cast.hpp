@@ -42,7 +42,7 @@ namespace tml {
  *
  * \par Expression semantics
  *
- * If `x` and `y` are two numeric types, `x` is convertible to `y`, and 
+ * If `x` and `y` are two numeric types, `x` is convertible to `y`, and
  * `x_tag` and `y_tag` are the types' corresponding numeric tags:
  * \code
  *  typedef apply_wrap< numeric_cast<x_tag,y_tag>, x >::type r;

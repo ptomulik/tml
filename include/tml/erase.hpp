@@ -29,7 +29,7 @@ namespace tml {
  * \par Synopsis
  *
  * \code
- *  template< 
+ *  template<
  *        class Sequence
  *      , class First
  *      , class Last

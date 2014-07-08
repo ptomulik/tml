@@ -29,7 +29,7 @@ template <class First1, class First2, class Last1, class Last2, class Predicate>
         apply <
           Predicate
         , typename deref<First1>::type
-        , typename deref<First2>::type 
+        , typename deref<First2>::type
         >
       , iter_equal_impl<
           typename next<First1>::type
@@ -103,9 +103,9 @@ namespace tml {
  * For eny \ref ForwardSeqConcept "Forward Sequences" `s1` and `s2` and a
  * binary \ref LambdaExprConcept `pred`:
  * \code
- *  typedef equal<s1,s2,pred>::type c; 
+ *  typedef equal<s1,s2,pred>::type c;
  * \endcode
- * - **Return type**: \ref IntConstConcept. 
+ * - **Return type**: \ref IntConstConcept.
  * - **Semantics**: `c::value == true` if and only if `size<s1>::value ==
  *   size<s2>::value` and for every iterator `i` in `[begin<s1>::type,
  *   end<s1>::type)` `defer<i>::type` is identical to `advance<

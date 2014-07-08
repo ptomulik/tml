@@ -50,7 +50,7 @@ namespace tml {
  *
  * \par Description
  *
- * `arg<N>` specialization is a \ref MetafunClassConcept that returns the 
+ * `arg<N>` specialization is a \ref MetafunClassConcept that returns the
  * nth of its arguments.
  *
  * \par Expression semantics

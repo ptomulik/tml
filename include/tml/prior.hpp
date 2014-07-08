@@ -51,7 +51,7 @@ namespace tml {
  * - **Return type**: \ref BidirIterConcept
  * - **Precondition**: `iter` is decrementable
  * - **Semantics**: `j` is an iterator pointing to the previous element in the
- *   sequence. 
+ *   sequence.
  *
  * \par Example
  * \snippet tml/prior.cpp Code

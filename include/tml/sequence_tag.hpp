@@ -62,7 +62,7 @@ namespace tml {
  */ // }}}
 template <class Sequence>
   struct sequence_tag
-  { 
+  {
     typedef typename Sequence::sequence_tag type;
   };
 } // end namespace tml
