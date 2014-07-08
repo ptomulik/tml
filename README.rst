@@ -10,10 +10,12 @@ Overview
 --------
 
 The TML library is a general-purpose C++ template metaprogramming library with
-compile-time algorithms, sequences and metafunctions. It's inspired by
-`Boost.MPL`_ and `tinympl`_. It tries to preserve the `Boost.MPL`_'s concepts
-and interfaces while adding few new concepts and features. The implementation
-of TML makes use of the C++11 features, resulting in smaller code base.
+compile-time algorithms, sequences and metafunctions. It's my few-week
+excercize to better understand the C++ templates and metaprogramming. It's
+inspired by `Boost.MPL`_ and `tinympl`_. It tries to preserve the
+`Boost.MPL`_'s concepts and interfaces while adding few new concepts and
+features. The implementation of TML makes use of the C++11 features, resulting
+in smaller code base.
 
 Status
 ------
