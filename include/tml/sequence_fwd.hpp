@@ -13,12 +13,12 @@
 #ifndef TML_SEQUENCE_FWD_HPP
 #define TML_SEQUENCE_FWD_HPP
 
-namespace tml { namespace variadic {
+namespace tml {
 template <class... Args>
   struct sequence;
 template <class T, T... Args>
   struct sequence_c;
-} } // end namespace tml
+} // end namespace tml
 
 #endif /* TML_SEQUENCE_FWD_HPP */
 // vim: set expandtab tabstop=2 shiftwidth=2:
